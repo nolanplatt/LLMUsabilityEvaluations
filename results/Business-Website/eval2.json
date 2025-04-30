@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks feedback for user actions such as clicking buttons or interacting with sliders.",
+    "CodeReference": "index.html line 25-40",
+    "CodeSnippet": "<div class=\"get-started\">\n <button>Get Started</button>\n</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, user actions such as navigation or interaction do not show visible confirmation or loading states.",
+      "Is the language understandable and uses real-world conventions?": "Yes, it uses common labels like 'Get Started' and 'We're hiring'.",
+      "Can users easily undo and redo actions?": "No, there are no mechanisms for undoing actions like form entries or submissions.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and button styles are used.",
+      "Is the design preventing problems before they occur?": "No, due to lack of user feedback, confusion may occur.",
+      "Is recognition prioritized over recall?": "Yes, actions are clearly labeled and visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, minimal interactivity limits efficiency.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is clean and minimal.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are displayed.",
+      "Is help and documentation easily accessible if needed?": "No, there's no help section or documentation available."
+    },
+    "Recommendation": "Implement real-time feedback for user actions like button clicks or slider transitions using visual or textual indicators."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Some of the terminology and icons used, such as abstract visual symbols in the slider, may not align with user expectations.",
+    "CodeReference": "index.html line 150-170",
+    "CodeSnippet": "<i class=\"material-icons\">navigate_next</i>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, icons do not provide hover-text or labels.",
+      "Is the language understandable and uses real-world conventions?": "No, some symbols are not clearly linked to familiar actions.",
+      "Can users easily undo and redo actions?": "No undo features are provided.",
+      "Are there consistent standards across the system?": "Yes, icon usage is consistent.",
+      "Is the design preventing problems before they occur?": "No, unfamiliar icons might lead to user mistakes.",
+      "Is recognition prioritized over recall?": "No, icons without text require memorization.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, abstract icons can confuse new users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, design is clean.",
+      "Are error messages helpful and expressed in plain language?": "No error messages implemented.",
+      "Is help and documentation easily accessible if needed?": "No help guidance provided."
+    },
+    "Recommendation": "Replace or augment icons with labels or tooltips that use familiar, descriptive language."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Users lack a way to undo actions or easily return to previous states, especially with interactive elements like sliders.",
+    "CodeReference": "script.js line 1-20",
+    "CodeSnippet": "function plusSlides(n){\n  showSlides(sliderIndex += n)\n}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, changes like slider movement lack a clear reset option.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, there's no undo or back mechanism.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of control can cause confusion.",
+      "Is recognition prioritized over recall?": "Yes, slider arrows are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, there's no fast navigation or advanced control.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No help provided."
+    },
+    "Recommendation": "Add navigation controls like 'Previous', 'Restart', or breadcrumbs to allow users to backtrack easily."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The website generally follows a consistent style but has minor inconsistencies such as inconsistent hover effects across elements.",
+    "CodeReference": "style.css line 20-50",
+    "CodeSnippet": ".hiring-text:hover{\n  color: lightgrey;\n  cursor: pointer;\n}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, hover effects aren't consistent across clickable elements.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No, minor visual inconsistencies exist.",
+      "Is the design preventing problems before they occur?": "Yes, in part.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Ensure all interactive elements use consistent styles, like hover color and cursor changes."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no mechanisms to prevent users from submitting incorrect data or navigating incorrectly.",
+    "CodeReference": "index.html, script.js",
+    "CodeSnippet": "<button>Get Started</button>\n<script>function plusSlides(n){ showSlides(sliderIndex += n); }</script>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement form validation, hover explanations, and disable inactive buttons until valid input is entered."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some elements rely on iconography without explanation, making users recall their function.",
+    "CodeReference": "index.html line 170",
+    "CodeSnippet": "<i class=\"material-icons\">navigate_next</i>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Partially.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No, some icons lack labels or tooltips.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use tooltips or text labels beside icons to make functions more easily recognizable."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website offers no shortcuts or power-user features to speed up interaction.",
+    "CodeReference": "script.js",
+    "CodeSnippet": "function showSlides(n) { ... }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard shortcuts or quicker navigation paths for experienced users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "N/A",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A",
+      "Is the language understandable and uses real-world conventions?": "Yes, design is clean and minimal.",
+      "Can users easily undo and redo actions?": "N/A",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issues found. Continue maintaining a clean, minimalist layout."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks any error messages or handling for navigation or interaction failures.",
+    "CodeReference": "script.js",
+    "CodeSnippet": "slider[sliderIndex - 1].style.display = \"block\";",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce user-friendly error messages to help users recover from mistakes."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No help sections, tooltips, or user guides are present.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<html lang=\"en\"> ... </html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Provide accessible help documentation, tooltips, or a FAQ section to guide users."
+  }
+]

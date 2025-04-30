@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The website does not provide visible system feedback to users (e.g., no loading indicators, status messages, or confirmation states).",
+    "CodeReference": "index.html: body section - missing feedback elements",
+    "CodeSnippet": "<body>...</body> <!-- No loading or status indicators present -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users receive no indication of system status such as loading or submission confirmations.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used is generally clear and simple.",
+      "Can users easily undo and redo actions?": "No, no undo or redo features are present.",
+      "Are there consistent standards across the system?": "Yes, consistent design components are used.",
+      "Is the design preventing problems before they occur?": "No, lack of feedback can lead to confusion or repeated actions.",
+      "Is recognition prioritized over recall?": "Yes, visible elements support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, limited feedback restricts usability for all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is clean and minimal.",
+      "Are error messages helpful and expressed in plain language?": "No, there are no error messages displayed.",
+      "Is help and documentation easily accessible if needed?": "No, help features or documentation are not included."
+    },
+    "Recommendation": "Add visual feedback for user actions, including loading states, submission confirmation, and error handling to improve transparency and usability."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some button labels like 'Explore features' and 'Get started for free' are vague and do not specify what actions will happen next.",
+    "CodeReference": "index.html: buttons with unclear context",
+    "CodeSnippet": "<button>Explore features</button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users are not given enough context before interacting.",
+      "Is the language understandable and uses real-world conventions?": "No, labels use marketing language that lacks clarity.",
+      "Can users easily undo and redo actions?": "No, there are no undo/redo options.",
+      "Are there consistent standards across the system?": "Yes, stylistic and structural consistency is observed.",
+      "Is the design preventing problems before they occur?": "No, vague text may cause user hesitation or confusion.",
+      "Is recognition prioritized over recall?": "Yes, users can recognize standard interface elements.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, but could be improved by clearer CTAs.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean UI with concise layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages observed.",
+      "Is help and documentation easily accessible if needed?": "No, no help content exists."
+    },
+    "Recommendation": "Revise call-to-action text to reflect user expectations more clearly, e.g., 'See all features' or 'Create an account'."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No options exist to undo actions or navigate back from actions like 'Get started for free'.",
+    "CodeReference": "index.html: interaction flows",
+    "CodeSnippet": "<button class='get-started-free'>Get started for free</button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users don\u2019t see confirmation or back options.",
+      "Is the language understandable and uses real-world conventions?": "Yes, plain language used.",
+      "Can users easily undo and redo actions?": "No, no undo/redo or cancel options are provided.",
+      "Are there consistent standards across the system?": "Yes, button design and colors are consistent.",
+      "Is the design preventing problems before they occur?": "No, users could click unintentionally and cannot revert easily.",
+      "Is recognition prioritized over recall?": "Yes, standard buttons are easily identified.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, but limited interactivity restricts efficiency.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visual design is streamlined.",
+      "Are error messages helpful and expressed in plain language?": "No error handling observed.",
+      "Is help and documentation easily accessible if needed?": "No help or escape mechanism included."
+    },
+    "Recommendation": "Include cancel buttons and confirmation dialogs for important actions to empower users and prevent errors."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "While the design uses consistent colors and button styles, the absence of link elements or standard navigation conventions (like breadcrumb trails or footer links) affects overall consistency.",
+    "CodeReference": "index.html: body structure and navigation",
+    "CodeSnippet": "<header><span class='logo'>Business Homepage</span>...</header>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback mechanisms are missing.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard business terms are used.",
+      "Can users easily undo and redo actions?": "No, navigation options are limited.",
+      "Are there consistent standards across the system?": "No, some web conventions like links and navs are missing.",
+      "Is the design preventing problems before they occur?": "No, lack of expected navigation may confuse users.",
+      "Is recognition prioritized over recall?": "Yes, layout helps user recognize features.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, but efficiency is hindered by non-standard navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually consistent design.",
+      "Are error messages helpful and expressed in plain language?": "No, none present.",
+      "Is help and documentation easily accessible if needed?": "No, not available."
+    },
+    "Recommendation": "Implement standard navigation components like menus or footers with links to maintain consistency with user expectations."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no visible constraints or form validation mechanisms to prevent user errors (e.g., no feedback on required fields or incorrect entries).",
+    "CodeReference": "index.html: no form or validation scripts present",
+    "CodeSnippet": "<form> <!-- No validation or instructions provided --></form>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, missing validation and confirmations.",
+      "Is the language understandable and uses real-world conventions?": "Yes, plain labels used.",
+      "Can users easily undo and redo actions?": "No, no recovery from errors or actions.",
+      "Are there consistent standards across the system?": "Yes, consistent design patterns used.",
+      "Is the design preventing problems before they occur?": "No, there are no error prevention techniques in use.",
+      "Is recognition prioritized over recall?": "Yes, users can recognize common elements.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, although error risks affect novices more.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimalistic layout.",
+      "Are error messages helpful and expressed in plain language?": "No, none available.",
+      "Is help and documentation easily accessible if needed?": "No help documentation found."
+    },
+    "Recommendation": "Introduce error-preventing elements such as form field constraints, required field indicators, and real-time validation messages."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The homepage layout supports recognition through visible buttons and branding, but lack of navigational cues or breadcrumbs limits discoverability of deeper content.",
+    "CodeReference": "index.html: structure and interaction elements",
+    "CodeSnippet": "<div class='get-started'>...</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no feedback after interaction.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clear business language.",
+      "Can users easily undo and redo actions?": "No, navigation is linear and lacks history.",
+      "Are there consistent standards across the system?": "Yes, stylistically consistent.",
+      "Is the design preventing problems before they occur?": "No, guidance for users is limited.",
+      "Is recognition prioritized over recall?": "Yes, most options are visible and intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, it\u2019s beginner-friendly.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, very clean.",
+      "Are error messages helpful and expressed in plain language?": "No error handling in place.",
+      "Is help and documentation easily accessible if needed?": "No help links or hints provided."
+    },
+    "Recommendation": "Add a clear navigation bar or site map to reduce cognitive load and increase user recognition of page structure."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard shortcuts, skip links, or advanced navigation methods are provided to support experienced users.",
+    "CodeReference": "index.html: lacks accessibility features",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lacks action acknowledgment.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard terms used.",
+      "Can users easily undo and redo actions?": "No, no such controls present.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No aids for error avoidance.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks features like keyboard access or personalization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown.",
+      "Is help and documentation easily accessible if needed?": "No help content available."
+    },
+    "Recommendation": "Implement accessibility improvements such as keyboard navigation, skip links, and screen reader support to increase efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is generally missing.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clean and focused.",
+      "Can users easily undo and redo actions?": "No undo/redo capabilities.",
+      "Are there consistent standards across the system?": "Yes, visual design is coherent.",
+      "Is the design preventing problems before they occur?": "No, but visuals help guide user intent.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal use of colors and clear spacing.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown.",
+      "Is help and documentation easily accessible if needed?": "No documentation present."
+    },
+    "Recommendation": "Maintain the minimalist design while pairing it with functional feedback elements for improved usability."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There are no error messages or visual indicators when users make mistakes, especially in forms or input interactions.",
+    "CodeReference": "index.html: missing error handlers",
+    "CodeSnippet": "<form>...</form> <!-- No error validation or hints -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, nothing displayed when users err.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, errors are not recoverable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, no visual prompts to aid users.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, error management is not intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages available.",
+      "Is help and documentation easily accessible if needed?": "No documentation exists."
+    },
+    "Recommendation": "Add user-friendly, inline error messages and real-time validation feedback to assist users during input."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No help section, tooltips, onboarding guidance, or documentation are available on the site.",
+    "CodeReference": "index.html: lacks help system",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No feedback mechanisms provided.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No undo/redo support.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users lack guidance.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lack of documentation hinders novice users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, there are no error messages.",
+      "Is help and documentation easily accessible if needed?": "No, completely absent."
+    },
+    "Recommendation": "Introduce an FAQ section, tooltips, or a help modal to support user education and problem resolution."
+  }
+]
