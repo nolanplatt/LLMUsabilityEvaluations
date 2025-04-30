@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The page lacks visual feedback or indicators for user actions or system status (e.g., hover effects, page load indicators).",
+    "CodeReference": "index.html, styles/style.css",
+    "CodeSnippet": "<h1>Mozilla is cool</h1>\n<img src=\"images/firefox-icon.png\" alt=\"...\">\n<p>At Mozilla, we\u2019re a global community of</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, because there are no interactive indicators or responses to user actions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language is simple and user-friendly.",
+      "Can users easily undo and redo actions?": "No, as this is a static page without interactive actions.",
+      "Are there consistent standards across the system?": "Yes, the visual styling is consistent.",
+      "Is the design preventing problems before they occur?": "No, since there\u2019s no feedback or validation for actions (though limited actions exist).",
+      "Is recognition prioritized over recall?": "Yes, the layout is straightforward and doesn\u2019t demand memory recall.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the simplicity benefits all user levels.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is minimalistic and focused.",
+      "Are error messages helpful and expressed in plain language?": "N/A, as no dynamic errors or forms are present.",
+      "Is help and documentation easily accessible if needed?": "No, no help or documentation is included."
+    },
+    "Recommendation": "Add visual indicators for user interactions (e.g., hover states, active link styles) and consider a loading indicator or progress feedback for future dynamic content."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "N/A",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, but limited since it's a static site.",
+      "Is the language understandable and uses real-world conventions?": "Yes, it aligns with natural language and user expectations.",
+      "Can users easily undo and redo actions?": "No, but the simplicity makes it unnecessary.",
+      "Are there consistent standards across the system?": "Yes, content and layout are consistent.",
+      "Is the design preventing problems before they occur?": "Yes, due to limited interactivity.",
+      "Is recognition prioritized over recall?": "Yes, everything is directly visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, easy for all levels.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "There is no navigation or way to go back or undo actions, though limited interaction reduces the severity.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<a href=\"https://www.mozilla.org/en-US/about/manifesto/\">Mozilla Manifesto</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, as there is no browser-like control.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, there's no such option.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially, due to limited interactions.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Include basic navigation or links back to the homepage or site sections, even in small static sites."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The design and structure follow consistent styling and layout conventions.",
+    "CodeReference": "index.html, styles/style.css",
+    "CodeSnippet": "body {\n  background-color: #FF9500;\n  padding: 0 20px 20px 20px;\n  border: 5px solid black;\n}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A for static content.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No interaction needed.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The site is static and does not include forms or inputs that could lead to errors.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<ul>\n  <li>technologists</li>\n  <li>thinkers</li>\n  <li>builders</li>\n</ul>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found due to absence of interactive elements."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "Content and navigation are straightforward, minimizing memory load.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<h1>Mozilla is cool</h1>\n<p>At Mozilla, we\u2019re a global community...</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The site is not keyboard navigable nor optimized for fast access or advanced user needs.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<body>\n  ...\n</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks keyboard shortcuts or quick actions.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Enhance accessibility with keyboard navigation and ARIA roles. Add skip links or landmarks."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The site uses a clean and minimal layout with good color contrast and typography.",
+    "CodeReference": "styles/style.css",
+    "CodeSnippet": "body {\n  background-color: #FF9500;\n  border: 5px solid black;\n}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "There are no user-generated errors possible on the site.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<p>Read the <a href=\"https://www.mozilla.org/en-US/about/manifesto/\">Mozilla Manifesto</a>...</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No issue found."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation link for users unfamiliar with the content or context.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<body>\n  ...\n</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a help or about section to explain site content and purpose for users unfamiliar with Mozilla or its mission."
+  }
+]
