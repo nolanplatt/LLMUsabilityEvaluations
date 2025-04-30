@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues found.",
+      "Can users easily undo and redo actions?": "Yes, no issues found.",
+      "Are there consistent standards across the system?": "Yes, no issues found.",
+      "Is the design preventing problems before they occur?": "Yes, no issues found.",
+      "Is recognition prioritized over recall?": "Yes, no issues found.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no issues found.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, no issues found.",
+      "Are error messages helpful and expressed in plain language?": "Yes, no issues found.",
+      "Is help and documentation easily accessible if needed?": "Yes, no issues found."
+    },
+    "Recommendation": "No changes recommended."
+  }
+]

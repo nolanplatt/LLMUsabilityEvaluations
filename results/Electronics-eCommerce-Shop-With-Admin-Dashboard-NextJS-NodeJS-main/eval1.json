@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There is no visible or structured help system or documentation."
+    },
+    "Recommendation": "No major changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks accessible help or documentation resources for end-users or admins.",
+    "CodeReference": "All routes",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes. The system includes visual feedback and page transitions.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text labels are clear and use standard eCommerce terminology.",
+      "Can users easily undo and redo actions?": "Yes. Navigation and action buttons offer reversal options like remove-from-cart.",
+      "Are there consistent standards across the system?": "Yes. UI components follow consistent naming and styling.",
+      "Is the design preventing problems before they occur?": "Yes. Validation on forms and limited options in dropdowns help prevent user errors.",
+      "Is recognition prioritized over recall?": "Yes. Navigation and user controls are visible and easy to recognize.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. The dashboard offers streamlined admin control, and the shop is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Tailwind and clean layout ensure clarity and focus.",
+      "Are error messages helpful and expressed in plain language?": "Yes. Forms and login errors provide simple, clear messages.",
+      "Is help and documentation easily accessible if needed?": "No. There are no visible help links or documentation pages for user assistance."
+    },
+    "Recommendation": "Add a help section or FAQ accessible from the main menu or footer to support users who need guidance."
+  }
+]
