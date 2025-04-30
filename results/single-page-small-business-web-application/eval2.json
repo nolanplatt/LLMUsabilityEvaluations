@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No loading indicators or status messages are present to indicate ongoing processes.",
+    "CodeReference": "index.html: body",
+    "CodeSnippet": "<body>\n    <header class=\"header\" id=\"header\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, because there is no indication of loading or system activity.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in meta tags and titles is appropriate.",
+      "Can users easily undo and redo actions?": "No, as there are no interactive actions requiring undo support.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML structure and class usage.",
+      "Is the design preventing problems before they occur?": "No, lack of system status feedback can confuse users.",
+      "Is recognition prioritized over recall?": "Yes, layout and icons assist recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, single-page simplicity helps novices.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, based on minimal scripts and stylesheets.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages are shown.",
+      "Is help and documentation easily accessible if needed?": "No, there is no embedded help or guide."
+    },
+    "Recommendation": "Add loading indicators or progress messages when content or assets are loading to inform users of system activity."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issues found for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no issues noted.",
+      "Is the language understandable and uses real-world conventions?": "Yes, no issues noted.",
+      "Can users easily undo and redo actions?": "No, not applicable since no interactive inputs exist.",
+      "Are there consistent standards across the system?": "Yes, consistent HTML and CSS usage.",
+      "Is the design preventing problems before they occur?": "Yes, nothing obstructive or risky identified.",
+      "Is recognition prioritized over recall?": "Yes, visual cues and icons are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is simple and uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No, no error states are defined.",
+      "Is help and documentation easily accessible if needed?": "No, no help content or links were found."
+    },
+    "Recommendation": "No action needed for this heuristic at this time."
+  }
+]
