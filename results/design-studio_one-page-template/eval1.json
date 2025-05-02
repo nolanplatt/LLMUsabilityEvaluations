@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks clear loading indicators or feedback for asynchronous actions like clicking navigation links.",
+    "CodeReference": "index.html, lines 45-70",
+    "CodeSnippet": "<nav class=\"page-header__nav js-nav\"><ul><li><a class=\"page-header__nav-link js-anchor js-link is-active\" href=\"#home\">Home</a></li>...</ul></nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, it lacks loading indicators or visual feedback after interactions like anchor navigation.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the labels are standard and understandable.",
+      "Can users easily undo and redo actions?": "No, there\u2019s no undo/redo functionality for navigation.",
+      "Are there consistent standards across the system?": "Yes, navigation and interactions follow a consistent visual pattern.",
+      "Is the design preventing problems before they occur?": "No, the absence of feedback might confuse users.",
+      "Is recognition prioritized over recall?": "Yes, navigation labels are always visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, there is no shortcut or advanced interaction for power users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is clean and modern.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable; there are no user errors triggered.",
+      "Is help and documentation easily accessible if needed?": "No, there\u2019s no help or tooltip feature present."
+    },
+    "Recommendation": "Introduce visual feedback such as scroll-based indicators or highlight animations on click to convey active navigation status."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some terminology, such as 'Bak-one', lacks clear meaning or real-world relevance for first-time users.",
+    "CodeReference": "index.html, line 44",
+    "CodeSnippet": "<h1>Bak-one</h1>&nbsp;<span>One page flat template</span>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable.",
+      "Is the language understandable and uses real-world conventions?": "No, 'Bak-one' lacks clear meaning or context.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes, no critical misunderstandings arise from this label.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help context is available."
+    },
+    "Recommendation": "Replace or supplement 'Bak-one' with a more descriptive or brand-relevant name or tagline to ensure clarity."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There\u2019s no visible 'back to top' button or undo for deep-scroll actions.",
+    "CodeReference": "index.html, general body structure",
+    "CodeSnippet": "<body><!-- $Page header--><header class=\"page-header js-header\">...</header>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users can get lost after navigating deep sections.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, there's no back-to-top or undo feature.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, getting lost in long scrolls is possible.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lack of navigation aids.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help provided."
+    },
+    "Recommendation": "Add a fixed-position 'Back to Top' button and consider breadcrumb or mini-nav to help orientation."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minor inconsistencies in spacing and capitalization of nav items.",
+    "CodeReference": "index.html, nav list",
+    "CodeSnippet": "<li><a class=\"page-header__nav-link js-anchor js-link\" href=\"#team\">About</a></li>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No issue here.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "No, slight visual inconsistencies exist.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help present."
+    },
+    "Recommendation": "Standardize capitalization and spacing across navigation labels to maintain visual harmony."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No input forms or user flows are present that require error prevention.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes, no risky interactions present.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help feature provided."
+    },
+    "Recommendation": "None needed unless forms are added in the future."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "All navigation and action elements are clearly visible.",
+    "CodeReference": "index.html, header navigation",
+    "CodeSnippet": "<ul><li><a class=\"page-header__nav-link js-anchor js-link\" href=\"#portfolio\">Portfolio</a></li>...</ul>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, clearly labeled nav links.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help context provided."
+    },
+    "Recommendation": "None needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Lacks keyboard navigation support or skip-links for accessibility.",
+    "CodeReference": "index.html, general layout",
+    "CodeSnippet": "<body><!-- $Page header--><header class=\"page-header js-header\">...</header>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, accessibility limitations may hinder usability.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help system exists."
+    },
+    "Recommendation": "Implement keyboard navigable links, ARIA roles, and skip-to-content links."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some decorative elements like background shapes could distract users from primary content.",
+    "CodeReference": "custom.min.css, assumed styles for decorative sections",
+    "CodeSnippet": "background: url('../images/bg-shape.svg') repeat;",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Mostly, but some improvements can help.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help provided."
+    },
+    "Recommendation": "Reduce or tone down background decorations to maintain user focus."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No form or error interactions are present in this static template.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help system."
+    },
+    "Recommendation": "If future forms are added, use inline validations and contextual error messages."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site has no visible help, tooltip, or onboarding documentation.",
+    "CodeReference": "index.html, global",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No help offered.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help provided."
+    },
+    "Recommendation": "Add minimal help documentation such as tooltips, a FAQ section, or onboarding modal for new users."
+  }
+]
