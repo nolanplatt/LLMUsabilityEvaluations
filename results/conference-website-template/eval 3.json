@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The navigation menu does not dynamically reflect the active page across different sections. Only 'index.html' statically uses a 'current' class, giving no feedback when users navigate to other pages.",
+    "CodeReference": "index.html (line 28), other HTML pages (program/index.html, registration/index.html, etc.)",
+    "CodeSnippet": "<a class='current' title='Conference Home' href='index.html'>Home</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the site does not visually indicate the current page except on 'index.html'.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard labels such as 'Program', 'Registration', and 'Home' are used.",
+      "Can users easily undo and redo actions?": "No, the site is static and lacks interaction or state-based actions.",
+      "Are there consistent standards across the system?": "Yes, the navigation structure and layout are consistent.",
+      "Is the design preventing problems before they occur?": "No, lack of active page indication may confuse users.",
+      "Is recognition prioritized over recall?": "Partially, users must recall which page they are on due to lack of dynamic feedback.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, the static nature lacks efficiency tools.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is visually minimal and clean.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable; the site has no error messages.",
+      "Is help and documentation easily accessible if needed?": "No, the site lacks support documentation."
+    },
+    "Recommendation": "Use JavaScript or server-side logic to apply an 'active' class to the correct menu item on each page. Consider breadcrumb navigation for better user orientation."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Dates and event locations use placeholder or fictional formats (e.g., 'June 31, 2525'), which may confuse users or seem unrealistic.",
+    "CodeReference": "index.html (line 20)",
+    "CodeSnippet": "June 31, 2525 <br> University Name, and City Maybe",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the placeholder data does not communicate real event status.",
+      "Is the language understandable and uses real-world conventions?": "Partially, some dates/locations are unrealistic or placeholder.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, language format is consistent but unrealistic.",
+      "Is the design preventing problems before they occur?": "No, placeholder content could lead to misinterpretation.",
+      "Is recognition prioritized over recall?": "Yes, event data is visible, though questionable in accuracy.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, clear layout benefits all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, despite unrealistic data, layout is clean.",
+      "Are error messages helpful and expressed in plain language?": "No error scenarios present.",
+      "Is help and documentation easily accessible if needed?": "No, and unclear info increases need for help."
+    },
+    "Recommendation": "Replace placeholder data with accurate dates and locations to align user expectations with real-world conventions."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no back or cancel actions, and no escape options on any page. Users cannot return to a safe state if lost.",
+    "CodeReference": "All pages - no implementation of interactive controls",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users cannot reverse navigation or undo page selections.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clearly labeled links assist navigation.",
+      "Can users easily undo and redo actions?": "No, not possible on this static site.",
+      "Are there consistent standards across the system?": "Yes, navigation is consistent but offers no control.",
+      "Is the design preventing problems before they occur?": "No, users can get lost with no breadcrumb or navigation hierarchy.",
+      "Is recognition prioritized over recall?": "Partially, main menu aids recognition, but control is limited.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or tools.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal design preserved.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no escape route or contextual help provided."
+    },
+    "Recommendation": "Include a breadcrumb or secondary navigation allowing users to backtrack. Consider a home button or consistent footer navigation."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The use of `<table>` for navigation and layout is outdated and inconsistent with modern web development practices.",
+    "CodeReference": "index.html (line ~26), program/index.html and others",
+    "CodeSnippet": "<table class='navigation'>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, though outdated, feedback is consistent.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Internally consistent, but not industry standard.",
+      "Is the design preventing problems before they occur?": "No, poor semantic structure may create accessibility issues.",
+      "Is recognition prioritized over recall?": "Yes, nav is visible and recognizable.",
+      "Is the interface flexible and efficient for both novices and experts?": "No advanced navigation tools.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Replace `<table>` layouts with `<nav>`, `<header>`, and CSS-based layouts to improve semantic consistency and future maintainability."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Several links (e.g., directions/index.html) reference pages with no functional forms or interactions, giving an impression of underdevelopment.",
+    "CodeReference": "directions/index.html (entire file)",
+    "CodeSnippet": "<h1>Directions</h1> <!-- no maps or guidance tools present -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users may expect interactivity (e.g., maps, links).",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, missing expected elements could frustrate users.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Populate key pages with real content, or clearly label under-construction areas to prevent misunderstanding."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The interface provides visible links and clearly labeled sections which support recognition.",
+    "CodeReference": "All pages",
+    "CodeSnippet": "<a href='program/index.html'>Program</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, links and visual cues help.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No immediate action required. Recognition support is sufficient."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "There are no shortcuts, search functionality, or customization options for experienced users.",
+    "CodeReference": "All pages",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks expert features.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a search bar, keyboard shortcuts, or quick links to improve expert user efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The layout is clean, consistent, and uses minimal distractions or excessive features.",
+    "CodeReference": "All pages",
+    "CodeSnippet": "<div class='banner'>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain the minimalist approach, but ensure it does not exclude essential functionality."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks any form of error messaging or guidance in case of navigation errors (e.g., missing pages or broken links).",
+    "CodeReference": "All pages (no 404 or user feedback mechanisms)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users receive no error feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages exist.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a custom 404 page and ensure broken links are addressed or reported to the user."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No help section, documentation, or contact information is available for users needing assistance.",
+    "CodeReference": "All HTML pages",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No, users must figure it out alone.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No, it is completely missing."
+    },
+    "Recommendation": "Provide a help section or at least an FAQ and contact details on a dedicated page or in the footer."
+  }
+]

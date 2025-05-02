@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No loading indicators or real-time feedback are implemented when adding items to the cart or performing key actions.",
+    "CodeReference": "components/AddToCartSingleProductBtn.tsx, line 18-40",
+    "CodeSnippet": "const handleAddToCart = async () => {\n  await addItem(product);\n  router.push(\"/cart\");\n};",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is delayed or not provided for critical user actions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, it uses familiar product and shopping terminology.",
+      "Can users easily undo and redo actions?": "No, there is no visual confirmation or option to undo cart additions.",
+      "Are there consistent standards across the system?": "Yes, interaction models appear consistent across the UI.",
+      "Is the design preventing problems before they occur?": "No, users may click multiple times assuming the system is not responding.",
+      "Is recognition prioritized over recall?": "Yes, users recognize actions like 'Add to Cart' and 'Buy Now'.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, the lack of feedback hinders efficiency.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal layout with clean component styling.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are shown in these flows.",
+      "Is help and documentation easily accessible if needed?": "No help or tooltips are available on action buttons."
+    },
+    "Recommendation": "Implement visible loading spinners or confirmation messages for user actions like 'Add to Cart' and navigation feedback to avoid confusion."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some UI text labels (e.g., 'BuyNowSingleProductBtn') are developer-centric and not visible or translated into user-facing phrases.",
+    "CodeReference": "components/BuyNowSingleProductBtn.tsx, line 5-15",
+    "CodeSnippet": "<Button onClick={handleBuyNow}>Buy Now</Button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, button labels are user-friendly but need better context in some cases.",
+      "Is the language understandable and uses real-world conventions?": "Mostly yes, but some backend-influenced phrasing is visible.",
+      "Can users easily undo and redo actions?": "Not applicable for language, but language does not confuse users.",
+      "Are there consistent standards across the system?": "Yes, naming is consistent but could be more user-oriented.",
+      "Is the design preventing problems before they occur?": "Yes, simple wording avoids complex interaction problems.",
+      "Is recognition prioritized over recall?": "Yes, labels like 'Buy Now' are clear and recognizable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple wording aids understanding for all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, button design is clean and minimal.",
+      "Are error messages helpful and expressed in plain language?": "No error messages tied to language found.",
+      "Is help and documentation easily accessible if needed?": "No help offered for button actions or terms."
+    },
+    "Recommendation": "Ensure all visible UI strings reflect user-centric language, avoiding developer jargon or internal code references."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No undo or cancel options are provided after performing critical actions like adding products to cart or buying.",
+    "CodeReference": "components/AddToCartSingleProductBtn.tsx, line 18-25",
+    "CodeSnippet": "router.push(\"/cart\");",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users are redirected with no option to cancel.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the phrasing is simple.",
+      "Can users easily undo and redo actions?": "No, no undo or redo options exist.",
+      "Are there consistent standards across the system?": "Yes, all buttons behave similarly.",
+      "Is the design preventing problems before they occur?": "No, users may accidentally commit actions they cannot revert.",
+      "Is recognition prioritized over recall?": "Yes, clear labels aid user understanding.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially; experts may find the lack of undo frustrating.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable in this case.",
+      "Is help and documentation easily accessible if needed?": "No help features found."
+    },
+    "Recommendation": "Add undo buttons or confirmation modals to improve user control during shopping interactions."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minor inconsistencies exist in UI structure, such as layout file naming and use of functional components.",
+    "CodeReference": "app/layout.tsx vs. app/(dashboard)/layout.tsx",
+    "CodeSnippet": "// Different layout composition in each layout.tsx",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not relevant here.",
+      "Are there consistent standards across the system?": "Partially, layouts and naming are inconsistent.",
+      "Is the design preventing problems before they occur?": "Not significantly impacted.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "No help features exist."
+    },
+    "Recommendation": "Standardize layout structures and component usage across main and dashboard areas for developer clarity and maintainability."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There are no confirmation prompts before actions such as buying a product or navigating to another page with pending input.",
+    "CodeReference": "components/BuyNowSingleProductBtn.tsx, line 10",
+    "CodeSnippet": "<Button onClick={handleBuyNow}>Buy Now</Button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, actions occur instantly with no confirmation.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of confirmation increases risk of error.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, but prone to accidental actions.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement confirmation modals for sensitive actions to prevent accidental submissions or purchases."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not relevant.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, visual elements are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "Yes."
+    },
+    "Recommendation": "No changes necessary for this heuristic."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system lacks keyboard shortcuts, autocomplete, or personalization options that could assist expert users.",
+    "CodeReference": "Global design - all components",
+    "CodeSnippet": "// No accessibility shortcuts or personalizations found",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks advanced features for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messaging on shortcuts.",
+      "Is help and documentation easily accessible if needed?": "No accessibility guides found."
+    },
+    "Recommendation": "Incorporate keyboard shortcuts and customization options to support power users and improve navigation efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not relevant.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout and structure.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "N/A"
+    },
+    "Recommendation": "No changes needed; aesthetic design is clean and modern."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system lacks clear and visible error messages on form submissions and interactions such as payment or login.",
+    "CodeReference": "Form-based components (not present in examined sample)",
+    "CodeSnippet": "// No try-catch or error UI feedback elements present",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no error feedback found.",
+      "Is the language understandable and uses real-world conventions?": "N/A",
+      "Can users easily undo and redo actions?": "N/A",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages displayed.",
+      "Is help and documentation easily accessible if needed?": "No help shown."
+    },
+    "Recommendation": "Implement visible and user-friendly error messages for all critical interactions and form validations."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no integrated help system, tooltips, or onboarding guidance.",
+    "CodeReference": "Global - all pages and components",
+    "CodeSnippet": "// No documentation or help UIs found in codebase",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No help or onboarding provided.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No onboarding or tips offered.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add onboarding walkthroughs, tooltips, or a help section to assist new users in navigating the site effectively."
+  }
+]

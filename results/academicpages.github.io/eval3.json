@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks visible system feedback for certain user actions, such as loading indicators or confirmation messages after submitting data.",
+    "CodeReference": "app/page.tsx, app/(dashboard)/admin/page.tsx",
+    "CodeSnippet": "return (\n    <>\n    <Hero />\n    <IntroducingSection />\n    <CategoryMenu />\n    <ProductsSection />\n    </>\n);",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no user-visible status feedback like loaders or success confirmations.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the content sections are named clearly like 'Hero', 'ProductsSection'.",
+      "Can users easily undo and redo actions?": "No, there is no interface mechanism shown for undo or redo.",
+      "Are there consistent standards across the system?": "Yes, the same UI structure and style appears to be reused.",
+      "Is the design preventing problems before they occur?": "No, lack of feedback may confuse users about success/failure.",
+      "Is recognition prioritized over recall?": "Yes, recognizable sections are visually present and labeled clearly.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, layout is responsive and supports different screen sizes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent minimalist design with whitespace is applied.",
+      "Are error messages helpful and expressed in plain language?": "No error messaging is visible in the current layout.",
+      "Is help and documentation easily accessible if needed?": "No, help sections or documentation are not integrated."
+    },
+    "Recommendation": "Implement real-time feedback mechanisms like loading spinners, toast confirmations, and visible status updates for actions (e.g., data submission or navigation)."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The interface uses some abstract component names internally which might reduce maintainability or onboarding clarity.",
+    "CodeReference": "app/page.tsx",
+    "CodeSnippet": "import { CategoryMenu, Hero, Incentives, IntroducingSection, Newsletter, ProductsSection } from \"@/components\";",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, system status is abstract without real-world metaphors.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels like 'Products' and 'Newsletter' are user-friendly.",
+      "Can users easily undo and redo actions?": "No, action reversibility is not addressed in the design.",
+      "Are there consistent standards across the system?": "Yes, all pages use structured and semantic React components.",
+      "Is the design preventing problems before they occur?": "Partially, but more semantic UI labels would improve understanding.",
+      "Is recognition prioritized over recall?": "Yes, navigation relies on recognizable patterns.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, intuitive structure helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, UI is clear and professional.",
+      "Are error messages helpful and expressed in plain language?": "Not available in current views.",
+      "Is help and documentation easily accessible if needed?": "No help-related content found."
+    },
+    "Recommendation": "Ensure all UI component labels and messages use real-world terminology to reduce ambiguity and improve accessibility for all users."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Users are not provided with navigation elements like 'back' or 'cancel' or undo options across main or admin pages.",
+    "CodeReference": "app/(dashboard)/admin/page.tsx",
+    "CodeSnippet": "<div className=\"flex flex-col items-center ml-5 ...\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, user actions aren't paired with visible feedback or reversibility.",
+      "Is the language understandable and uses real-world conventions?": "Yes, consistent UI elements used.",
+      "Can users easily undo and redo actions?": "No, undo/redo actions are not present.",
+      "Are there consistent standards across the system?": "Yes, components are reused consistently.",
+      "Is the design preventing problems before they occur?": "No, it assumes all user actions are always correct.",
+      "Is recognition prioritized over recall?": "Yes, dashboard icons and stats are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, dashboard supports different devices.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout with accessible visuals.",
+      "Are error messages helpful and expressed in plain language?": "No error handling is visible.",
+      "Is help and documentation easily accessible if needed?": "No help tools are integrated."
+    },
+    "Recommendation": "Add undo/redo or cancel options, especially in interactive areas like forms, dashboards, or data updates."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Most components are consistent, but a few naming conventions vary (e.g., classNames use inconsistent casing).",
+    "CodeReference": "app/(dashboard)/admin/page.tsx",
+    "CodeSnippet": "<div className=\"bg-white flex justify-start max-w-screen-2xl ...\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No system status cues are implemented.",
+      "Is the language understandable and uses real-world conventions?": "Yes, UI elements like stats, sidebar are clearly labeled.",
+      "Can users easily undo and redo actions?": "No, these are not supported in the current code.",
+      "Are there consistent standards across the system?": "Partially, though internal naming varies slightly.",
+      "Is the design preventing problems before they occur?": "No, inconsistency may cause confusion during maintenance.",
+      "Is recognition prioritized over recall?": "Yes, component names and structure help with UI recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, layout is adaptive and familiar.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, follows minimal and structured layout.",
+      "Are error messages helpful and expressed in plain language?": "No messaging observed.",
+      "Is help and documentation easily accessible if needed?": "No, there's no help UI."
+    },
+    "Recommendation": "Standardize naming conventions for classNames and React components. Maintain consistent casing and structure across files."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No validations or checks are apparent for user input or interactive actions in the current implementation.",
+    "CodeReference": "app/page.tsx",
+    "CodeSnippet": "<Newsletter />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there's no indication that invalid inputs are handled.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels and components are clear.",
+      "Can users easily undo and redo actions?": "No undo features are shown.",
+      "Are there consistent standards across the system?": "Yes, component layout is consistent.",
+      "Is the design preventing problems before they occur?": "No, there are no error-preventing checks for forms or inputs.",
+      "Is recognition prioritized over recall?": "Yes, UI components are clearly labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the interface is responsive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is visually clean.",
+      "Are error messages helpful and expressed in plain language?": "None observed.",
+      "Is help and documentation easily accessible if needed?": "No support content exists."
+    },
+    "Recommendation": "Implement input validation and error-preventing mechanisms, especially in form fields like newsletters or account pages."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Most navigation and interface elements are icon or component based, but the absence of labels for some components can cause recall reliance.",
+    "CodeReference": "app/(dashboard)/admin/page.tsx",
+    "CodeSnippet": "<DashboardSidebar />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No feedback tools are used.",
+      "Is the language understandable and uses real-world conventions?": "Yes, components and section titles are intuitive.",
+      "Can users easily undo and redo actions?": "No undo tools are shown.",
+      "Are there consistent standards across the system?": "Yes, consistent UI structure used.",
+      "Is the design preventing problems before they occur?": "Not strongly, lack of labels could cause confusion.",
+      "Is recognition prioritized over recall?": "Partially, icons lack text labels reducing recognition clarity.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the layout adapts well.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, it uses a clean minimal design.",
+      "Are error messages helpful and expressed in plain language?": "None shown.",
+      "Is help and documentation easily accessible if needed?": "No help integration observed."
+    },
+    "Recommendation": "Add tooltips or labels for icons in navigation components to reduce memory burden on users."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website does not support keyboard shortcuts or user customization options for frequent users.",
+    "CodeReference": "app/layout.tsx",
+    "CodeSnippet": "<body className={inter.className}> ... <Header /> <Providers> {children} </Providers> <Footer />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no adaptive feedback or shortcuts are used.",
+      "Is the language understandable and uses real-world conventions?": "Yes, section names are clear.",
+      "Can users easily undo and redo actions?": "No such functionality is implemented.",
+      "Are there consistent standards across the system?": "Yes, components are used uniformly.",
+      "Is the design preventing problems before they occur?": "No, users can't customize or streamline repeated actions.",
+      "Is recognition prioritized over recall?": "Yes, visual elements guide navigation.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks power-user features like shortcut keys.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent and minimal styling.",
+      "Are error messages helpful and expressed in plain language?": "No, they are not present.",
+      "Is help and documentation easily accessible if needed?": "No help elements are embedded."
+    },
+    "Recommendation": "Incorporate shortcut keys and customizable dashboard features for power users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found. The interface is clean, minimal, and avoids unnecessary clutter.",
+    "CodeReference": "app/(dashboard)/admin/page.tsx",
+    "CodeSnippet": "<div className=\"flex flex-col items-center ml-5 gap-y-4 w-full ...\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No feedback mechanisms present.",
+      "Is the language understandable and uses real-world conventions?": "Yes, component names and structure are clear.",
+      "Can users easily undo and redo actions?": "No such features are implemented.",
+      "Are there consistent standards across the system?": "Yes, consistent styling and layout observed.",
+      "Is the design preventing problems before they occur?": "No, lacks error-preventive cues.",
+      "Is recognition prioritized over recall?": "Yes, minimalism aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, responsive design helps both.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clearly.",
+      "Are error messages helpful and expressed in plain language?": "No messages are implemented.",
+      "Is help and documentation easily accessible if needed?": "No help available."
+    },
+    "Recommendation": "No action needed; maintain the minimalist and structured design philosophy."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks any error handling mechanisms or messages, such as invalid form feedback or failed API request notices.",
+    "CodeReference": "app/page.tsx",
+    "CodeSnippet": "<Newsletter />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no error notifications or recovery hints exist.",
+      "Is the language understandable and uses real-world conventions?": "Yes, though errors are not presented.",
+      "Can users easily undo and redo actions?": "No, users have no way to recover from mistakes.",
+      "Are there consistent standards across the system?": "Yes, consistent use of UI components.",
+      "Is the design preventing problems before they occur?": "No, errors are not anticipated.",
+      "Is recognition prioritized over recall?": "Yes, layout is intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks clarity in error states.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are implemented.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement user-friendly error messages in forms and during asynchronous operations like data fetches."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks any help system, tooltips, or accessible documentation links for users to understand or troubleshoot issues.",
+    "CodeReference": "app/page.tsx, app/layout.tsx",
+    "CodeSnippet": "export default function Home() {...}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No feedback tools present.",
+      "Is the language understandable and uses real-world conventions?": "Yes, interface is familiar.",
+      "Can users easily undo and redo actions?": "No, not possible.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No built-in documentation or cues.",
+      "Is recognition prioritized over recall?": "Yes, layout supports recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "No help resources hinders novice experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not implemented.",
+      "Is help and documentation easily accessible if needed?": "No, it\u2019s entirely absent."
+    },
+    "Recommendation": "Add a dedicated help section, tooltips, and inline guidance elements for better support and usability."
+  }
+]
