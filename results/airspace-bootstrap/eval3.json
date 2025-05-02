@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is limited feedback provided to users on the status of actions such as message sending in the contact form; feedback appears only via hidden 'success' or 'error' divs.",
+    "CodeReference": "source/contact.html: line near <div class='error' id='error'>",
+    "CodeSnippet": "<div class=\"error\" id=\"error\">Sorry Msg dose not sent</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements are present but are not styled to be clearly visible or dynamically updated.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the message 'Message Sent' and 'Sorry Msg dose not sent' is understandable, though there\u2019s a grammatical error.",
+      "Can users easily undo and redo actions?": "No, there are no undo options provided for form submissions.",
+      "Are there consistent standards across the system?": "Yes, standard input types and CSS classes are consistently used.",
+      "Is the design preventing problems before they occur?": "No, invalid input isn\u2019t validated before submission.",
+      "Is recognition prioritized over recall?": "No, lack of dynamic visual cues forces users to remember submission behavior.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, form feedback is minimal and lacks confirmations.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, it is minimal but lacks interactive guidance.",
+      "Are error messages helpful and expressed in plain language?": "Partially. The grammar in 'Msg dose not sent' is incorrect.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help or documentation available on the site."
+    },
+    "Recommendation": "Improve feedback with styled success/error messages using JavaScript. Add input validation and use grammatically correct messages."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some placeholder text such as 'Your Name', 'Email Address' are user-friendly, but the message 'Msg dose not sent' contains a typo, which may confuse users.",
+    "CodeReference": "source/contact.html: near div with id='error'",
+    "CodeSnippet": "<div class=\"error\" id=\"error\">Sorry Msg dose not sent</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the feedback contains a language error that can reduce clarity.",
+      "Is the language understandable and uses real-world conventions?": "No, 'Msg dose not sent' is not clear English.",
+      "Can users easily undo and redo actions?": "No, this action is not provided.",
+      "Are there consistent standards across the system?": "Yes, language use in placeholders is consistent.",
+      "Is the design preventing problems before they occur?": "No, spelling and grammar checks are not enforced.",
+      "Is recognition prioritized over recall?": "Yes, placeholders support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, grammatical issues can affect understanding.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the form is minimal.",
+      "Are error messages helpful and expressed in plain language?": "No, the language is broken.",
+      "Is help and documentation easily accessible if needed?": "No, help text is not available."
+    },
+    "Recommendation": "Replace 'Msg dose not sent' with a clearer message like 'Message could not be sent'. Conduct a grammar check on all user-facing text."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The contact form does not allow users to cancel or undo submission; once submitted, users must refresh to reset.",
+    "CodeReference": "source/contact.html: entire form tag",
+    "CodeSnippet": "<form class=\"row\" id=\"contact-form\">...</form>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, user is not notified clearly about control options.",
+      "Is the language understandable and uses real-world conventions?": "Yes, placeholders are clear.",
+      "Can users easily undo and redo actions?": "No, no undo/redo controls are provided.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, user mistakes (e.g. accidental submit) can\u2019t be undone.",
+      "Is recognition prioritized over recall?": "No, user has to guess how to reset the form.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, only a static form is provided.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a 'Clear Form' button and confirmation prompt before form submission."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "There is inconsistent use of feedback elements\u2014some forms use divs for messages, others provide no feedback.",
+    "CodeReference": "source/contact.html and other .html forms",
+    "CodeSnippet": "<div class=\"error\" id=\"error\">Sorry Msg dose not sent</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, but inconsistent across pages.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No, message handling varies.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, and some are absent.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Unify message and feedback handling across all forms using a shared component."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no form validation in HTML or JavaScript to prevent user input errors.",
+    "CodeReference": "source/contact.html: input fields",
+    "CodeSnippet": "<input class=\"form-control\" name=\"user_email\" placeholder=\"Email Address\" type=\"text\"/>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No.",
+      "Is the design preventing problems before they occur?": "No, no input type=email or required.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use input type='email', type='text' with required and pattern attributes to prevent common errors before submission."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no suggestions or saved history features in forms; users must re-enter all info if an error occurs.",
+    "CodeReference": "source/contact.html",
+    "CodeSnippet": "<input class=\"form-control\" name=\"user_name\" placeholder=\"Your Name\" type=\"text\"/>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No, user must re-enter all data on error.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Enable browser autofill, implement error persistence to retain input values on error."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "There are no shortcuts or advanced input controls for power users; interaction is rigid and static.",
+    "CodeReference": "source/contact.html",
+    "CodeSnippet": "<form class=\"row\" id=\"contact-form\">...</form>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard shortcuts and dynamic form assistance such as predictive inputs or suggestions."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "While the design is clean, some pages like the blog have excessive whitespace and redundant placeholders.",
+    "CodeReference": "source/blog-left-sidebar.html",
+    "CodeSnippet": "<input class=\"form-control\" placeholder=\"Search\" type=\"text\"/>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Partially. Some elements feel redundant.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Reduce unused UI space and remove redundant placeholder fields to streamline appearance."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Error messages like 'Msg dose not sent' are not clear and offer no advice for correction.",
+    "CodeReference": "source/contact.html",
+    "CodeSnippet": "<div class=\"error\" id=\"error\">Sorry Msg dose not sent</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "No.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Provide descriptive error messages with suggested resolutions (e.g. 'Please check your internet connection')."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help section, tooltip, or documentation to guide new users on using the forms or navigating the site.",
+    "CodeReference": "All pages",
+    "CodeSnippet": "<!-- No help/documentation tooltips or links -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a help page, tooltips, or inline hints to support users in understanding how to use features."
+  }
+]
