@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no indication of loading or processing status during any interaction. The page does not inform users when transitions or background operations are occurring.",
+    "CodeReference": "index.html line ~20-100",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users are not informed of any system processing or status updates.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Add loading indicators or progress bars when users initiate actions or page loads."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The navigation menu uses generic labels such as 'Menu', which may confuse users about the specific sections or their purposes.",
+    "CodeReference": "index.html line ~60",
+    "CodeSnippet": "<title>Menu</title>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "No, some elements like 'Menu' lack clarity.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Use clear, descriptive titles and labels that align with user expectations (e.g., 'Home', 'Departments', etc.)."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no 'back' or 'undo' feature or clear navigation to return to previous pages or cancel actions.",
+    "CodeReference": "index.html line ~150",
+    "CodeSnippet": "<nav>...</nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "No, there are no undo/cancel features.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Include navigation aids such as breadcrumbs and 'back' or 'cancel' buttons."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, consistent design and layout.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No input validation or preventive measures are visible for form submissions (though forms are not present in the HTML).",
+    "CodeReference": "index.html (no forms)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "No, form and input error prevention is missing.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Implement form validation and input constraints to prevent invalid entries."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, users can recognize navigation and layout.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site does not support any features for expert users, such as keyboard shortcuts, nor does it offer personalization.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or personalization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Add keyboard shortcuts or user settings to speed up frequent actions."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found. The design is clean and minimal.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is clean and readable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No error messages or recovery actions are available for users when errors occur, such as broken links or input failures.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages are provided.",
+      "Is help and documentation easily accessible if needed?": "Yes, or not applicable."
+    },
+    "Recommendation": "Create error-handling messages that clearly describe issues and steps to resolve them."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation or even a contact/help section on the site.",
+    "CodeReference": "index.html",
+    "CodeSnippet": "<footer>...</footer>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, or not applicable.",
+      "Is the language understandable and uses real-world conventions?": "Yes, or not applicable.",
+      "Can users easily undo and redo actions?": "Yes, or not applicable.",
+      "Are there consistent standards across the system?": "Yes, or not applicable.",
+      "Is the design preventing problems before they occur?": "Yes, or not applicable.",
+      "Is recognition prioritized over recall?": "Yes, or not applicable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, or not applicable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, or not applicable.",
+      "Are error messages helpful and expressed in plain language?": "Yes, or not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help section or documentation."
+    },
+    "Recommendation": "Add a 'Help' section or contact page with FAQs or support links."
+  }
+]
