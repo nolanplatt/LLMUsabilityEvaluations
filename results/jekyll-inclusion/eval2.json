@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no visual feedback when data is loading, which can confuse users especially on slow connections.",
+    "CodeReference": "page.tsx: lines 10-20",
+    "CodeSnippet": "  // getting all categories to be displayed on the all categories page\n  useEffect(() => {\n    fetch(\"http://localhost:3001/api/categories\")\n      .then((res) => {\n        return res.json();",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, data fetches do not indicate loading or progress states.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels and buttons use understandable text.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo capabilities for deletion or edits.",
+      "Are there consistent standards across the system?": "Yes, component styling appears consistent.",
+      "Is the design preventing problems before they occur?": "No, the lack of feedback could lead to duplicate actions.",
+      "Is recognition prioritized over recall?": "Yes, categories are listed and actionable with minimal cognitive load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the dashboard design is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout with appropriate whitespace.",
+      "Are error messages helpful and expressed in plain language?": "No, errors from fetch requests are not surfaced in the UI.",
+      "Is help and documentation easily accessible if needed?": "No, no help or tips are provided for the dashboard UI."
+    },
+    "Recommendation": "Implement loading indicators using UI feedback elements (e.g., spinners or skeleton loaders). Also surface error states via modals or toast alerts when data fails to load."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The 'Contact support' link is a placeholder and does not reflect real-world support options.",
+    "CodeReference": "not-found.tsx: lines 20-30",
+    "CodeSnippet": "            </Link>\n            <Link href=\"#\" className=\"text-sm font-semibold text-black hover:underline hover:underline-offset-4\">\n              Contact support <span aria-hidden=\"true\">&rarr;</span>\n            </Link>\n          </div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, the 404 message is clear.",
+      "Is the language understandable and uses real-world conventions?": "No, the 'Contact support' link doesn't match real expectations.",
+      "Can users easily undo and redo actions?": "Not applicable to 404 context.",
+      "Are there consistent standards across the system?": "Yes, design is consistent.",
+      "Is the design preventing problems before they occur?": "Yes, informative error page.",
+      "Is recognition prioritized over recall?": "Yes, call-to-action is visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes, clear and friendly 404 explanation.",
+      "Is help and documentation easily accessible if needed?": "No, support link is non-functional."
+    },
+    "Recommendation": "Update the 'Contact support' link to direct users to a real help page or email form."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Users cannot undo category deletions once submitted, which may lead to accidental data loss.",
+    "CodeReference": "page.tsx: lines 40-60",
+    "CodeSnippet": "  const router = useRouter();\n\n  const deleteCategory = async () => {\n    const requestOptions = {\n      method: \"DELETE\",",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, toast messages show success/failure.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, no undo option for deletes.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, accidental deletion is irreversible.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce a confirmation modal with an undo timer or a trash bin mechanism to restore deleted categories."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Footer and Header are not present on all pages due to inconsistent layout usage.",
+    "CodeReference": "layout.tsx: lines 20-30",
+    "CodeSnippet": "        {children}\n        </Providers>\n        <Footer />\n      </SessionProvider>\n        </body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Yes.",
+      "Are there consistent standards across the system?": "No, global layout components are inconsistently used.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Ensure that shared layout elements like Header/Footer are consistently included across routes."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no front-end validations for empty login fields before submission.",
+    "CodeReference": "page.tsx: lines 10-20",
+    "CodeSnippet": "        <div className=\"mt-5 sm:mx-auto sm:w-full sm:max-w-[480px]\">\n          <div className=\"bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12\">\n            <form className=\"space-y-6\" onSubmit={handleSubmit}>\n              <div>\n                <label",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no client-side input feedback shown.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Yes.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, invalid inputs are accepted without warnings.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement client-side validation and clear user messages for empty or incorrect inputs before form submission."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Product filters do not retain previous selections, requiring users to remember and reapply them.",
+    "CodeReference": "page.tsx: dynamic route",
+    "CodeSnippet": "            <div className=\"flex justify-between items-center max-lg:flex-col max-lg:gap-y-5\">\n              <h2 className=\"text-2xl font-bold max-sm:text-xl max-[400px]:text-lg uppercase\">\n                {slug?.params?.slug && slug?.params?.slug[0]?.length > 0\n                  ? improveCategoryText(slug?.params?.slug[0])\n                  : \"All products\"}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lost selections force memory recall.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Retain filter state using query parameters or local storage to enhance recognition."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The checkout process lacks shortcuts or autofill options, reducing efficiency for repeat users.",
+    "CodeReference": "page.tsx: full file",
+    "CodeSnippet": "\nconst CheckoutPage = () => {\n  const [checkoutForm, setCheckoutForm] = useState({\n    name: \"\",\n    lastname: \"\",",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, there are no speed-up options like saved addresses or autocomplete.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Allow returning users to reuse previous shipping/payment information and use browser autofill where applicable."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some dashboard tables are cluttered with small fonts and dense layout, affecting readability.",
+    "CodeReference": "page.tsx: table rendering",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "No, dashboard tables are visually dense.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Increase spacing and font size in data tables. Use visual hierarchy and whitespace to declutter."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Login errors such as incorrect credentials are not shown on screen.",
+    "CodeReference": "page.tsx: login logic",
+    "CodeSnippet": "    } else {\n      setError(\"\");\n      toast.success(\"Successful login\");\n    }\n  };",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, not shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Display clear, inline error messages when login fails, and guide users to reset credentials if needed."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No accessible help, onboarding, or support links are provided on the main or dashboard pages.",
+    "CodeReference": "page.tsx: entire page",
+    "CodeSnippet": "import { CategoryMenu, Hero, Incentives, IntroducingSection, Newsletter, ProductsSection } from \"@/components\";\n\nexport default function Home() {\n  return (\n    <>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no help links present."
+    },
+    "Recommendation": "Add a Help or FAQ section accessible from both main and dashboard views to support new users."
+  }
+]
