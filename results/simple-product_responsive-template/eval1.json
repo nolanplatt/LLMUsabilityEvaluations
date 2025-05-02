@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no visual feedback or system status indicator when users interact with navigation or slider controls.",
+    "CodeReference": "build/index.html, line ~30-80",
+    "CodeSnippet": "<input class=\"slider__radio\" id=\"button-one\" type=\"radio\" name=\"controls\" checked=\"checked\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the system does not display feedback upon navigation or interaction.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels like 'Products' and 'Sign up now' are understandable.",
+      "Can users easily undo and redo actions?": "No, there are no undo/redo mechanisms visible.",
+      "Are there consistent standards across the system?": "Yes, the design uses consistent navigation and layout patterns.",
+      "Is the design preventing problems before they occur?": "No, lack of feedback could confuse users about their actions.",
+      "Is recognition prioritized over recall?": "Yes, visual links are available in the header.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, due to lack of interactive feedback.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, design is clean and organized.",
+      "Are error messages helpful and expressed in plain language?": "No, no error feedback is implemented.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help or documentation visible."
+    },
+    "Recommendation": "Add visual cues (e.g., highlights or transition effects) on interaction with slider or navigation elements to inform users their action was registered."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Terminology is mostly generic (e.g., 'Products', 'Sign up now') but lacks real-world metaphors or clear category names.",
+    "CodeReference": "build/index.html, line ~45-60",
+    "CodeSnippet": "<a class=\"page-nav__link\" href=\"#\">Products</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, user clicks are not confirmed visually.",
+      "Is the language understandable and uses real-world conventions?": "Partially. Labels are common but not domain-specific.",
+      "Can users easily undo and redo actions?": "No, there is no undo feature.",
+      "Are there consistent standards across the system?": "Yes, labels and layout are consistent.",
+      "Is the design preventing problems before they occur?": "Not fully, since unclear terms may mislead.",
+      "Is recognition prioritized over recall?": "Yes, familiar link labels help recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially. Simplicity benefits novices.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help documentation."
+    },
+    "Recommendation": "Refine navigation labels to use clearer real-world terms specific to the context (e.g., 'Mobile Accessories', 'Order Help')."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No way for users to undo actions or exit a state; for example, slider navigation has no back or reset mechanism.",
+    "CodeReference": "build/index.html, line ~60-100",
+    "CodeSnippet": "<input class=\"slider__radio\" id=\"button-two\" type=\"radio\" name=\"controls\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is lacking.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, controls lack state management.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No undo reduces control.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement reset or 'go back' functionality for sliders or interactions to enhance user control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some CSS classes are overly granular and inconsistent in naming, which may cause maintenance issues.",
+    "CodeReference": "screen.min.css",
+    "CodeSnippet": ".slider__item-title, .slider__item-text, .slider__control",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Partially, CSS naming inconsistencies found.",
+      "Is the design preventing problems before they occur?": "No, inconsistency could cause dev-side confusion.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Standardize CSS class naming conventions and reduce unnecessary specificity."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No validation, input feedback, or confirmation mechanisms for user actions.",
+    "CodeReference": "build/index.html",
+    "CodeSnippet": "<input class=\"slider__radio\" type=\"radio\" name=\"controls\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, no safeguards are in place.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement validation and feedback mechanisms to prevent user mistakes and ensure clarity."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "While major navigation is visible, actions like signing up do not guide users through steps.",
+    "CodeReference": "build/index.html, line ~80",
+    "CodeSnippet": "<a class=\"slider__item-link\" href=\"#\">Sign up now</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, unclear call to action leads to confusion.",
+      "Is recognition prioritized over recall?": "Partially.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Provide step indicators or confirmations for actions like sign-up to support recognition over recall."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No shortcuts, no dynamic elements to speed up interactions for experienced users.",
+    "CodeReference": "build/index.html",
+    "CodeSnippet": "<nav class=\"page-nav\">...</nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add features such as keyboard shortcuts, autocomplete, or quick access buttons for efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The design is visually clean, though redundancy in imagery and generic text adds slight clutter.",
+    "CodeReference": "build/index.html",
+    "CodeSnippet": "<h2 class=\"slider__item-text\">dummy text of the</h2>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Mostly.",
+      "Are error messages helpful and expressed in plain language?": "No errors visible.",
+      "Is help and documentation easily accessible if needed?": "No help present."
+    },
+    "Recommendation": "Replace filler text with relevant content and reduce repeated elements to enhance minimalism."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No error messages or diagnostic feedback is provided in any form.",
+    "CodeReference": "build/index.html",
+    "CodeSnippet": "<input class=\"slider__radio\" ...>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement error messaging and alerts in plain language to help users recover from input mistakes or navigation errors."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 4,
+    "IssueFound": true,
+    "IssueDescription": "There is no visible help, FAQs, or documentation links in the interface.",
+    "CodeReference": "build/index.html",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages present.",
+      "Is help and documentation easily accessible if needed?": "No help content found."
+    },
+    "Recommendation": "Add a Help or Support section with FAQs, documentation, or contact options."
+  }
+]
