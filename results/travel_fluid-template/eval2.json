@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No visual feedback is present during actions like navigation or data loading.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no visual indicators like loading spinners or content feedback elements present.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Add visual status indicators such as spinners or loading bars."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found for this heuristic based on current review.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No undo or redo actions are available for users during interactions.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Implement clear undo/redo options for user interactions and form inputs."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found for this heuristic based on current review.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No mechanisms in place to prevent form submission errors or navigational mishaps.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Add form validation and prevent invalid actions to reduce user errors."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found for this heuristic based on current review.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks keyboard shortcuts, saved settings, or expert-level controls.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Introduce optional shortcuts or power features for expert users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found for this heuristic based on current review.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Error messages are not present or defined anywhere in the UI or JavaScript.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Define and display user-friendly error messages using JavaScript on error conditions."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help documentation or support resources linked on the site.",
+    "CodeReference": "index.html line 1-200, custom.min.css line 1-100",
+    "CodeSnippet": "<html><head>...</head><body>...</body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no feedback issues observed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language used in headers and text is appropriate and familiar.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo affordances across navigation and form inputs.",
+      "Are there consistent standards across the system?": "Yes, consistent design and style observed in headers, layout and button components.",
+      "Is the design preventing problems before they occur?": "No, due to lack of validation/error handling in forms or navigational safeguards.",
+      "Is recognition prioritized over recall?": "Yes, menu labels and structure make navigation intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts or custom options that enhance power-user experience.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern typography, spacing and iconography are well-balanced.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages were found in the HTML or JavaScript.",
+      "Is help and documentation easily accessible if needed?": "No, no help sections, tooltips, or documentation links found."
+    },
+    "Recommendation": "Provide a help section or documentation link in the footer or navigation."
+  }
+]

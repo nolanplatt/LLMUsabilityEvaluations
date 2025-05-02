@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, system clearly reflects status changes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Yes.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "Yes."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "Real-world destinations are featured, but some content lacks localization or contextual info (e.g., currency, time zone).",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, relevant content is shown.",
+      "Is the language understandable and uses real-world conventions?": "No, there's a lack of regional contextual data like time or currency.",
+      "Can users easily undo and redo actions?": "No, static content doesn't support this.",
+      "Are there consistent standards across the system?": "Yes, sections are clearly labeled.",
+      "Is the design preventing problems before they occur?": "No, missing context might mislead users.",
+      "Is recognition prioritized over recall?": "Yes, images help quick recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors observed.",
+      "Is help and documentation easily accessible if needed?": "No visible help provided."
+    },
+    "Recommendation": "Incorporate regional data like currencies or local time zones to enhance real-world relevance."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No clear undo or navigation control options are visible in the UI.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users can't easily reverse navigation.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, there's no mechanism for undo/redo.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of control could lead to frustration.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, due to lack of control options.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages observed.",
+      "Is help and documentation easily accessible if needed?": "No visible help section."
+    },
+    "Recommendation": "Include clear 'Back' or 'Undo' options on key actions to support user control and navigation freedom."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Heading levels are skipped which could confuse screen readers and affect SEO.",
+    "CodeReference": "index.html: line 1",
+    "CodeSnippet": "1: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Home | Travel template</title><meta name=\"description\" content=\"Page-specific description\"><meta name=\"keywords\" content=\"Page-specific keywords\"><link rel=\"shortcut icon\" href=\"favicon.ico\"><link rel=\"shortcut icon\" href=\"static/images/favicons/favicon.png\" type=\"image/x-icon\"><link rel=\"apple-touch-icon\" href=\"static/images/favicons/apple-touch-icon.png\"><link rel=\"apple-touch-icon-precomposed\" href=\"static/images/favicons/apple-touch-icon-precomposed.png\"><link href=\"http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic\" rel=\"stylesheet\" type=\"text/css\"><link rel=\"stylesheet\" href=\"static/css/screen.min.css\"><link rel=\"stylesheet\" href=\"static/css/custom.min.css\"></head><body><!-- $Page header--><header class=\"page-header\"><div class=\"page-header__inner\"><h1 class=\"page-header__logo\">Indo<span>Tourism</span></h1><!-- $Page navigation--><nav class=\"page-nav\"><a class=\"page-nav__link\" href=\"#\">Home</a><a class=\"page-nav__link\" href=\"#\">About us</a><a class=\"page-nav__link\" href=\"#\">Projects</a><a class=\"page-nav__link page-nav__link_special\" href=\"#\">Contact us</a></nav></div></header><!-- $Page content--><div class=\"page-content\"><main class=\"page-content__main\"><!-- $Promo--><section class=\"promo\"><div class=\"promo__inner\"><h1 class=\"promo__title\">I Like To Ask The Same Question<span>Many Many Times</span></h1><a class=\"promo__button\" href=\"#\">Ok ask me</a></div></section><!-- $Info--><section class=\"info\"><div class=\"info__places\"><!-- $Places--><div class=\"places\"><h2 class=\"places__title\">Places You Must Visit In Your Lifetime</h2><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_1\"></span>Azheekal</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_2\"></span>Ooty</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_3\"></span>Munnar</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_4\"></span>Humpi</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_5\"></span>Kovalam</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_6\"></span>Kuttanad</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_7\"></span>Thenmala</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_8\"></span>Beach</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_9\"></span>Munnar</a><a class=\"places__link\" href=\"#\"><span class=\"places__loc places__loc_10\"></span>Punaloor</a></div></div><div class=\"info__inner\"><h3 class=\"info__content\">We&rsquo;ve since expanded our life list to 43 sites around the world<br>43 Places to See Before You Die</h3><div class=\"info__services\"><!-- $Services--><div class=\"services\"><a class=\"services__link\" href=\"#\"><span class=\"services__logo services__logo_sites\"></span>Sites the world</a><a class=\"services__link\" href=\"#\"><span class=\"services__logo services__logo_shopping\"></span>Shopping</a><a class=\"services__link\" href=\"#\"><span class=\"services__logo services__logo_photography\"></span>Photography</a><a class=\"services__link\" href=\"#\"><span class=\"services__logo services__logo_find-best\"></span>Find the best</a></div></div></div></section></main></div><!-- $Page footer--><footer class=\"page-footer\"><div class=\"page-footer__inner\"><p class=\"page-footer__text\">Designed by cssauthor.com | Coded by orlovmax.com</p></div></footer></body></html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, not applicable.",
+      "Are there consistent standards across the system?": "No, heading tags skip logical sequence.",
+      "Is the design preventing problems before they occur?": "No, inconsistency could reduce accessibility.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use a logical heading structure (e.g., h1 > h2 > h3) to maintain semantic consistency and improve accessibility."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Form fields do not use HTML5 validation attributes like 'required', increasing the risk of user errors.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users may not receive pre-submission warnings.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No undo capability seen.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, form fields lack error prevention cues.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable \u2013 no messages displayed.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add HTML5 validation attributes like 'required', 'type=email', etc., to prevent incomplete or incorrect submissions."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Navigation icons may not be clearly labeled with text, risking confusion for unfamiliar users.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "No, not all icons are labeled clearly.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Label navigation icons with clear text or tooltips to support recognition and accessibility."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks features like keyboard navigation, search bars, or personalization which would aid power users.",
+    "CodeReference": "index.html: throughout",
+    "CodeSnippet": "HTML lacks ARIA landmarks, accesskeys, or script hooks for power users.",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, not optimized for expert users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard shortcuts, quick links, and customizable elements for expert users to enhance efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": false,
+    "IssueDescription": "Some UI sections use large background images which can be visually overwhelming on slower networks.",
+    "CodeReference": "index.html: multiple hero/image sections",
+    "CodeSnippet": "<div class=\"hero-image\"> ... large background ... </div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Partially, though large images may distract.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use image optimization and consider reducing image size or replacing with SVG to improve minimalism and load speed."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks any visible error messages or status codes, which may confuse users when something goes wrong.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there's no feedback in case of failure.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Include clear and contextual error messages to guide users when issues occur, using simple language and possible solutions."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no help, FAQ, or support section visible in the navigation or footer.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no guidance offered for user queries.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, because no documentation is provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a dedicated help or FAQ section, and link it clearly in the header or footer to support users who need guidance."
+  }
+]
