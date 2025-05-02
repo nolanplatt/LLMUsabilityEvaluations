@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks visual feedback for interactive elements such as navigation links and form interactions.",
+    "CodeReference": "build/index.html, lines 45-60",
+    "CodeSnippet": "<nav class=\"navbar navbar-default navbar-fixed-top navbar-shrink\">\n  <div class=\"container\">\n    <!-- Nav contents without active state feedback -->\n  </div>\n</nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, interactive elements do not visibly respond when clicked or hovered.",
+      "Is the language understandable and uses real-world conventions?": "Yes, text labels like 'Contact', 'Portfolio' use conventional language.",
+      "Can users easily undo and redo actions?": "No, no undo/redo functionality is present for user actions.",
+      "Are there consistent standards across the system?": "Yes, navigation structure and button styles are consistent.",
+      "Is the design preventing problems before they occur?": "No, users may not realize if a link was clicked or a form was submitted.",
+      "Is recognition prioritized over recall?": "Yes, navigation and structure are visible and easily scannable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the single-page layout aids both user types.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the site uses a modern and clean one-page layout.",
+      "Are error messages helpful and expressed in plain language?": "No, form error handling is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no links to help or documentation."
+    },
+    "Recommendation": "Add hover and active visual states for navigation and form elements to improve feedback visibility."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Icons and section names like 'Portfolio' and 'Services' are clear but use abstract iconography in some cases.",
+    "CodeReference": "build/index.html, lines 100-140",
+    "CodeSnippet": "<section id=\"services\">\n  <h2 class=\"text-center\">Services</h2>\n  <i class=\"fa fa-diamond fa-stack-1x text-primary\"></i>\n</section>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, icons don\u2019t clarify meaning immediately without labels.",
+      "Is the language understandable and uses real-world conventions?": "Yes, headings use clear and common terminology.",
+      "Can users easily undo and redo actions?": "No, there\u2019s no undo/redo functionality.",
+      "Are there consistent standards across the system?": "Yes, section headers and icons follow a uniform layout.",
+      "Is the design preventing problems before they occur?": "Partially, but ambiguous icons may confuse users.",
+      "Is recognition prioritized over recall?": "Yes, all sections are labeled and visible on scroll.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, intuitive layout benefits both.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent minimal design.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable to this heuristic.",
+      "Is help and documentation easily accessible if needed?": "No help or documentation present."
+    },
+    "Recommendation": "Accompany icons with explanatory text to better match real-world expectations and improve clarity."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Users can't easily cancel or undo actions such as form submissions or navigation events.",
+    "CodeReference": "build/index.html, lines 240-260",
+    "CodeSnippet": "<form name=\"sentMessage\" id=\"contactForm\" novalidate>\n  <input type=\"text\" class=\"form-control\" placeholder=\"Your Name\" id=\"name\" required>\n</form>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no cancel or undo functionality for the form.",
+      "Is the language understandable and uses real-world conventions?": "Yes, form placeholders are intuitive.",
+      "Can users easily undo and redo actions?": "No, no reset or undo functionality provided.",
+      "Are there consistent standards across the system?": "Yes, forms follow standard design.",
+      "Is the design preventing problems before they occur?": "No, users can submit incomplete forms without visible validation.",
+      "Is recognition prioritized over recall?": "Yes, the form is immediately visible and structured.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, forms are straightforward.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal and centered design.",
+      "Are error messages helpful and expressed in plain language?": "No, error handling is missing.",
+      "Is help and documentation easily accessible if needed?": "No help link provided."
+    },
+    "Recommendation": "Implement a form reset button or cancel option and visible client-side validation for user control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Icons and visual elements are consistent, but not all form fields follow the same validation pattern.",
+    "CodeReference": "build/index.html, lines 250-270",
+    "CodeSnippet": "<input type=\"email\" class=\"form-control\" placeholder=\"Your Email\" id=\"email\" required>\n<input type=\"text\" class=\"form-control\" placeholder=\"Your Name\" id=\"name\" required>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, form consistency varies in feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, field names are conventional.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No, not all form fields give consistent feedback.",
+      "Is the design preventing problems before they occur?": "No, inconsistency may confuse users.",
+      "Is recognition prioritized over recall?": "Yes, forms are labeled clearly.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error handling seen.",
+      "Is help and documentation easily accessible if needed?": "No help or tooltips present."
+    },
+    "Recommendation": "Standardize input field behavior with consistent styling and validation feedback."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Form allows submission without client-side error prevention for empty or invalid fields.",
+    "CodeReference": "build/index.html, lines 240-280",
+    "CodeSnippet": "<form name=\"sentMessage\" id=\"contactForm\" novalidate>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, forms do not prevent incomplete submissions.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Partially.",
+      "Is the design preventing problems before they occur?": "No, user input is not validated.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add HTML5 input validations and real-time feedback to reduce user input errors."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation is visible, but icons without labels may require users to remember their meaning.",
+    "CodeReference": "build/index.html, lines 110-130",
+    "CodeSnippet": "<i class=\"fa fa-diamond fa-stack-1x text-primary\"></i>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, ambiguous icons aren't self-explanatory.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, icons may confuse users.",
+      "Is recognition prioritized over recall?": "No, icons require memory.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Include text labels alongside icons to aid recognition and reduce reliance on memory."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No shortcuts or keyboard accessibility detected for advanced users.",
+    "CodeReference": "build/index.html, entire file",
+    "CodeSnippet": "<!-- No ARIA roles or accesskey attributes found -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No keyboard or shortcut feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, advanced shortcuts are missing.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement ARIA roles and keyboard shortcuts to improve usability for power users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, minimal distraction and clear visuals.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, but not applicable here.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes, due to simplicity.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No change needed. Design is clean and minimal."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Form lacks error messages or hints on what went wrong during submission.",
+    "CodeReference": "build/index.html, lines 240-290",
+    "CodeSnippet": "<form name=\"sentMessage\" id=\"contactForm\" novalidate>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No error message handling is present.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, no error messages provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add clear, context-aware error messages for each input field."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation linked anywhere on the site.",
+    "CodeReference": "build/index.html, entire file",
+    "CodeSnippet": "<!-- No help or documentation links found -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No help available for error recovery.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, because no error messaging exists.",
+      "Is help and documentation easily accessible if needed?": "No help content exists."
+    },
+    "Recommendation": "Add a 'Help' section or link to documentation for form use or general navigation."
+  }
+]
