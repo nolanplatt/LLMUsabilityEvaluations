@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No visual indication or feedback when an image is hovered or selected in the gallery.",
+    "CodeReference": "gallery.html: lines 25-100",
+    "CodeSnippet": "<figure class=\"gallery__preview\"><div class=\"gallery__preview-image\"><img src=\"...\" alt=\"street art\"></div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, hovering or interacting with images provides no visual feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, common gallery terms are used appropriately.",
+      "Can users easily undo and redo actions?": "No, there are no undo or redo options for viewing or interacting with images.",
+      "Are there consistent standards across the system?": "Yes, visual elements are consistently styled.",
+      "Is the design preventing problems before they occur?": "No, lack of interaction feedback could confuse users.",
+      "Is recognition prioritized over recall?": "Yes, navigation and content presentation are visual and intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, but more interactive feedback would help novices.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is clean and minimal.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable, no error messages observed.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help or documentation link."
+    },
+    "Recommendation": "Add hover effects or selection indicators (e.g., border highlight or animation) on images to enhance user feedback."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Terms like 'AuthorName' are used as placeholders, which may confuse users.",
+    "CodeReference": "gallery.html: lines 25-300",
+    "CodeSnippet": "<a class=\"gallery__preview-link gallery__preview-link_role_author\" href=\"#\">AuthorName</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, these placeholders suggest unfinished content.",
+      "Is the language understandable and uses real-world conventions?": "No, placeholder text is not meaningful to end users.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, but the use of placeholders undermines credibility.",
+      "Is the design preventing problems before they occur?": "No, this could lead to misinterpretation.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Replace all placeholder texts such as 'AuthorName' with real content or remove them if not necessary."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No back button or easy way to return to home/index page from the gallery.",
+    "CodeReference": "gallery.html",
+    "CodeSnippet": "<body>...</body> <!-- no navigation or back link -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, no navigation controls are present.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a navigation menu or a back link to allow users to return to the main page easily."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The HTML tag 'hader' is a typo and should be 'header'.",
+    "CodeReference": "gallery.html: line 9",
+    "CodeSnippet": "<hader class=\"page-header\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, this may lead to rendering inconsistencies.",
+      "Is the language understandable and uses real-world conventions?": "No, it's a typographical error.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "No, this breaks HTML standard.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Fix the tag to 'header' to ensure compatibility and semantic correctness."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No validation or feedback exists if resources like images or links are broken.",
+    "CodeReference": "gallery.html: image links",
+    "CodeSnippet": "<img src=\"static/images/blocks/gallery/filename.jpg\" alt=\"street art\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, broken links are not handled.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement fallback content or error handling for broken images or links."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, clearly labeled navigation.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard navigation or accessibility shortcuts observed.",
+    "CodeReference": "index.html and gallery.html",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add ARIA roles and ensure full keyboard accessibility to enhance flexibility."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clearly and attractively presented content.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No error messages or feedback for broken resources or wrong navigation.",
+    "CodeReference": "gallery.html",
+    "CodeSnippet": "<img src=\"static/images/blocks/gallery/...jpg\" alt=\"street art\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add error handling to display user-friendly messages when resources are unavailable."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation available for users.",
+    "CodeReference": "index.html and gallery.html",
+    "CodeSnippet": "<body>...</body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No help offered.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a help section or link to documentation to assist users in understanding site features and navigation."
+  }
+]

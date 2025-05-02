@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks visible feedback for user interactions such as clicking gallery images or loading new content.",
+    "CodeReference": "build/index.html: lines 40-60",
+    "CodeSnippet": "<div class=\"gallery-item\"><img src=\"img/photo1.jpg\" alt=\"\"></div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, image interactions provide no visual cues or transitions indicating state changes.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used in alt text and labels is simple and understandable.",
+      "Can users easily undo and redo actions?": "No, once a user clicks an image, there is no visual modal or state indication to close or go back.",
+      "Are there consistent standards across the system?": "Yes, the structure and layout are consistently used across pages.",
+      "Is the design preventing problems before they occur?": "No, users may be confused due to lack of interactive feedback.",
+      "Is recognition prioritized over recall?": "Yes, thumbnails help users recognize the type of content.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, the interface is simple enough for novices.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is clean with minimal distraction.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable, no error states or messages implemented.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help or FAQ section."
+    },
+    "Recommendation": "Implement hover and click visual feedback on gallery images using CSS transitions or modal popups to confirm action and improve interactivity."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Image labels are missing, and alt attributes are blank, which affects screen readers and real-world recognition.",
+    "CodeReference": "build/index.html: lines 40-60",
+    "CodeSnippet": "<img src=\"img/photo1.jpg\" alt=\"\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, screen readers will not provide image descriptions.",
+      "Is the language understandable and uses real-world conventions?": "No, alt tags are empty, breaking real-world metaphors and expectations.",
+      "Can users easily undo and redo actions?": "No undo/redo support.",
+      "Are there consistent standards across the system?": "Yes, all image tags consistently omit alt text.",
+      "Is the design preventing problems before they occur?": "No, users with visual impairments will face accessibility issues.",
+      "Is recognition prioritized over recall?": "No, blank labels increase the cognitive load.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, accessibility barriers hinder usage.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Provide meaningful alt text for all images to enhance accessibility and match real-world conventions."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Users cannot undo actions or navigate easily from the gallery view; there is no modal or navigation aid.",
+    "CodeReference": "build/gallery.html: lines 40-70",
+    "CodeSnippet": "<div class=\"gallery-item\">...</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, actions are final with no undo.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, navigation and interactivity lacks flexibility.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users might click without knowing consequences.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, limited interactivity.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add modals for image previews with close buttons, and consider breadcrumb or back buttons for navigation freedom."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Button styling and class usage vary slightly across pages (e.g., inconsistent hover behavior).",
+    "CodeReference": "build/css/style.css: lines 100-140",
+    "CodeSnippet": ".btn-primary { background: #000; } .btn:hover { background: #333; }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, some buttons have hover feedback, others do not.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not relevant.",
+      "Are there consistent standards across the system?": "No, inconsistencies exist in interactive elements.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Mostly.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Ensure consistent class naming and hover behavior for all buttons using standardized CSS classes."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No form inputs or interaction confirmations are used, limiting the opportunity to prevent user errors.",
+    "CodeReference": "All HTML files",
+    "CodeSnippet": "N/A - no input or form elements",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, due to lack of any validation or confirmation mechanisms.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce confirmation dialogs or modals for major actions like navigation or interaction in future features."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, thumbnails and minimal navigation support visual cues.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No changes needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard navigation or shortcut keys are implemented, limiting efficient use by power users.",
+    "CodeReference": "scripts.js",
+    "CodeSnippet": "// No keyboard shortcuts or ARIA roles detected",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no visual or auditory feedback for accessibility interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks advanced user support.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add support for keyboard shortcuts and ARIA roles to improve accessibility and efficiency for experienced users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, not needed here.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is clean and simple.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No action needed."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No error handling is present for broken image links or script failures.",
+    "CodeReference": "index.html, gallery.html",
+    "CodeSnippet": "<img src=\"img/nonexistent.jpg\" alt=\"\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No error messages shown for broken images or JavaScript errors.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, they are absent.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add fallback content or error handling for broken images and JavaScript errors using try-catch or `onerror` handlers."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks any form of help, tooltips, or documentation.",
+    "CodeReference": "index.html, gallery.html",
+    "CodeSnippet": "<!-- No help documentation or links provided -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Include a simple help page or tooltip-based documentation for explaining navigation and features."
+  }
+]
