@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system lacks clear indicators for which page or section is currently active, which can leave users uncertain about their navigation state.",
+    "CodeReference": "index.html: lines 20-40",
+    "CodeSnippet": "<a class=\"list-group-item list-group-item-action list-group-item-light p-3\" href=\"#!\">Dashboard</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no visual cue indicating which navigation item is currently active.",
+      "Is the language understandable and uses real-world conventions?": "Yes, common navigation terms like 'Dashboard' are used.",
+      "Can users easily undo and redo actions?": "No, there is no support for undoing navigation or restoring previous UI state.",
+      "Are there consistent standards across the system?": "Yes, Bootstrap classes are used uniformly.",
+      "Is the design preventing problems before they occur?": "No, users may click the same link multiple times without knowing their current location.",
+      "Is recognition prioritized over recall?": "Yes, visible links aid recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple structure benefits all user levels.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is visually clean and straightforward.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable as there are no messages.",
+      "Is help and documentation easily accessible if needed?": "No, help is not present in the interface."
+    },
+    "Recommendation": "Apply an 'active' class to the selected sidebar item to visually indicate the current section to users."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation links use placeholder references ('#!'), which are not real-world destinations and may confuse users.",
+    "CodeReference": "index.html: lines 30-45",
+    "CodeSnippet": "<a class=\"list-group-item list-group-item-action list-group-item-light p-3\" href=\"#!\">Overview</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, clicking the link does not lead to a new page or action.",
+      "Is the language understandable and uses real-world conventions?": "Yes, link labels use familiar terminology.",
+      "Can users easily undo and redo actions?": "No, there's no navigational history supported through UI.",
+      "Are there consistent standards across the system?": "Yes, all placeholder links are consistently implemented.",
+      "Is the design preventing problems before they occur?": "No, the dead-end links could mislead users.",
+      "Is recognition prioritized over recall?": "Yes, links are always visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple and minimal interface.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent layout and styling.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no help documentation is provided."
+    },
+    "Recommendation": "Replace all placeholder links with functional URLs or informative placeholders such as 'Coming Soon' pages to maintain clarity."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Users can toggle the sidebar but there\u2019s no visible indication of its state or how to revert it; there's no undo functionality for actions.",
+    "CodeReference": "scripts.js: lines 8-20",
+    "CodeSnippet": "const sidebarToggle = document.body.querySelector('#sidebarToggle');",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, toggling sidebar does not visually indicate its current state or a way to revert it.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, no visual support for undoing state changes.",
+      "Are there consistent standards across the system?": "Yes, toggling is consistent in design.",
+      "Is the design preventing problems before they occur?": "No, users may accidentally hide navigation and not know how to restore it.",
+      "Is recognition prioritized over recall?": "No, users must remember that the toggle exists.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, no accessibility or shortcut indicators are included.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error states exist.",
+      "Is help and documentation easily accessible if needed?": "No help features included."
+    },
+    "Recommendation": "Implement a visible toggle button with a label that reflects the sidebar's current state, and consider adding a reset or default layout option."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Although Bootstrap ensures consistency in layout, there's a lack of contextual standards like section highlighting or feedback for active elements.",
+    "CodeReference": "index.html: lines 15-40",
+    "CodeSnippet": "<div class=\"sidebar-heading border-bottom bg-light\">Start Bootstrap</div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, interface does not highlight sections to reflect active content.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No UI support for this.",
+      "Are there consistent standards across the system?": "Yes, uniform class usage.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help present."
+    },
+    "Recommendation": "Enhance context cues like active states or section titles to help users understand where they are and reinforce system feedback."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "There are no built-in validations or warnings to prevent user missteps such as interacting with non-functional links.",
+    "CodeReference": "index.html: lines 20-50",
+    "CodeSnippet": "<a class=\"list-group-item list-group-item-action list-group-item-light p-3\" href=\"#!\">Overview</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no visual or system-level cue to avoid clicking inactive links.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, nothing to support reversing interactions.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, placeholder links create misleading actions.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Remove or disable non-functional links and include visual indicators (like tooltips or muted colors) to convey inactive elements."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The interface provides no persistent visual cue to indicate the current page, requiring users to recall their navigation path.",
+    "CodeReference": "index.html: lines 25-45",
+    "CodeSnippet": "<div class=\"list-group list-group-flush\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, links are static and provide no persistent state indicator.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, UI does not support history navigation.",
+      "Are there consistent standards across the system?": "Yes, use of Bootstrap elements is consistent.",
+      "Is the design preventing problems before they occur?": "No, absence of feedback leads to disorientation.",
+      "Is recognition prioritized over recall?": "No, users have to remember which page they\u2019re on.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help provided."
+    },
+    "Recommendation": "Apply an 'active' class and visual highlight to selected links to help users recognize their location without relying on memory."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system lacks features like keyboard shortcuts or customizable layouts to support expert users or faster workflows.",
+    "CodeReference": "scripts.js: lines 10-30",
+    "CodeSnippet": "// Toggle the side navigation \u2014 no keyboard or personalization support present",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially; sidebar toggles but lacks state visibility.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users can inadvertently hide the sidebar.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, no shortcuts or customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard shortcuts and a persistent toggle indicator. Consider layout memory or user preference saving for improved expert performance."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue. The design is clean, modern, and minimal with consistent spacing, typography, and color palette.",
+    "CodeReference": "index.html, styles.css",
+    "CodeSnippet": "<link href=\"css/styles.css\" rel=\"stylesheet\" />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, interface uses clean layout cues.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, consistent visual language.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, high-quality design.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Maintain minimalist styling and ensure future feature additions preserve simplicity and clarity."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No error-handling mechanisms are present. Users are not notified if something fails (e.g., broken links, missing content).",
+    "CodeReference": "index.html, scripts.js",
+    "CodeSnippet": "No try-catch blocks or error handlers present for sidebar toggle or invalid inputs",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, system fails silently.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users are not guided through faults.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement user-facing error messages for failed loads or broken links and log errors in the console to help developers diagnose issues."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 4,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation support included in the interface, leaving users without guidance or references.",
+    "CodeReference": "Entire interface (index.html, styles.css, scripts.js)",
+    "CodeSnippet": "No tooltips, help icons, FAQs, or documentation links included",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lack of help guidance.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of guidance may result in user frustration.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, absence of help hurts novice users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a help section or contextual tooltips to support novice users and provide a fallback for questions and troubleshooting."
+  }
+]

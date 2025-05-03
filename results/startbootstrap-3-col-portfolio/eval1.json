@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks visual feedback mechanisms such as loading indicators or success/error notifications when actions are taken.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. The website does not provide feedback on user actions such as button clicks or navigation.",
+      "Is the language understandable and uses real-world conventions?": "Yes. The text used is understandable though minimal.",
+      "Can users easily undo and redo actions?": "No. There is no support for undo/redo operations.",
+      "Are there consistent standards across the system?": "Yes. It uses a Bootstrap layout consistently.",
+      "Is the design preventing problems before they occur?": "No. There's no validation or indication of required fields.",
+      "Is recognition prioritized over recall?": "Yes. Buttons and navigation are labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. It lacks shortcuts or customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. It uses a minimal Bootstrap template.",
+      "Are error messages helpful and expressed in plain language?": "No. Error feedback is minimal and unclear.",
+      "Is help and documentation easily accessible if needed?": "No. No help or documentation links are present."
+    },
+    "Recommendation": "Add visible feedback mechanisms like loading spinners or alert messages when actions are performed to inform the user of system status."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The template uses placeholders and lacks realistic, user-focused content.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Feedback is not context-aware.",
+      "Is the language understandable and uses real-world conventions?": "No. Uses placeholder text like 'Lorem ipsum'.",
+      "Can users easily undo and redo actions?": "No. No undo/redo capability.",
+      "Are there consistent standards across the system?": "Yes. Consistent layout and Bootstrap use.",
+      "Is the design preventing problems before they occur?": "No. Placeholder content can confuse users.",
+      "Is recognition prioritized over recall?": "Yes. Visual elements are labeled and recognizable.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Limited interaction and control.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Visually clean with ample white space.",
+      "Are error messages helpful and expressed in plain language?": "No. No error messages are present.",
+      "Is help and documentation easily accessible if needed?": "No. Help content is missing."
+    },
+    "Recommendation": "Replace placeholder text with real, user-centered language and meaningful content to improve clarity and connection with users."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The interface does not offer undo or redo actions and lacks controls to exit from errors.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. No interaction-based feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Minimal but consistent.",
+      "Can users easily undo and redo actions?": "No. This functionality is absent.",
+      "Are there consistent standards across the system?": "Yes. Standardized layout via Bootstrap.",
+      "Is the design preventing problems before they occur?": "No. No error prevention mechanisms.",
+      "Is recognition prioritized over recall?": "Yes. Interface elements are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Lacks advanced controls.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Design is uncluttered.",
+      "Are error messages helpful and expressed in plain language?": "No. None exist.",
+      "Is help and documentation easily accessible if needed?": "No. Not provided."
+    },
+    "Recommendation": "Introduce features such as undo/redo buttons or confirmation modals for destructive actions to give users more control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "While Bootstrap offers consistency, there's limited variation in components, and iconography standards are not always followed.",
+    "CodeReference": "index.html: line 11",
+    "CodeSnippet": "<title>3 Col Portfolio - Start Bootstrap Template</title>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Visual cues are minimal.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Bootstrap classes are standard.",
+      "Can users easily undo and redo actions?": "No. Missing entirely.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap maintains layout consistency.",
+      "Is the design preventing problems before they occur?": "No. Consistency doesn't prevent errors alone.",
+      "Is recognition prioritized over recall?": "Yes. Recognizable structure.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Static structure limits efficiency.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Simple design.",
+      "Are error messages helpful and expressed in plain language?": "No. Not implemented.",
+      "Is help and documentation easily accessible if needed?": "No. Help missing."
+    },
+    "Recommendation": "Use consistent UI elements and consider expanding component use to ensure uniform experience across pages and functions."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no preventive validations or constraints to avoid user errors during interactions.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Lacks proactive error feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Minimal and understandable.",
+      "Can users easily undo and redo actions?": "No. Not available.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap usage aids consistency.",
+      "Is the design preventing problems before they occur?": "No. Input forms lack validation.",
+      "Is recognition prioritized over recall?": "Yes. Interface is visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Basic and static.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Appealing layout.",
+      "Are error messages helpful and expressed in plain language?": "No. No error messages provided.",
+      "Is help and documentation easily accessible if needed?": "No. Help content is missing."
+    },
+    "Recommendation": "Add form validation, input constraints, and tooltips to guide users and reduce the likelihood of errors."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The interface uses visible labels and recognizable icons but lacks descriptive text in some controls.",
+    "CodeReference": "index.html: line 27",
+    "CodeSnippet": "<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Feedback minimal.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Labels are mostly clear.",
+      "Can users easily undo and redo actions?": "No. This function is missing.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap supports uniformity.",
+      "Is the design preventing problems before they occur?": "No. Minimal cues.",
+      "Is recognition prioritized over recall?": "Yes. Interface elements are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Few efficiency features.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Neat design.",
+      "Are error messages helpful and expressed in plain language?": "No. Not implemented.",
+      "Is help and documentation easily accessible if needed?": "No. Lacking."
+    },
+    "Recommendation": "Use more descriptive labels and tooltips for controls to reduce memory load and improve usability."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no features like keyboard shortcuts or personalization to support expert users.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Feedback lacks depth.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Minimal but clear.",
+      "Can users easily undo and redo actions?": "No. Missing feature.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap maintains standard behavior.",
+      "Is the design preventing problems before they occur?": "No. Does not support user efficiency.",
+      "Is recognition prioritized over recall?": "Yes. Controls are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Static interface lacks shortcuts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Simplistic and clean.",
+      "Are error messages helpful and expressed in plain language?": "No. Not present.",
+      "Is help and documentation easily accessible if needed?": "No. Not included."
+    },
+    "Recommendation": "Add support for expert users via shortcuts, form autofill, and user preferences."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "[No issue found]",
+    "CodeReference": "index.html: line 25",
+    "CodeSnippet": "<div class=\"container\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Feedback is limited.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Text is concise.",
+      "Can users easily undo and redo actions?": "No. Not implemented.",
+      "Are there consistent standards across the system?": "Yes. Consistency through Bootstrap.",
+      "Is the design preventing problems before they occur?": "No. Minimal cues.",
+      "Is recognition prioritized over recall?": "Yes. Clear labels.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Lacks advanced features.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Minimalist Bootstrap-based design.",
+      "Are error messages helpful and expressed in plain language?": "No. Not available.",
+      "Is help and documentation easily accessible if needed?": "No. Lacking."
+    },
+    "Recommendation": "Maintain the current minimal design; consider enhancing contrast and spacing for better readability."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Error messages are either generic or entirely absent, making it difficult for users to understand issues.",
+    "CodeReference": "index.html: line 89",
+    "CodeSnippet": "<p class=\"card-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Errors are not clearly communicated.",
+      "Is the language understandable and uses real-world conventions?": "No. Error messages use technical or placeholder text.",
+      "Can users easily undo and redo actions?": "No. Not available.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap layout helps.",
+      "Is the design preventing problems before they occur?": "No. Lacks validation.",
+      "Is recognition prioritized over recall?": "Yes. Interface is intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Limited controls.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Clean look.",
+      "Are error messages helpful and expressed in plain language?": "No. Not implemented effectively.",
+      "Is help and documentation easily accessible if needed?": "No. Missing."
+    },
+    "Recommendation": "Implement user-friendly, specific error messages in forms and actions to guide users in resolving issues."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No help links or documentation sections are provided for user guidance.",
+    "CodeReference": "index.html: N/A",
+    "CodeSnippet": "[No matching snippet found]",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No. Users receive no guidance.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Clear but minimal.",
+      "Can users easily undo and redo actions?": "No. Missing feature.",
+      "Are there consistent standards across the system?": "Yes. Bootstrap framework ensures visual consistency.",
+      "Is the design preventing problems before they occur?": "No. No hints or help.",
+      "Is recognition prioritized over recall?": "Yes. Elements are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "No. Not adaptive.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Layout is clean.",
+      "Are error messages helpful and expressed in plain language?": "No. Error support is missing.",
+      "Is help and documentation easily accessible if needed?": "No. Not available."
+    },
+    "Recommendation": "Include a help page or FAQ section to assist users in navigating and troubleshooting the site."
+  }
+]

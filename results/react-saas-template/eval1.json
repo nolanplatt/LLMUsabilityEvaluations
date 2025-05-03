@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The UI provides some feedback mechanisms such as spinner icons (e.g., in AccountInformationArea) and Material-UI Snackbars, but there is limited status feedback for page loads, network delays, or background operations.",
+    "CodeReference": "src/logged_in/components/dashboard/AccountInformationArea.js:32-42",
+    "CodeSnippet": "LoopIcon\nclassName={classNames(\n  isAccountActivated ? classes.spin : null,\n  classes.scaleMinus\n)}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially. Spinners and icon animations indicate state changes but overall system status (e.g., loading states, save confirmation) is limited.",
+      "Is the language understandable and uses real-world conventions?": "Yes. Terms like 'Activated', 'Balance', and 'Settings' are intuitive.",
+      "Can users easily undo and redo actions?": "No. There is no visible undo/redo support for actions like settings or data input.",
+      "Are there consistent standards across the system?": "Yes. The MUI framework ensures consistent component design.",
+      "Is the design preventing problems before they occur?": "Moderately. Some read-only components help prevent errors.",
+      "Is recognition prioritized over recall?": "Yes. Information is presented visually without requiring memory.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. Clean layout with intuitive navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Follows Material Design with ample whitespace.",
+      "Are error messages helpful and expressed in plain language?": "Not fully tested. Few user-generated error states found.",
+      "Is help and documentation easily accessible if needed?": "No. No tooltips or help icons observed."
+    },
+    "Recommendation": "Add loading indicators or progress bars for background actions. Include Snackbars or status banners to confirm user actions. Implement undo for key actions where feasible."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Language and UI design largely match real-world metaphors, such as account status, balance display, and settings. However, icons lack text alternatives or labels in places.",
+    "CodeReference": "src/logged_in/components/navigation/Balance.js:19-25",
+    "CodeSnippet": "OutlinedInput\n  value={currencyPrettyPrint(balance)}\n  readOnly\n  onClick={openAddBalanceDialog}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Minimal. Clicking balance opens a dialog but lacks tooltip or label.",
+      "Is the language understandable and uses real-world conventions?": "Yes. 'Balance', 'Status', and 'Account' are intuitive terms.",
+      "Can users easily undo and redo actions?": "No. No undo for dialog inputs or settings toggles.",
+      "Are there consistent standards across the system?": "Yes. Material UI follows common interface patterns.",
+      "Is the design preventing problems before they occur?": "Moderately. Use of read-only values minimizes risk.",
+      "Is recognition prioritized over recall?": "Yes. Data and controls are visible on-screen.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes. Simple layout with quick access to dialogs.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Icons and inputs are styled cleanly.",
+      "Are error messages helpful and expressed in plain language?": "Not evident in the balance module.",
+      "Is help and documentation easily accessible if needed?": "No. No inline explanations or help features found."
+    },
+    "Recommendation": "Provide text labels for interactive icons. Add tooltips or short descriptions to clarify actions like balance input or status indicators."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Users cannot undo actions such as toggling account status or submitting changes in settings dialogs. Navigation is structured with few escape or cancel options.",
+    "CodeReference": "src/logged_in/components/dashboard/SettingsArea.js",
+    "CodeSnippet": "// No undo or cancel button found for settings",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Limited. Actions are taken immediately with no cancel or undo.",
+      "Is the language understandable and uses real-world conventions?": "Yes. The settings layout is familiar.",
+      "Can users easily undo and redo actions?": "No. Once toggled or submitted, changes are immediate and final.",
+      "Are there consistent standards across the system?": "Yes. Button placement and color coding follow norms.",
+      "Is the design preventing problems before they occur?": "No undo means users are prone to irreversible actions.",
+      "Is recognition prioritized over recall?": "Yes. Options are shown in clear dropdowns and toggles.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially. Lacks shortcuts or power user support.",
+      "Is the design aesthetically pleasing and minimal?": "Yes. Uniform card-based layout.",
+      "Are error messages helpful and expressed in plain language?": "N/A. No feedback on setting errors was present.",
+      "Is help and documentation easily accessible if needed?": "No. Lacks on-page guidance or escape mechanisms."
+    },
+    "Recommendation": "Add undo or confirmation steps for critical actions. Consider adding cancel buttons and feedback prompts before executing changes."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Most UI elements follow Material-UI standards, but there are inconsistencies in icon usage without labels and form layouts differ slightly between components.",
+    "CodeReference": "src/logged_in/components/dashboard/ and navigation/",
+    "CodeSnippet": "// Icon use in Balance and LoopIcon without labels",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Visually yes, semantically less so.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Mostly yes, with some inconsistencies in labeling.",
+      "Is the design preventing problems before they occur?": "Yes, fields and components are clearly bounded.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Ensure all interactive icons include labels or accessible alt text. Align form layouts and naming patterns."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Read-only fields and toggles reduce input errors, but the lack of confirmation dialogs or form validation can lead to unintended changes.",
+    "CodeReference": "src/logged_in/components/dashboard/AccountInformationArea.js",
+    "CodeSnippet": "toggleAccountActivation={toggleAccountActivation}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partial. Toggles are direct without warning.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially, via read-only defaults.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add validation messages or confirmations before executing account toggles or setting changes. Include warning prompts when needed."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Most options and states are visible rather than requiring memory, but some dropdowns lack default hints or previews, relying on users to remember choices.",
+    "CodeReference": "src/logged_in/components/dashboard/UserDataArea.js",
+    "CodeSnippet": "// Dropdown component lacks placeholder",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, selected items are shown.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Mostly, some exceptions in dropdowns.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not tested here.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use placeholder text in dropdowns and preview options where applicable. Maintain visual display of system state at all times."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system is optimized for standard use but lacks keyboard shortcuts, bulk actions, or user settings to tailor workflows for experts.",
+    "CodeReference": "src/App.js, all components",
+    "CodeSnippet": "<Route path=\"/c\"><LoggedInComponent /></Route>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partial. No expert toggles or power features.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Not enough for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not evident.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce expert shortcuts, keyboard navigation, and user preferences to optimize workflows for returning users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No usability issue found. The interface is clean, minimal, and consistent with Material Design guidelines.",
+    "CodeReference": "src/theme.js, src/App.js",
+    "CodeSnippet": "<ThemeProvider theme={theme}>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, but unrelated to aesthetic.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No recommendation necessary. Design is clean and minimalist."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The system does not show any obvious error messages or user-driven error states. Input errors or toggles do not show confirmation or errors on failure.",
+    "CodeReference": "src/logged_in/components/dashboard/AccountInformationArea.js",
+    "CodeSnippet": "// No feedback when toggling activation fails",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No error messages displayed on failure.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Only partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not present.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add clear error messages and visual feedback for failed actions. Use toasts or inline messages to help diagnose issues."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No contextual help, tooltips, or documentation links are present within the application UI.",
+    "CodeReference": "src/logged_in/components/dashboard/SettingsArea.js, entire app",
+    "CodeSnippet": "// No help icons or documentation links",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not in terms of documentation.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add tooltips, help icons, or links to relevant sections of documentation to support users in completing tasks."
+  }
+]

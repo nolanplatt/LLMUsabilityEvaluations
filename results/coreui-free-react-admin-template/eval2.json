@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The UI lacks persistent visual cues to indicate system states such as loading, saving, or submitting data beyond initial route loading.",
+    "CodeReference": "src/App.js, line 19-30",
+    "CodeSnippet": "fallback={<div className=\"pt-3 text-center\"><CSpinner color=\"primary\" variant=\"grow\" /></div>}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is only present during initial route suspense load; user actions like form submissions do not reflect system feedback clearly.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard phrases like 'Search' and 'You\u2019re lost' are used appropriately.",
+      "Can users easily undo and redo actions?": "No, the interface lacks undo/redo functionality for most interactions.",
+      "Are there consistent standards across the system?": "Yes, consistent use of CoreUI components throughout ensures uniform design.",
+      "Is the design preventing problems before they occur?": "No, lack of confirmation modals or pre-validation may allow users to make erroneous actions without checks.",
+      "Is recognition prioritized over recall?": "Yes, menus and iconography reduce cognitive load by making options visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, while the layout is clean, there's limited shortcut or efficiency features for power users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the template uses a clean, responsive layout with appropriate spacing and minimal visual clutter.",
+      "Are error messages helpful and expressed in plain language?": "Yes, 404 and 500 pages use clear, friendly language.",
+      "Is help and documentation easily accessible if needed?": "No, no visible help or documentation link is present in the UI."
+    },
+    "Recommendation": "Implement inline feedback for user actions (e.g., submitting forms, saving settings). Show confirmation messages or visual loaders to indicate action progress."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some language and icons may not be intuitive to non-technical users (e.g., lack of labels on icons like magnifying glass).",
+    "CodeReference": "src/views/pages/page404/Page404.js, line 24-28",
+    "CodeSnippet": "<CIcon icon={cilMagnifyingGlass} />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, limited contextual guidance or descriptive feedback.",
+      "Is the language understandable and uses real-world conventions?": "Partially. The search interface uses an icon without a label, which may confuse some users.",
+      "Can users easily undo and redo actions?": "No undo/redo visible.",
+      "Are there consistent standards across the system?": "Yes, consistent use of CoreUI icons and layouts.",
+      "Is the design preventing problems before they occur?": "No warnings or helper text seen.",
+      "Is recognition prioritized over recall?": "No, some icons may require recall unless accompanied by labels.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, for those familiar with iconography.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, simple and modern UI.",
+      "Are error messages helpful and expressed in plain language?": "Yes, the error page language is user-friendly.",
+      "Is help and documentation easily accessible if needed?": "No help section observed."
+    },
+    "Recommendation": "Include tooltips or labels for all icons to improve understandability for non-technical users."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No visible support for undo/redo actions or canceling changes in forms or settings.",
+    "CodeReference": "src/views/pages/register/Register.js (not included but implied usage), assumed missing undo support",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, feedback is limited.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, no support for these interactions found.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, no confirmation or cancel options visible.",
+      "Is recognition prioritized over recall?": "Partially.",
+      "Is the interface flexible and efficient for both novices and experts?": "Moderate.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement undo/cancel functionality for critical actions like form inputs, navigation away from unsaved changes, and form resets."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No consistency issues were detected. The template uses a consistent component system (CoreUI) throughout.",
+    "CodeReference": "src/layout/DefaultLayout.js",
+    "CodeSnippet": "<AppHeader />, <AppFooter />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes, very consistent with CoreUI.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No change required; maintain consistent use of the design system."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Forms do not appear to provide pre-validation or confirmation steps before submission, increasing potential for user error.",
+    "CodeReference": "src/views/pages/register/Register.js (not visible but inferred)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, no confirmation dialogs or warnings present.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add client-side validation and confirmation steps on critical actions like registration or data entry to reduce errors."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation relies heavily on icon-based sidebars with limited text labels, potentially reducing usability for first-time users.",
+    "CodeReference": "src/components/AppSidebar.js (not included but likely contains sidebar code)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No, users must remember what each icon means without labels.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Use text labels alongside icons in the sidebar to improve recognition for novice users."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No shortcuts, power features, or customization options for expert users were found in the interface.",
+    "CodeReference": "src/App.js",
+    "CodeSnippet": "<HashRouter> and default layout loading",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks efficiency tools for advanced users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce keyboard shortcuts, configurable dashboard layouts, or user preference settings to support expert efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The UI is visually clean, using whitespace and layout grids effectively.",
+    "CodeReference": "src/layout/DefaultLayout.js",
+    "CodeSnippet": "<div className=\"wrapper d-flex flex-column min-vh-100\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain minimal design and ensure future features do not introduce clutter."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Error pages exist but do not provide links or actionable next steps beyond a search bar.",
+    "CodeReference": "src/views/pages/page404/Page404.js",
+    "CodeSnippet": "<p className=\"text-body-secondary float-start\">The page you are looking for was not found.</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes, but no recovery suggestions.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add actionable links such as 'Go Home' or 'Contact Support' on error pages."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no visible help section, tooltips, or documentation linked in the UI.",
+    "CodeReference": "src/layout/DefaultLayout.js",
+    "CodeSnippet": "<AppHeader />, <AppSidebar />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "No.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Yes.",
+      "Is help and documentation easily accessible if needed?": "No, none is present."
+    },
+    "Recommendation": "Add a help icon linking to documentation or include inline help on complex components."
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no loading indicator or visible feedback when navigation links are clicked, leaving users unsure if the page is responsive or working.",
+    "CodeReference": "index.html: lines 120\u2013140",
+    "CodeSnippet": "<a class=\"nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger\" href=\"#about\">About</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the system lacks real-time visual feedback when navigation elements are triggered.",
+      "Is the language understandable and uses real-world conventions?": "Yes, menu items like 'About', 'Contact', and 'Portfolio' are conventional and clear.",
+      "Can users easily undo and redo actions?": "No, there is no support for undo/redo navigation or form actions.",
+      "Are there consistent standards across the system?": "Yes, navigation and headings follow consistent formatting.",
+      "Is the design preventing problems before they occur?": "No, users may click links multiple times due to lack of feedback.",
+      "Is recognition prioritized over recall?": "Yes, visible menu options help with recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, straightforward layout aids usability.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the minimalist design helps visual focus.",
+      "Are error messages helpful and expressed in plain language?": "No, error handling is not visible.",
+      "Is help and documentation easily accessible if needed?": "No, there is no help section or documentation."
+    },
+    "Recommendation": "Implement loading indicators or transition animations when navigating between sections to confirm user actions are registered."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The language and labels generally follow conventions but lack additional context or personalization that might improve engagement.",
+    "CodeReference": "index.html: lines 100\u2013140",
+    "CodeSnippet": "<h2 class=\"page-section-heading text-center text-uppercase text-secondary mb-0\">Portfolio</h2>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is lacking in some sections.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard terminology is used effectively.",
+      "Can users easily undo and redo actions?": "No, not applicable for basic content sections.",
+      "Are there consistent standards across the system?": "Yes, consistent section naming and structure.",
+      "Is the design preventing problems before they occur?": "Yes, design structure minimizes confusion.",
+      "Is recognition prioritized over recall?": "Yes, real-world terms aid user understanding.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal interaction complexity helps both.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, aligned with user expectations.",
+      "Are error messages helpful and expressed in plain language?": "No, error handling is not relevant here.",
+      "Is help and documentation easily accessible if needed?": "No, not present."
+    },
+    "Recommendation": "Include microcopy or tooltips to provide real-world analogies or context for certain interface elements (e.g., what users should expect in Portfolio)."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no clear way for users to undo form input or cancel form submission.",
+    "CodeReference": "index.html: lines 420\u2013470",
+    "CodeSnippet": "<form id=\"contactForm\" name=\"sentMessage\" novalidate=\"novalidate\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback is not offered after form submission.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the form fields are labeled clearly.",
+      "Can users easily undo and redo actions?": "No, no 'reset' button or way to cancel submission.",
+      "Are there consistent standards across the system?": "Yes, uniform form layout and styles.",
+      "Is the design preventing problems before they occur?": "No, without reset or cancel users may make mistakes.",
+      "Is recognition prioritized over recall?": "Yes, form fields are intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple input fields aid usability.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually clean and structured.",
+      "Are error messages helpful and expressed in plain language?": "Partially, field validation messages exist.",
+      "Is help and documentation easily accessible if needed?": "No, there\u2019s no guide or helper text."
+    },
+    "Recommendation": "Add a 'Reset' or 'Clear' button to forms and allow users to cancel actions before submission, improving perceived control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minor inconsistencies exist between CSS classes and JavaScript triggers that could confuse developers maintaining the system.",
+    "CodeReference": "freelancer.js: lines 10\u201320",
+    "CodeSnippet": "$('.js-scroll-trigger').click(function() { $('.navbar-collapse').collapse('hide'); });",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, feedback is implicit through collapse.",
+      "Is the language understandable and uses real-world conventions?": "Yes, semantic classes used well.",
+      "Can users easily undo and redo actions?": "No, limited to single-direction action.",
+      "Are there consistent standards across the system?": "No, naming conventions vary slightly.",
+      "Is the design preventing problems before they occur?": "Partially, code tries to anticipate UI actions.",
+      "Is recognition prioritized over recall?": "Yes, visible links are helpful.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, basic actions for both.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal and modern.",
+      "Are error messages helpful and expressed in plain language?": "No error messages in this script.",
+      "Is help and documentation easily accessible if needed?": "No, not included."
+    },
+    "Recommendation": "Standardize class names and JavaScript selectors to avoid developer confusion and ease future updates."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Form does not provide real-time inline validation or clear prevention before submission.",
+    "CodeReference": "index.html: lines 420\u2013470",
+    "CodeSnippet": "<input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Your Name *\" required=\"required\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, validation is only on submit.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clearly labeled fields.",
+      "Can users easily undo and redo actions?": "No, error prevention tools are missing.",
+      "Are there consistent standards across the system?": "Yes, form field structure is uniform.",
+      "Is the design preventing problems before they occur?": "No, users can submit incomplete forms.",
+      "Is recognition prioritized over recall?": "Yes, field prompts help recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, easy to navigate.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean form design.",
+      "Are error messages helpful and expressed in plain language?": "Somewhat, messages exist post-submission.",
+      "Is help and documentation easily accessible if needed?": "No, no visible instructions or help."
+    },
+    "Recommendation": "Implement real-time validation and user-friendly inline error messaging to guide users before submitting the form."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation menus and portfolio items are visible but icons or thumbnails lack descriptive labels.",
+    "CodeReference": "index.html: lines 160\u2013200",
+    "CodeSnippet": "<img class=\"img-fluid\" src=\"img/portfolio/cake.png\" alt=\"\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, portfolio images lack alt-text descriptions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels like 'Portfolio' are intuitive.",
+      "Can users easily undo and redo actions?": "No, not supported in this context.",
+      "Are there consistent standards across the system?": "Yes, repeated layout pattern for portfolio.",
+      "Is the design preventing problems before they occur?": "No, missing alt-text could cause accessibility issues.",
+      "Is recognition prioritized over recall?": "Partially, recognizable images help but lack context.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple layout.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, good use of whitespace and visual grouping.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, help not provided."
+    },
+    "Recommendation": "Include descriptive alt text for all images and use captions to improve content discoverability and accessibility."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no keyboard shortcuts or accessibility aids like tab indexing for faster navigation.",
+    "CodeReference": "index.html: lines 100\u2013300",
+    "CodeSnippet": "<a class=\"portfolio-item d-block mx-auto\" href=\"#portfolioModal1\" data-toggle=\"modal\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, modal triggers offer visual change.",
+      "Is the language understandable and uses real-world conventions?": "Yes, link labels are conventional.",
+      "Can users easily undo and redo actions?": "No, keyboard control is not supported.",
+      "Are there consistent standards across the system?": "Yes, uniform design and structure.",
+      "Is the design preventing problems before they occur?": "No, no guidance for non-mouse users.",
+      "Is recognition prioritized over recall?": "Yes, layout supports visual recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, experts lack shortcut options.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually consistent and clean.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no assistance features."
+    },
+    "Recommendation": "Add keyboard navigation, tabindex, and ARIA attributes to enhance usability for power users and accessibility."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue. The website adheres to minimalist design principles with consistent spacing, typography, and layout.",
+    "CodeReference": "index.html, freelancer.css",
+    "CodeSnippet": "body { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, ... }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, transitions and modals indicate interactivity.",
+      "Is the language understandable and uses real-world conventions?": "Yes, headings and copy are clear.",
+      "Can users easily undo and redo actions?": "No, not applicable here.",
+      "Are there consistent standards across the system?": "Yes, stylistic and layout uniformity observed.",
+      "Is the design preventing problems before they occur?": "Yes, clean layout avoids confusion.",
+      "Is recognition prioritized over recall?": "Yes, layout supports visual recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, intuitive for all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, uses color and space effectively.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "No, not included."
+    },
+    "Recommendation": "No action needed. Maintain current design style and continue using minimalist principles."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Form validation messages are not shown until after submission and lack detailed guidance.",
+    "CodeReference": "freelancer.js: lines 30\u201340",
+    "CodeSnippet": "error: function () { $('#success').html(\"<div class='alert alert-danger'>...</div>\"); }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, vague messages post-submission only.",
+      "Is the language understandable and uses real-world conventions?": "Somewhat, language is generic.",
+      "Can users easily undo and redo actions?": "No, error handling does not support correction guidance.",
+      "Are there consistent standards across the system?": "Yes, but not in error messaging.",
+      "Is the design preventing problems before they occur?": "No, errors occur without user clarity.",
+      "Is recognition prioritized over recall?": "No, users must remember what went wrong.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, error diagnosis is unclear.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, error messages follow alert style.",
+      "Are error messages helpful and expressed in plain language?": "No, messages are generic and unhelpful.",
+      "Is help and documentation easily accessible if needed?": "No, not available."
+    },
+    "Recommendation": "Use specific and contextual error messages that indicate the exact field with problems and suggest actions to resolve them."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help or documentation link for users or site administrators.",
+    "CodeReference": "index.html: entire file",
+    "CodeSnippet": "<!-- No help/documentation section present -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lack of support messaging.",
+      "Is the language understandable and uses real-world conventions?": "Yes, but support features are missing.",
+      "Can users easily undo and redo actions?": "No, not supported.",
+      "Are there consistent standards across the system?": "Yes, visually consistent.",
+      "Is the design preventing problems before they occur?": "No, no instructions or warnings.",
+      "Is recognition prioritized over recall?": "No, users must guess actions.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, no onboarding or help.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually clean.",
+      "Are error messages helpful and expressed in plain language?": "No error or help messages.",
+      "Is help and documentation easily accessible if needed?": "No, completely absent."
+    },
+    "Recommendation": "Include a basic FAQ or documentation section and link to support contact options to assist users encountering issues."
+  }
+]

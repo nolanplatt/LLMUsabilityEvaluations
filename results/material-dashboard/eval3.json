@@ -1,0 +1,170 @@
+[
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The product naming and descriptions (e.g., 'THE PRODUCT OF THE FUTURE') in the Hero component are vague marketing language and do not clearly convey the purpose or category of products sold, which may confuse first-time users.",
+    "CodeReference": "Hero.tsx: line ~15-25",
+    "CodeSnippet": "// *********************\n// Role of the component: Classical hero component on home page\n// Name of the component: Hero.tsx\n// Developer: Aleksandar Kuzmanovic\n// Version: 1.0\n// Component call: <Hero />\n// Input parameters: no input parameters\n// Output: Classical hero component with two columns on",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable for static content.",
+      "Is the language understandable and uses real-world conventions?": "No, abstract slogans are used instead of product-specific terminology.",
+      "Can users easily undo and redo actions?": "Not applicable here.",
+      "Are there consistent standards across the system?": "Yes, visual layout and style are consistent.",
+      "Is the design preventing problems before they occur?": "No, vague text can mislead users about product purpose.",
+      "Is recognition prioritized over recall?": "Yes, layout and design are familiar.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, page structure supports both user types.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the layout is visually clean.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Use clear and specific product names and descriptions in hero sections. Avoid abstract marketing phrases and align content with user expectations and standard e-commerce terminology."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks 'undo' or 'redo' actions for user operations like adding to cart or wishlist. There\u2019s also no navigation shortcut to go back or undo selections within the UI.",
+    "CodeReference": "Header.tsx: line ~30-130 (Cart & Wishlist logic)",
+    "CodeSnippet": "const getWishlistByUserId = async (id: string) => {\n    const response = await fetch(`http://localhost:3001/api/wishlist/${id}`, {\n      cache: \"no-store\",\n    });\n    const wishlist = await response.json();\n    const productArray: {\n      id: string;\n      title: string;\n      price: number;\n      image: string;\n      slug:string\n      stockAvailabillity: number;\n    }[] = [];\n    \n    wishlist.map((item: any) => productArray.push({id: item?.product?.id, title: item?.product?.title, price: item?.product?.price, image: item?.product?.mainImage, slug: item?.product?.slug, stockAvailabillity: item?.product?.inStock}));\n    \n    setWishlist(productArray);",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, actions like adding/removing items don\u2019t offer undo.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terms like 'wishlist', 'logout' are intuitive.",
+      "Can users easily undo and redo actions?": "No, there are no undo or redo UI elements.",
+      "Are there consistent standards across the system?": "Yes, Tailwind UI elements are reused uniformly.",
+      "Is the design preventing problems before they occur?": "No, accidental actions can\u2019t be reversed.",
+      "Is recognition prioritized over recall?": "Yes, clickable icons for wishlist/cart aid recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, interface layout suits both user types.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, UI maintains a clean appearance.",
+      "Are error messages helpful and expressed in plain language?": "No feedback on misclicks or wrong actions.",
+      "Is help and documentation easily accessible if needed?": "No visible help links for user assistance."
+    },
+    "Recommendation": "Implement undo/redo support for key interactions such as adding items to the cart or wishlist. Include toast messages with an undo link and allow easy reversal of actions within a short time window."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The website mostly maintains consistent design and layout using Tailwind, but there are some inconsistencies like using both 'img' and 'Image' components for logos.",
+    "CodeReference": "Header.tsx: line ~80-100",
+    "CodeSnippet": "<img src=\"/logo v1 svg.svg\" width={300} height={300} alt=\"singitronic logo\" className=\"relative right-5 max-[1023px]:w-56\" />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable for this heuristic.",
+      "Is the language understandable and uses real-world conventions?": "Yes, naming and navigation are consistent.",
+      "Can users easily undo and redo actions?": "Not applicable here.",
+      "Are there consistent standards across the system?": "No, inconsistent use of components like <img> vs <Image>.",
+      "Is the design preventing problems before they occur?": "Some inconsistencies may confuse developers and affect accessibility.",
+      "Is recognition prioritized over recall?": "Yes, components are mostly intuitive.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, consistent layout improves usability.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, though inconsistencies can slightly disrupt aesthetics.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "Not applicable here."
+    },
+    "Recommendation": "Use consistent components throughout the project (e.g., always use Next.js <Image> for images). This enhances performance and maintains visual and development consistency."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The site does not confirm critical user actions like logout, item removal, or navigation away during an incomplete action (e.g., filling a form).",
+    "CodeReference": "Header.tsx: line ~50-70 (logout logic)",
+    "CodeSnippet": "const handleLogout = () => {\n    setTimeout(() => signOut(), 1000);\n    toast.success(\"Logout successful!\");",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, it confirms logout only after it occurs.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clear language is used.",
+      "Can users easily undo and redo actions?": "No undo confirmation for logout or destructive actions.",
+      "Are there consistent standards across the system?": "Yes, UI standards are consistent.",
+      "Is the design preventing problems before they occur?": "No, there is no confirmation prompt for logout.",
+      "Is recognition prioritized over recall?": "Yes, logout is recognizable via menu.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, UI is simple and effective.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, logout UI is clean.",
+      "Are error messages helpful and expressed in plain language?": "Yes, logout success is confirmed by toast.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Add confirmation dialogs before executing critical actions like logout or deletion. Use modal prompts or toasts to ensure the user does not make irreversible mistakes."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The UI generally supports recognition (icons for wishlist/cart), but admin dropdown actions are hidden until clicked and require the user to recall options.",
+    "CodeReference": "Header.tsx: line ~100-130",
+    "CodeSnippet": "<ul\n                tabIndex={0}\n                className=\"dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52\"\n              >\n                <li>\n                  <Link href=\"/admin\">Dashboard</Link>\n                </li>\n                <li>\n                  <a>Profile</a>\n                </li>\n                <li onClick={handleLogout}>\n                  <a href=\"#\">Logout</a>\n                </li>\n              </ul>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not in the admin menu \u2014 options are not visible by default.",
+      "Is the language understandable and uses real-world conventions?": "Yes, menu labels are clear.",
+      "Can users easily undo and redo actions?": "Not relevant here.",
+      "Are there consistent standards across the system?": "Yes, dropdowns are used consistently.",
+      "Is the design preventing problems before they occur?": "Partially, as menu interaction is hidden.",
+      "Is recognition prioritized over recall?": "No, admin dropdown hides available options until clicked.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, familiar patterns are used.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean dropdown design.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Display critical admin actions directly or add tooltips/icons that preview menu content to reduce memory load. Prioritize visible UI elements to avoid reliance on user memory."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The design is clean, but some buttons in the Hero section use verbose text (e.g., 'LEARN MORE') without clear relevance or hierarchy.",
+    "CodeReference": "Hero.tsx: line ~25-30",
+    "CodeSnippet": "<button className=\"bg-white text-blue-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100\">\n              BUY NOW\n            </button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Not applicable here.",
+      "Is the language understandable and uses real-world conventions?": "Yes, button text is understandable but vague.",
+      "Can users easily undo and redo actions?": "Not relevant here.",
+      "Are there consistent standards across the system?": "Yes, design is uniform.",
+      "Is the design preventing problems before they occur?": "Yes, no clutter or misleading elements detected.",
+      "Is recognition prioritized over recall?": "Yes, buttons are clearly labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, structure is intuitive.",
+      "Is the design aesthetically pleasing and minimal?": "Mostly yes, though minor text redundancies exist.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Ensure that all buttons use concise, actionable text that reflects the action (e.g., 'View Details', 'Shop Now'). Avoid generic labels like 'Learn More' unless contextually clear."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks visible error handling UI elements for common issues like failed login, fetch failures, or cart update errors.",
+    "CodeReference": "Header.tsx & global components",
+    "CodeSnippet": "// *********************\n// Role of the component: Header component\n// Name of the component: Header.tsx\n// Developer: Aleksandar Kuzmanovic\n// Version: 1.0\n// Component call: <Header />\n// Input parameters: no input parameters\n// Output: Header component\n// *********************\n\n\"use client\";\nimpo",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, failures (e.g., network or login) aren\u2019t visibly handled.",
+      "Is the language understandable and uses real-world conventions?": "Yes, where used.",
+      "Can users easily undo and redo actions?": "No error recovery options are given.",
+      "Are there consistent standards across the system?": "Yes, design system is consistent.",
+      "Is the design preventing problems before they occur?": "No, errors are not preemptively managed.",
+      "Is recognition prioritized over recall?": "Yes, consistent use of elements like icons helps users orient.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, basic layout supports both.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean but lacks feedback when things go wrong.",
+      "Are error messages helpful and expressed in plain language?": "No, none are shown visibly in UI.",
+      "Is help and documentation easily accessible if needed?": "No guidance provided on what went wrong."
+    },
+    "Recommendation": "Implement global error handling UI components, such as banners or alerts, to inform users of failed actions. Include clear, plain-language error messages and suggest corrective actions where possible."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 4,
+    "IssueFound": true,
+    "IssueDescription": "No in-app help system, tooltips, FAQs, or user onboarding documentation is visible across the site. Users lack support for troubleshooting or guidance.",
+    "CodeReference": "All components and layout files",
+    "CodeSnippet": "import type { Metadata } from \"next\";\nimport { Inter } from \"next/font/google\";\nimport \"./globals.css\";\nimport { Footer, Header } from \"@/components\";\nimport SessionProvider from \"@/utils/SessionProvider\";\nimport Providers from \"@/Providers\";\nimport { getServerSession } from \"next-auth\";\nimport 'svg",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no help text or error resolution info is shown.",
+      "Is the language understandable and uses real-world conventions?": "Yes, where used, it is straightforward.",
+      "Can users easily undo and redo actions?": "No, support actions are missing.",
+      "Are there consistent standards across the system?": "Yes, design is consistent.",
+      "Is the design preventing problems before they occur?": "No, lack of documentation may lead to misuse.",
+      "Is recognition prioritized over recall?": "No, users must recall how to use features without support.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, novices are unsupported.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, but lacks informative help layers.",
+      "Are error messages helpful and expressed in plain language?": "No, error resolution guidance is missing.",
+      "Is help and documentation easily accessible if needed?": "No, none is provided in UI."
+    },
+    "Recommendation": "Integrate a help section, user guide, or tooltip system in the UI. Provide links to FAQs, onboarding instructions, and inline explanations for advanced features. Support should be easy to find from any page."
+  }
+]

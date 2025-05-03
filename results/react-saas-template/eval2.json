@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The application lacks clear loading indicators during component lazy loading, relying only on Suspense fallback which isn't user-visible.",
+    "CodeReference": "src/App.js:9",
+    "CodeSnippet": "const LoggedInComponent = lazy(() => import(\"./logged_in/components/Main\"));",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is minimal feedback during component loading, which could confuse users.",
+      "Is the language understandable and uses real-world conventions?": "Yes, code uses standard labels and UI conventions from MUI.",
+      "Can users easily undo and redo actions?": "No, there is no visible undo/redo support.",
+      "Are there consistent standards across the system?": "Yes, MUI provides consistent UI elements.",
+      "Is the design preventing problems before they occur?": "No, lack of loading feedback may lead to misinterpretation of app state.",
+      "Is recognition prioritized over recall?": "Yes, navigation is structured clearly.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, intuitive layout and routing structure support this.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, well-structured layout with Material Design.",
+      "Are error messages helpful and expressed in plain language?": "No error message structure is visible in UI components.",
+      "Is help and documentation easily accessible if needed?": "No, in-app help/documentation is missing."
+    },
+    "Recommendation": "Add visible loading indicators (spinners, progress bars) in Suspense fallbacks to improve user feedback during async loading."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some component labels (e.g., 'CardChart', 'UserDataArea') are abstract and not user-facing, potentially confusing in internal references.",
+    "CodeReference": "src/logged_in/components/dashboard/Dashboard.js:10",
+    "CodeSnippet": "import UserDataArea from \"./UserDataArea\";",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, though some internal naming isn't mirrored in UI.",
+      "Is the language understandable and uses real-world conventions?": "Partially, some technical terms leak into UI structure.",
+      "Can users easily undo and redo actions?": "No support identified.",
+      "Are there consistent standards across the system?": "Yes, consistently uses Material UI components.",
+      "Is the design preventing problems before they occur?": "Not in naming\u2014some terms may confuse.",
+      "Is recognition prioritized over recall?": "Yes, UI buttons and structure help recognize function.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, design supports both audiences.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal and clean design.",
+      "Are error messages helpful and expressed in plain language?": "None detected.",
+      "Is help and documentation easily accessible if needed?": "No in-app help is available."
+    },
+    "Recommendation": "Align internal component names more closely with user-facing labels and use real-world terminology wherever possible."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There is no mechanism provided for undoing or redoing user actions, and modal dialogues lack cancel options.",
+    "CodeReference": "src/logged_in/components/dashboard/Dashboard.js",
+    "CodeSnippet": "function Dashboard(props) { ... }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, limited feedback for errors or action results.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, no support present.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Not effectively.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable\u2014none found.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce undo/redo mechanisms and ensure all user-initiated actions have reversible options or confirmations."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The app maintains consistent design through Material-UI, though the lack of uniform feedback messages is a slight inconsistency.",
+    "CodeReference": "src/GlobalStyles.js:5",
+    "CodeSnippet": "\"*:focus\": { outline: 0 },",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, visual cues are consistent but limited.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes, UI is standardized.",
+      "Is the design preventing problems before they occur?": "No, limited preventive design.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messaging exists.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Introduce consistent inline feedback and error messages that follow UI standards."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no mechanisms to prevent incorrect inputs or guide users in forms or workflows.",
+    "CodeReference": "src/logged_in/components/dashboard/AccountInformationArea.js",
+    "CodeSnippet": "function AccountInformationArea(props) { ... }",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lacks validation cues.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement client-side validation with descriptive hints to prevent errors before submission."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue identified.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes, navigation uses iconography and common labels.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain clear visual cues and labels to preserve the good recognition-based navigation."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No shortcuts or advanced options identified for experienced users (e.g., keyboard shortcuts, advanced filters).",
+    "CodeReference": "src/logged_in/components/navigation/MessagePopperButton.js",
+    "CodeSnippet": "IconButton component lacks accesskey or key listener.",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks expert shortcuts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard shortcuts or fast-access panels for power users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found. Design is clean, consistent, and uses modern UI principles.",
+    "CodeReference": "src/theme.js",
+    "CodeSnippet": "Material-UI theming with color codes and layout grid.",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Continue using the Material-UI design principles. Add spacing and color contrast accessibility checks."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No defined error messages or feedback patterns are in the UI logic.",
+    "CodeReference": "src/index.js",
+    "CodeSnippet": "ReactDOM.render(\n  <App />,\n  document.getElementById(\"root\")\n);",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error feedback.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement meaningful error messages in the UI. Catch and display runtime or fetch errors."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The application lacks in-app help or user guidance. README exists but no contextual help is provided within the app.",
+    "CodeReference": "README.md",
+    "CodeSnippet": "### What to do next?\n\nIf you are new to React, you should watch...",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No in-app help provided."
+    },
+    "Recommendation": "Provide contextual help or tooltips in the interface. Link to documentation or show onboarding hints."
+  }
+]

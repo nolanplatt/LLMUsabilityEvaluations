@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The responsive navigation toggle lacks visual feedback indicating its expanded/collapsed state, potentially confusing users.",
+    "CodeReference": "index.html line 25",
+    "CodeSnippet": "                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n                <ul class=\"navbar-nav\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no feedback on the state of the navigation toggle.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard Bootstrap and HTML semantics are used.",
+      "Can users easily undo and redo actions?": "No, no support for undo/redo in navigation interactions.",
+      "Are there consistent standards across the system?": "Yes, consistent Bootstrap-based layout.",
+      "Is the design preventing problems before they occur?": "No, users might click multiple times not knowing current state.",
+      "Is recognition prioritized over recall?": "Yes, navigation links are always visible once expanded.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, supports mobile and desktop layouts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean design overall.",
+      "Are error messages helpful and expressed in plain language?": "N/A \u2013 no user input or error display involved here.",
+      "Is help and documentation easily accessible if needed?": "N/A \u2013 no help links present."
+    },
+    "Recommendation": "Add visual indicators (like animated icon transitions or aria-expanded attributes) to communicate toggle state clearly."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The page title and displayed name use different identifiers ('Resume' and 'Clarence Taylor'), which might confuse users about branding or ownership.",
+    "CodeReference": "index.html line 22",
+    "CodeSnippet": "        <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary fixed-top\" id=\"sideNav\">\n            <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">\n                <span class=\"d-block d-lg-none\">Clarence Taylor</span>\n                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A \u2013 not applicable to content labeling.",
+      "Is the language understandable and uses real-world conventions?": "No, there is inconsistency in names which can confuse users.",
+      "Can users easily undo and redo actions?": "N/A \u2013 not related to actions.",
+      "Are there consistent standards across the system?": "No, branding inconsistency identified.",
+      "Is the design preventing problems before they occur?": "No, inconsistent identifiers may reduce user trust.",
+      "Is recognition prioritized over recall?": "Yes, the user sees the name prominently.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, no complexity for users here.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually clean but semantically inconsistent.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "Align the page title and displayed profile name to create a consistent brand and reinforce user confidence."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There are no 'undo', 'back', or escape mechanisms for actions like navigation or downloads. Users cannot reverse accidental actions.",
+    "CodeReference": "index.html (general lack of undo features)",
+    "CodeSnippet": "No modal dialogs or cancel buttons implemented.",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no indicators of undo/cancel mechanisms.",
+      "Is the language understandable and uses real-world conventions?": "Yes, but lacks actionable feedback.",
+      "Can users easily undo and redo actions?": "No, not supported.",
+      "Are there consistent standards across the system?": "Yes, consistent layout but missing key functionality.",
+      "Is the design preventing problems before they occur?": "No, no safety nets like confirmations or cancellations.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially \u2013 lacks controls experts expect.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No, help elements are missing."
+    },
+    "Recommendation": "Implement undo capabilities, back buttons for single-page sections, or confirmation modals for irreversible actions."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Custom class naming like 'img-profile' without consistent BEM or utility-based structure can introduce styling ambiguity.",
+    "CodeReference": "index.html line 23",
+    "CodeSnippet": "            <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">\n                <span class=\"d-block d-lg-none\">Clarence Taylor</span>\n                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "No, class naming lacks consistency with best practices.",
+      "Is the design preventing problems before they occur?": "Partially \u2013 depends on CSS structure.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "Use consistent naming conventions like BEM or standardized utility-first CSS for clarity and maintainability."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No actionable input forms or complex interactions found where user error could occur.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes, limited interactivity means few opportunities for error.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "No recommendation needed due to lack of user input mechanisms."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "Navigation is clearly labeled and easily recognizable. All sections are linked visibly.",
+    "CodeReference": "index.html line 20",
+    "CodeSnippet": "    <body id=\"page-top\">\n        <!-- Navigation-->\n        <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary fixed-top\" id=\"sideNav\">\n            <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">\n                <span class=\"d-block d-lg-none\">Clarence Taylor</span>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, clear labeled navigation used.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "No changes necessary; current navigation supports recognition effectively."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks keyboard navigation hints, skip links, or personalization features for experienced users.",
+    "CodeReference": "index.html (missing keyboard shortcuts or preferences)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, keyboard interaction feedback is not present.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, accessibility issues for keyboard users.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks shortcuts and personalization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard navigation aids, skip links, and user preferences for advanced users to improve flexibility."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "Design is clean, modern, and minimalist. Text and visuals are well balanced.",
+    "CodeReference": "index.html line 23",
+    "CodeSnippet": "            <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">\n                <span class=\"d-block d-lg-none\">Clarence Taylor</span>\n                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout and spacing.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "No change needed; maintain the clean and minimalist aesthetic."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No forms, inputs, or complex user interactions are present that require error messages.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "N/A.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "N/A."
+    },
+    "Recommendation": "No recommendation needed; no user error interactions are involved."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no visible help, instructions, or links to contact or learn more about the resume.",
+    "CodeReference": "index.html (no help links found)",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users may not know what to do if lost.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A.",
+      "Is help and documentation easily accessible if needed?": "No, it is not present at all."
+    },
+    "Recommendation": "Add a help section or footer with instructions, contact information, or FAQ link for user support."
+  }
+]

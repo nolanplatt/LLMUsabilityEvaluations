@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'visibility' detected in the code that may impact usability.",
+    "CodeReference": "src/App.js, line 5",
+    "CodeSnippet": "import { CSpinner, useColorModes } from '@coreui/react'",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "Review and refine the element at src/App.js, line 5 to better support the visibility of system status principle."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'match' detected in the code that may impact usability.",
+    "CodeReference": "src/App.js, line 42",
+    "CodeSnippet": "<div className=\"pt-3 text-center\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "Review and refine the element at src/App.js, line 42 to better support the match between system and the real world principle."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "No changes needed at this time."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'consistency' detected in the code that may impact usability.",
+    "CodeReference": "src/App.js, line 6",
+    "CodeSnippet": "import './scss/style.scss'",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "Review and refine the element at src/App.js, line 6 to better support the consistency and standards principle."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "No changes needed at this time."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'recognition' detected in the code that may impact usability.",
+    "CodeReference": "index.html, line 19",
+    "CodeSnippet": "<link rel=\"shortcut icon\" href=\"/favicon.ico\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "Review and refine the element at index.html, line 19 to better support the recognition rather than recall principle."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'flexibility' detected in the code that may impact usability.",
+    "CodeReference": "index.html, line 19",
+    "CodeSnippet": "<link rel=\"shortcut icon\" href=\"/favicon.ico\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "Review and refine the element at index.html, line 19 to better support the flexibility and efficiency of use principle."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "No changes needed at this time."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "No changes needed at this time."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified for this heuristic.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, feedback mechanisms are in place.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with expected web conventions.",
+      "Can users easily undo and redo actions?": "No, no clear undo/redo functionality is provided.",
+      "Are there consistent standards across the system?": "Yes, component styling is consistent throughout.",
+      "Is the design preventing problems before they occur?": "No, there is limited error prevention.",
+      "Is recognition prioritized over recall?": "Yes, sidebar icons and labels support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no clear shortcuts for experts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design uses a clean layout.",
+      "Are error messages helpful and expressed in plain language?": "No error messages were clearly found.",
+      "Is help and documentation easily accessible if needed?": "No visible help section in the interface."
+    },
+    "Recommendation": "No changes needed at this time."
+  }
+]

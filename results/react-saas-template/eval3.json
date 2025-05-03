@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Loading feedback using ButtonCircularProgress is inconsistently used, leaving users uncertain if actions are processing.",
+    "CodeReference": "src/logged_out/components/register_login/LoginDialog.js:161",
+    "CodeSnippet": "{isLoading && <ButtonCircularProgress />} ",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback mechanisms like loading indicators are inconsistently used.",
+      "Is the language understandable and uses real-world conventions?": "Yes, common UI terminology is used throughout.",
+      "Can users easily undo and redo actions?": "No, undo/redo features are not implemented.",
+      "Are there consistent standards across the system?": "Yes, uses consistent component patterns.",
+      "Is the design preventing problems before they occur?": "No, users lack assurance of background activity.",
+      "Is recognition prioritized over recall?": "Yes, visual cues guide user behavior.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks shortcut or bulk-action support.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal layout with MUI styling.",
+      "Are error messages helpful and expressed in plain language?": "No, some errors lack visibility or explanation.",
+      "Is help and documentation easily accessible if needed?": "No, there is no visible help mechanism in place."
+    },
+    "Recommendation": "Ensure all critical actions use consistent, visible status indicators like spinners or progress bars."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Labels like 'DialogSelector' and 'Subscription' reflect developer terminology, not user-centric language.",
+    "CodeReference": "src/logged_out/components/register_login/DialogSelector.js:1",
+    "CodeSnippet": "import DialogSelector from \"./DialogSelector\";",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, but some label names are unclear to general users.",
+      "Is the language understandable and uses real-world conventions?": "No, internal jargon is used in some UI labels.",
+      "Can users easily undo and redo actions?": "No, lacks support for undo/redo.",
+      "Are there consistent standards across the system?": "Yes, consistently built but not always user-friendly.",
+      "Is the design preventing problems before they occur?": "Partially, clearer naming could reduce confusion.",
+      "Is recognition prioritized over recall?": "Yes, structure supports discoverability.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple flow works for general users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean design aligns with expectations.",
+      "Are error messages helpful and expressed in plain language?": "No, uses developer-language errors in a few places.",
+      "Is help and documentation easily accessible if needed?": "No, no glossary or label clarification available."
+    },
+    "Recommendation": "Use user-centered terminology in UI components and actions; avoid internal names like 'DialogSelector'."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There are no visible ways to cancel or undo account actions or exit multi-step dialogs.",
+    "CodeReference": "src/logged_out/components/register_login/RegisterDialog.js:150",
+    "CodeSnippet": "<Button variant=\"contained\">Create account</Button>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, actions complete without confirmation.",
+      "Is the language understandable and uses real-world conventions?": "Yes, action buttons are clearly labeled.",
+      "Can users easily undo and redo actions?": "No, there is no undo, redo, or cancel support for major actions.",
+      "Are there consistent standards across the system?": "Yes, button behavior is consistent across dialogs.",
+      "Is the design preventing problems before they occur?": "No, irreversible actions can occur without prompt.",
+      "Is recognition prioritized over recall?": "Yes, icons and button locations support familiarity.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks modal shortcuts or recovery options.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, buttons are unobtrusive but clearly visible.",
+      "Are error messages helpful and expressed in plain language?": "No, lacks 'undo' guidance or escape confirmation.",
+      "Is help and documentation easily accessible if needed?": "No, there is no guidance on reversing actions."
+    },
+    "Recommendation": "Add clear cancel buttons and confirmation dialogs for major irreversible actions."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Multiple navigation and dialog components use inconsistent naming conventions (e.g., NavBar vs NavigationDrawer).",
+    "CodeReference": "src/logged_out/components/navigation/NavBar.js:12",
+    "CodeSnippet": "import NavigationDrawer from \"../../../shared/components/NavigationDrawer\";",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, actions like nav toggles are consistent.",
+      "Is the language understandable and uses real-world conventions?": "Partially, inconsistent naming may confuse.",
+      "Can users easily undo and redo actions?": "No, undo/redo not supported.",
+      "Are there consistent standards across the system?": "No, inconsistencies in naming conventions can impact UX.",
+      "Is the design preventing problems before they occur?": "Partially, naming issues cause indirect confusion.",
+      "Is recognition prioritized over recall?": "Yes, visual consistency aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, basic layout works for both groups.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal and clean design.",
+      "Are error messages helpful and expressed in plain language?": "No, inconsistent naming can make debugging hard.",
+      "Is help and documentation easily accessible if needed?": "No, no naming convention guidance exists."
+    },
+    "Recommendation": "Enforce naming conventions for components to enhance clarity and developer handoff."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Forms do not validate entries inline before submission, allowing empty fields to be submitted.",
+    "CodeReference": "src/logged_out/components/register_login/RegisterDialog.js:190",
+    "CodeSnippet": "<TextField variant=\"outlined\" fullWidth required ... />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, user must submit to see field errors.",
+      "Is the language understandable and uses real-world conventions?": "Yes, field labels are user-friendly.",
+      "Can users easily undo and redo actions?": "No, fields cannot be reverted to prior state automatically.",
+      "Are there consistent standards across the system?": "Yes, forms share a consistent structure.",
+      "Is the design preventing problems before they occur?": "No, delayed validation allows preventable errors.",
+      "Is recognition prioritized over recall?": "Yes, field layout supports quick recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks validation shortcuts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, form design is clean.",
+      "Are error messages helpful and expressed in plain language?": "No, messages appear only post-submission.",
+      "Is help and documentation easily accessible if needed?": "No, form guidance is absent."
+    },
+    "Recommendation": "Implement real-time field validation and prevent submission until all required fields are valid."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The system uses visible, labeled UI elements consistently to minimize recall effort.",
+    "CodeReference": "src/logged_in/components/dashboard/Dashboard.js:24",
+    "CodeSnippet": "<Typography variant=\"subtitle1\">Your Account</Typography>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, clear UI prompts reduce uncertainty.",
+      "Is the language understandable and uses real-world conventions?": "Yes, text is familiar.",
+      "Can users easily undo and redo actions?": "No, still missing.",
+      "Are there consistent standards across the system?": "Yes, layout is intuitive.",
+      "Is the design preventing problems before they occur?": "Yes, instructions minimize confusion.",
+      "Is recognition prioritized over recall?": "Yes, all key elements are clearly presented.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, dashboard is navigable.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal typography and white space used.",
+      "Are error messages helpful and expressed in plain language?": "Yes, messages guide user behavior.",
+      "Is help and documentation easily accessible if needed?": "No, help not integrated."
+    },
+    "Recommendation": "Continue using clearly labeled elements and avoid hidden actions."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The UI lacks shortcut support or advanced controls for experienced users.",
+    "CodeReference": "src/logged_out/components/register_login/LoginDialog.js:90",
+    "CodeSnippet": "<TextField autoFocus fullWidth ... />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, input fields show visual feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels are clear.",
+      "Can users easily undo and redo actions?": "No, actions are final once triggered.",
+      "Are there consistent standards across the system?": "Yes, input forms follow MUI patterns.",
+      "Is the design preventing problems before they occur?": "Partially, no shortcut or tab-index customization.",
+      "Is recognition prioritized over recall?": "Yes, field visibility supports user decisions.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks expert control or shortcut customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent design across dialogs.",
+      "Are error messages helpful and expressed in plain language?": "No, limited error guidance.",
+      "Is help and documentation easily accessible if needed?": "No, there\u2019s no shortcut guide."
+    },
+    "Recommendation": "Add keyboard navigation and power-user shortcuts to speed up frequent tasks."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Overall design is clean, but some redundant text and icons in nav components clutter the interface.",
+    "CodeReference": "src/logged_out/components/navigation/NavBar.js:18",
+    "CodeSnippet": "<HomeIcon /><Typography variant=\"h6\">Home</Typography>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, layout clearly indicates sections.",
+      "Is the language understandable and uses real-world conventions?": "Yes, headers and labels are familiar.",
+      "Can users easily undo and redo actions?": "No, action states are not reversible.",
+      "Are there consistent standards across the system?": "Yes, uses Material UI patterns.",
+      "Is the design preventing problems before they occur?": "Partially, minor visual clutter persists.",
+      "Is recognition prioritized over recall?": "Yes, iconography aids navigation.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, visible UI benefits all users.",
+      "Is the design aesthetically pleasing and minimal?": "No, slight redundancy reduces minimalism.",
+      "Are error messages helpful and expressed in plain language?": "Yes, errors are readable when present.",
+      "Is help and documentation easily accessible if needed?": "No, no aesthetic toggles or dark mode."
+    },
+    "Recommendation": "Remove redundant visual elements to streamline the interface and improve minimalism."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No clear error boundaries or form field-level messages to explain what went wrong.",
+    "CodeReference": "src/shared/components/ConfirmationDialog.js:28",
+    "CodeSnippet": "<DialogContentText>{content}</DialogContentText>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, failed actions don\u2019t explain why they failed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, copy is user-friendly.",
+      "Can users easily undo and redo actions?": "No, recovery is manual.",
+      "Are there consistent standards across the system?": "Yes, but error handling isn\u2019t standardized.",
+      "Is the design preventing problems before they occur?": "No, form inputs are accepted without confirming data integrity.",
+      "Is recognition prioritized over recall?": "Yes, fields guide user input.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, due to lack of error guidance.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, errors don\u2019t disrupt the layout.",
+      "Are error messages helpful and expressed in plain language?": "No, vague or missing error messages.",
+      "Is help and documentation easily accessible if needed?": "No, troubleshooting help is missing."
+    },
+    "Recommendation": "Implement detailed, inline error messages and user-friendly explanations of what went wrong and how to fix it."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help section, tooltip guidance, or accessible documentation for new users.",
+    "CodeReference": "src/logged_out/components/home/Home.js:7",
+    "CodeSnippet": "function Home(props) { const { selectHome } = props;",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, homepage components load as expected.",
+      "Is the language understandable and uses real-world conventions?": "Yes, page titles are informative.",
+      "Can users easily undo and redo actions?": "No, the app provides no undo guidance.",
+      "Are there consistent standards across the system?": "Yes, help is consistently missing.",
+      "Is the design preventing problems before they occur?": "No, missing help increases learning curve.",
+      "Is recognition prioritized over recall?": "Yes, homepage features are clearly labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks onboarding or help overlays.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, homepage is visually clean.",
+      "Are error messages helpful and expressed in plain language?": "No, app lacks onboarding cues.",
+      "Is help and documentation easily accessible if needed?": "No, no help links or contextual guidance present."
+    },
+    "Recommendation": "Include contextual help icons, tooltips, or a help modal for user guidance and onboarding."
+  }
+]

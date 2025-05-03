@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The system does not provide real-time visual feedback for certain user actions such as item addition to wishlist or cart, especially when API calls are made in the background.",
+    "CodeReference": "components/Header.tsx: lines 39-58",
+    "CodeSnippet": "const getWishlistByUserId = async (id: string) => {\n    const response = await fetch(`http://localhost:3001/api/wishlist/${id}`, {\n      cache: \"no-store\",\n    });",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, actions like wishlist retrieval and logout rely on API calls with no visible loading indicators.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels like 'Wishlist', 'Cart', and 'Logout' are intuitive.",
+      "Can users easily undo and redo actions?": "No, actions like logging out or modifying wishlist items don't have visible undo options.",
+      "Are there consistent standards across the system?": "Yes, consistent styling and layout is used across pages.",
+      "Is the design preventing problems before they occur?": "No, lack of feedback could lead to repeated user actions or confusion.",
+      "Is recognition prioritized over recall?": "Yes, icons and familiar elements are used in navigation.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, clean interface benefits both types of users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the Tailwind styling provides a clean UI.",
+      "Are error messages helpful and expressed in plain language?": "No, there are no visible error messages for failed API calls.",
+      "Is help and documentation easily accessible if needed?": "No, no direct links to help resources are present."
+    },
+    "Recommendation": "Add loading indicators and user feedback mechanisms during API interactions (e.g., while fetching wishlist or on logout) to inform users and prevent redundant actions."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Certain button texts like 'random profile photo' and placeholder text may seem generic or technical, not aligned with user expectations.",
+    "CodeReference": "components/Header.tsx: lines 78-84",
+    "CodeSnippet": "alt=\"random profile photo\"\nwidth={30}\nheight={30}",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, not in terms of matching real-world context in visual alt text or labeling.",
+      "Is the language understandable and uses real-world conventions?": "No, some labels like 'random profile photo' aren't user-friendly.",
+      "Can users easily undo and redo actions?": "No, this isn't applicable here.",
+      "Are there consistent standards across the system?": "Yes, visual consistency is maintained.",
+      "Is the design preventing problems before they occur?": "No, unclear alt texts may mislead screen reader users.",
+      "Is recognition prioritized over recall?": "Yes, icons assist in recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, UI supports efficient navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is clean.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable in this heuristic.",
+      "Is help and documentation easily accessible if needed?": "Not applicable here."
+    },
+    "Recommendation": "Replace generic or technical placeholder texts and labels with more meaningful real-world equivalents for better clarity and accessibility."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No visible undo option exists for key user actions such as wishlist modifications or logging out.",
+    "CodeReference": "components/Header.tsx: lines 27-30",
+    "CodeSnippet": "const handleLogout = () => {\n    setTimeout(() => signOut(), 1000);\n    toast.success(\"Logout successful!\");\n};",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, logout occurs on a delay with no user cancellation.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, undo options are not present.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of undo may frustrate users.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messaging present for this action.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement confirmation dialogs or undo options for critical actions like logout or wishlist deletion."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Although visual styling is consistent, some component naming (e.g., 'randomuser.jpg') and alt texts break naming standards.",
+    "CodeReference": "components/Header.tsx: line 80",
+    "CodeSnippet": "src=\"/randomuser.jpg\"",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "No.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "No, some naming standards are inconsistent.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Standardize naming conventions across codebase including image names and alt texts."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Form elements like search inputs are implemented, but no validation or user protection is evident from the code to prevent submission of empty or incorrect data.",
+    "CodeReference": "components/SearchInput.tsx (not shown in extracted, but referenced)",
+    "CodeSnippet": "<SearchInput />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of input validation could lead to user confusion.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages evident.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement client-side validation for input forms, especially for search and login."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The navigation system uses recognizable icons and layout, but some interactive elements lack labels, requiring user memory or trial.",
+    "CodeReference": "components/Header.tsx: lines 58\u201365",
+    "CodeSnippet": "<HeartElement wishQuantity={wishQuantity} />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, icon functions are not always labeled clearly.",
+      "Is the language understandable and uses real-world conventions?": "Yes, icons like hearts and carts are widely understood.",
+      "Can users easily undo and redo actions?": "No, actions aren't reversible.",
+      "Are there consistent standards across the system?": "Yes, consistent UI styling is applied.",
+      "Is the design preventing problems before they occur?": "No, users might misclick due to lack of clarity.",
+      "Is recognition prioritized over recall?": "No, unlabeled icons reduce recognition and require memory.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, layout supports quick access.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean design promotes focus.",
+      "Are error messages helpful and expressed in plain language?": "No errors shown for navigation misclicks.",
+      "Is help and documentation easily accessible if needed?": "No help cues or tooltips available."
+    },
+    "Recommendation": "Add tooltips or visible labels for icons like heart, cart, and profile to improve recognition and accessibility."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard shortcuts or customization options are evident, limiting efficiency for expert users.",
+    "CodeReference": "components/Header.tsx, Footer.tsx",
+    "CodeSnippet": "<Header />\n<Footer />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lacks power-user features or shortcuts.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks features tailored to expert workflows.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No feedback available for advanced interactions.",
+      "Is help and documentation easily accessible if needed?": "No, no help system is in place."
+    },
+    "Recommendation": "Introduce keyboard shortcuts for navigation and allow personalization options to support power users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "app/layout.tsx, app/globals.css",
+    "CodeSnippet": "<body className={inter.className}>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, minimal design enhances visibility.",
+      "Is the language understandable and uses real-world conventions?": "Yes, layout and labels are clean.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes, simplicity reduces potential errors.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, uses TailwindCSS and clean layout.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "Not applicable."
+    },
+    "Recommendation": "Maintain minimalist design approach and ensure added features do not compromise aesthetic simplicity."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks error feedback for failed network actions or form submissions.",
+    "CodeReference": "components/Header.tsx: lines 39\u201345",
+    "CodeSnippet": "const response = await fetch(`http://localhost:3001/api/wishlist/${id}`)",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no fallback UI or error message displayed on fetch failure.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages are visible or user-friendly.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement visible and user-friendly error messages for all async operations including network failures."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks any help, FAQs, or user guidance, which is critical for novice users.",
+    "CodeReference": "components/Footer.tsx, overall site",
+    "CodeSnippet": "<Footer />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, help system is missing.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error documentation exists.",
+      "Is help and documentation easily accessible if needed?": "No, not accessible or present at all."
+    },
+    "Recommendation": "Add a help section or FAQ in the footer or dedicated page to support novice users in navigating and using features effectively."
+  }
+]

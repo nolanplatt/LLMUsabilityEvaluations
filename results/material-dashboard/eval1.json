@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The admin dashboard does not provide real-time or clearly timestamped updates for stats such as 'visitors today', creating ambiguity about data freshness.",
+    "CodeReference": "app/(dashboard)/admin/page.tsx:12-27",
+    "CodeSnippet": "<p className=\"text-3xl font-bold\">1200</p>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, statistics such as visitor counts lack real-time indicators or timestamps.",
+      "Is the language understandable and uses real-world conventions?": "Yes, uses familiar terms like 'visitors today'.",
+      "Can users easily undo and redo actions?": "No, the dashboard lacks undo/redo capabilities for admin actions.",
+      "Are there consistent standards across the system?": "Yes, styling and component layout are consistent.",
+      "Is the design preventing problems before they occur?": "No, the lack of status indicators may lead to misinterpretation of outdated data.",
+      "Is recognition prioritized over recall?": "Yes, visual presentation aids recognition of metrics.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, layout and visual cues support a range of users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent use of Tailwind classes and layout results in clean UI.",
+      "Are error messages helpful and expressed in plain language?": "No, error states or alerts are not present in the UI reviewed.",
+      "Is help and documentation easily accessible if needed?": "No, no help tooltips or links are provided in the UI."
+    },
+    "Recommendation": "Add real-time indicators or timestamps near metrics and use toast or modal feedback for asynchronous updates."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minor mismatch in terminology with admin UI using 'StatsElement' and icons without text labels for some nav links.",
+    "CodeReference": "components/DashboardSidebar.tsx:18-28",
+    "CodeSnippet": "<MdDashboard className=\"text-2xl\" />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, icons alone can be unclear without labels or tooltips.",
+      "Is the language understandable and uses real-world conventions?": "Partially, terms like 'Dashboard' are good, but some items lack explanation.",
+      "Can users easily undo and redo actions?": "No, not applicable here.",
+      "Are there consistent standards across the system?": "Yes, visual patterns are consistently applied.",
+      "Is the design preventing problems before they occur?": "No, icon-only navigation can confuse users.",
+      "Is recognition prioritized over recall?": "Partially, some elements require recall due to missing labels.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, quick links and layout are efficient.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the minimal design is effective.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable here.",
+      "Is help and documentation easily accessible if needed?": "No, no contextual help or labels."
+    },
+    "Recommendation": "Add text labels or tooltips to icon-only navigation items to improve clarity and match real-world terminology."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The dashboard lacks options for undoing changes or navigating back from actions like data edits.",
+    "CodeReference": "Entire app - no undo/redo patterns found",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no feedback for control actions or undo.",
+      "Is the language understandable and uses real-world conventions?": "Yes, clear and modern terminology.",
+      "Can users easily undo and redo actions?": "No, undo/redo is not implemented.",
+      "Are there consistent standards across the system?": "Yes, UI patterns are consistent.",
+      "Is the design preventing problems before they occur?": "No, lack of undo may cause user frustration.",
+      "Is recognition prioritized over recall?": "Yes, users can visually explore options.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, quick dashboard layout is efficient.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent minimal design.",
+      "Are error messages helpful and expressed in plain language?": "No errors displayed.",
+      "Is help and documentation easily accessible if needed?": "No, no undo or help actions are exposed."
+    },
+    "Recommendation": "Add undo/redo functionality and include 'Cancel' buttons or history breadcrumbs in dashboard operations."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "N/A",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, consistent layout and spacing provide visual feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terms and design match modern standards.",
+      "Can users easily undo and redo actions?": "No, not related to this heuristic.",
+      "Are there consistent standards across the system?": "Yes, highly consistent visual style using Tailwind.",
+      "Is the design preventing problems before they occur?": "Yes, consistent layout helps avoid confusion.",
+      "Is recognition prioritized over recall?": "Yes, consistent elements aid recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, clean layout helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimalist aesthetic supports focus.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No, not present in interface."
+    },
+    "Recommendation": "Continue maintaining consistent design standards; no changes required for this heuristic."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No visual or functional validation exists to prevent input mistakes in admin forms (e.g., products, users, categories).",
+    "CodeReference": "components/AdminOrders.tsx (based on naming, validation not present in surrounding structure)",
+    "CodeSnippet": "N/A (Validation missing)",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, validation or warnings on form entry are not found.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, lacking undo.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, absence of form validation increases error risk.",
+      "Is recognition prioritized over recall?": "Yes, basic layout supports recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No error messages or validation are implemented.",
+      "Is help and documentation easily accessible if needed?": "No help provided for validation or field formats."
+    },
+    "Recommendation": "Add client-side and server-side validation, use visual cues (e.g., red borders) and error messages."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Icon-based UI lacks text labels or hover tooltips, which forces users to remember icon meanings.",
+    "CodeReference": "components/DashboardSidebar.tsx:18-28",
+    "CodeSnippet": "<MdDashboard className=\"text-2xl\" />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Partially, icons give feedback but meaning is unclear without labels.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, icon-only designs can lead to confusion.",
+      "Is recognition prioritized over recall?": "No, icons without labels require recall.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add hover tooltips or visible labels to icons for enhanced recognizability."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "N/A",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, unrelated here.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, dashboard layout with modular components supports flexibility.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain modular, responsive layout; consider adding keyboard shortcuts or admin macros."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "N/A",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, unrelated here.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, layout is clean and aligned.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Continue use of Tailwind and spacing standards; no changes needed for this heuristic."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks any user-visible error messages or status notifications for failed actions or form submissions.",
+    "CodeReference": "app/page.tsx and layout.tsx - no handlers for failed actions or feedback alerts",
+    "CodeSnippet": "N/A (Missing error handling)",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no feedback shown for errors or form failures.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, they are absent.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement error handling components to show feedback to users on failed network or input actions."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no embedded documentation or contextual help for admin tasks or dashboard operations.",
+    "CodeReference": "Overall app - No visible help links or guidance text",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "N/A",
+      "Is help and documentation easily accessible if needed?": "No, help system is missing."
+    },
+    "Recommendation": "Add contextual help icons, quick tours or modals for admin features to guide users."
+  }
+]

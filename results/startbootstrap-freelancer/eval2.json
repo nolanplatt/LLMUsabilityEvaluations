@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks immediate feedback on navigation item selection or current active section.",
+    "CodeReference": "index.html: Line 40-55",
+    "CodeSnippet": "<nav class=\"navbar navbar-expand-lg bg-secondary text-uppercase fixed-top\" id=\"mainNav\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users do not receive feedback indicating which navigation section is active.",
+      "Is the language understandable and uses real-world conventions?": "Yes, uses common terminology for menu items.",
+      "Can users easily undo and redo actions?": "No, navigation does not provide undo or history state.",
+      "Are there consistent standards across the system?": "Yes, consistent Bootstrap-based styling used.",
+      "Is the design preventing problems before they occur?": "Yes, limited complexity prevents major errors.",
+      "Is recognition prioritized over recall?": "Yes, menu items are clearly labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, mobile responsive and desktop optimized.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, modern minimal theme used.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable, no input or error forms present.",
+      "Is help and documentation easily accessible if needed?": "No, no help links or tooltips provided."
+    },
+    "Recommendation": "Add visual indicators (like active states or highlights) for the current section to improve user orientation."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Terminology such as 'Start Bootstrap' may not clearly communicate purpose to users unfamiliar with the theme provider.",
+    "CodeReference": "index.html: Line 44",
+    "CodeSnippet": "<a class=\"navbar-brand\" href=\"#page-top\">Start Bootstrap</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, page sections load quickly with smooth transitions.",
+      "Is the language understandable and uses real-world conventions?": "No, 'Start Bootstrap' may not be immediately meaningful to average users.",
+      "Can users easily undo and redo actions?": "No, not applicable in this static design.",
+      "Are there consistent standards across the system?": "Yes, terminology and layout are consistent.",
+      "Is the design preventing problems before they occur?": "Yes, the simple layout prevents confusion.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation supports recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, clean and responsive layout.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visual hierarchy is well maintained.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable, no user input involved.",
+      "Is help and documentation easily accessible if needed?": "No, no documentation or instructions provided."
+    },
+    "Recommendation": "Use branding that communicates the website\u2019s function or purpose more clearly to end users."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no back button functionality or breadcrumb navigation to help users recover from navigation mistakes.",
+    "CodeReference": "index.html: Full page",
+    "CodeSnippet": "<body id=\"page-top\"> ... </body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, smooth transitions assist user navigation.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard terms used.",
+      "Can users easily undo and redo actions?": "No, no browser or in-page support for undo.",
+      "Are there consistent standards across the system?": "Yes, consistent Bootstrap layout.",
+      "Is the design preventing problems before they occur?": "Partially, but lack of undo may hinder recovery.",
+      "Is recognition prioritized over recall?": "Yes, sections and buttons are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal learning curve.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, consistent design elements.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, not present."
+    },
+    "Recommendation": "Introduce breadcrumbs or visual feedback that allow users to understand where they are and easily return to previous sections."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No inconsistency was found in terminology or interaction styles.",
+    "CodeReference": "index.html, styles.css",
+    "CodeSnippet": "<nav class=\"navbar navbar-expand-lg bg-secondary text-uppercase fixed-top\" id=\"mainNav\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, consistent responses to interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, consistent terminology.",
+      "Can users easily undo and redo actions?": "Not applicable in static context.",
+      "Are there consistent standards across the system?": "Yes, Bootstrap and branding are consistent.",
+      "Is the design preventing problems before they occur?": "Yes, uniform layouts aid predictability.",
+      "Is recognition prioritized over recall?": "Yes, interface elements are standard.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No help included."
+    },
+    "Recommendation": "No changes required; maintain consistent use of components and language."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No safeguards are in place against accidental clicks, e.g., no confirmation prompts or undo options.",
+    "CodeReference": "index.html: Buttons and forms",
+    "CodeSnippet": "<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No confirmation or undo prompts present.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially, due to lack of form validation feedback.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No clear error display found.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add client-side validation and confirmation prompts before critical actions like form submissions."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "All content and options are visible without requiring memory.",
+    "CodeReference": "index.html: Navigation, section links",
+    "CodeSnippet": "<a class=\"nav-link py-3 px-0 px-lg-3 rounded\" href=\"#portfolio\">Portfolio</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes, visible menu options.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Continue prioritizing visible navigation and descriptive links."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks shortcuts or personalization for expert users.",
+    "CodeReference": "scripts.js: Responsive navbar only",
+    "CodeSnippet": "responsiveNavItems.map(function (responsiveNavItem) {",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks expert shortcuts.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Consider adding keyboard shortcuts or power-user navigation aids for frequent users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The visual design is minimalistic and supports user tasks without clutter.",
+    "CodeReference": "styles.css, index.html",
+    "CodeSnippet": "<section class=\"page-section portfolio\" id=\"portfolio\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain minimal aesthetic while ensuring essential controls remain accessible."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Contact form does not visibly display validation errors or suggestions when submitted with invalid data.",
+    "CodeReference": "index.html: Line 125+",
+    "CodeSnippet": "<div class=\"form-floating mb-3\">\n    <input class=\"form-control\" id=\"name\" type=\"text\" ... />",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lacks form validation messaging.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, no guidance after errors.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, they are missing.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add inline validation and user-friendly error messages for form inputs."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The website lacks help, tooltips, or any documentation for users.",
+    "CodeReference": "index.html: Full document",
+    "CodeSnippet": "<body id=\"page-top\"> ... </body>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, help is not available.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, lack of help can cause confusion.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, no errors shown.",
+      "Is help and documentation easily accessible if needed?": "No, it's absent."
+    },
+    "Recommendation": "Include a help section, FAQs, or tooltips to support new users."
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The application lacks clear visual feedback during data submissions, e.g., no loading spinner when adding products.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx:53-57",
+    "CodeSnippet": "toast.error(\"Please enter values in input fields\");",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, it only uses toast errors but lacks feedback during loading or submissions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terminology aligns with standard e-commerce contexts.",
+      "Can users easily undo and redo actions?": "No, there's no undo/redo or autosave functionality.",
+      "Are there consistent standards across the system?": "Yes, styling and component use are consistent.",
+      "Is the design preventing problems before they occur?": "Partially, basic validation is implemented but no progressive checks.",
+      "Is recognition prioritized over recall?": "Yes, dropdowns and previews minimize recall demands.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, no expert shortcuts or keyboard navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout and consistent use of color.",
+      "Are error messages helpful and expressed in plain language?": "Partially, generic errors like 'enter values' lack specificity.",
+      "Is help and documentation easily accessible if needed?": "No, there is no embedded help or contextual tooltips."
+    },
+    "Recommendation": "Introduce loading spinners for async actions, detailed error messages, and progress indicators to ensure clarity during operations."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some admin forms use technical labels like 'slug' which may confuse non-technical users.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx:20-24",
+    "CodeSnippet": "slug: \"\",",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, labels like 'slug' are not real-world terms for most users.",
+      "Is the language understandable and uses real-world conventions?": "No, some developer jargon is exposed to users.",
+      "Can users easily undo and redo actions?": "No, no undo or step-back for edits.",
+      "Are there consistent standards across the system?": "Yes, form layout is consistent.",
+      "Is the design preventing problems before they occur?": "No, unclear fields may cause incorrect input.",
+      "Is recognition prioritized over recall?": "Partially, dropdowns are used but labels require knowledge.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, novices may find terminology confusing.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, form design is clean.",
+      "Are error messages helpful and expressed in plain language?": "Partially, errors don\u2019t explain field meanings.",
+      "Is help and documentation easily accessible if needed?": "No, no contextual help is provided."
+    },
+    "Recommendation": "Rename labels like 'slug' to 'URL-friendly product name' and add tooltips explaining inputs."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No cancel or clear options exist on forms, and users can't undo changes once submitted.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx",
+    "CodeSnippet": "<input ... /> without form-level controls",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users can't cancel mid-action easily.",
+      "Is the language understandable and uses real-world conventions?": "Yes, basic terminology is fine.",
+      "Can users easily undo and redo actions?": "No, missing undo/redo or cancel.",
+      "Are there consistent standards across the system?": "Yes, form structure is consistent.",
+      "Is the design preventing problems before they occur?": "No, mistakes can't be reversed easily.",
+      "Is recognition prioritized over recall?": "Yes, most fields are labeled clearly.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks quick cancel/reset.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visual layout is simple.",
+      "Are error messages helpful and expressed in plain language?": "Partially, no guidance on how to undo.",
+      "Is help and documentation easily accessible if needed?": "No, help actions for reversal are absent."
+    },
+    "Recommendation": "Add cancel and clear buttons to forms and allow draft-saving or undo options for user control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Inconsistent naming between UI elements and route files, e.g., 'product' vs. 'item' in components.",
+    "CodeReference": "components/ProductsSection.tsx, app/cart/page.tsx",
+    "CodeSnippet": "ProductCard vs Item in cart",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, messages are consistently displayed.",
+      "Is the language understandable and uses real-world conventions?": "Partially, inconsistent labels confuse users.",
+      "Can users easily undo and redo actions?": "No, functionality is missing.",
+      "Are there consistent standards across the system?": "No, inconsistent naming affects clarity.",
+      "Is the design preventing problems before they occur?": "Partially, inconsistent labels might mislead.",
+      "Is recognition prioritized over recall?": "Yes, visuals support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, component reuse improves usability.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, uniform visuals aid clarity.",
+      "Are error messages helpful and expressed in plain language?": "Yes, where implemented.",
+      "Is help and documentation easily accessible if needed?": "No, guidance isn't present for discrepancies."
+    },
+    "Recommendation": "Standardize terminology across UI and backend references to reduce confusion and promote consistency."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Form allows submission even if some required fields like 'categoryId' are not selected.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx:43-57",
+    "CodeSnippet": "if (product.title === \"\" || ...)",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, only a generic error is shown.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the warning is simple but vague.",
+      "Can users easily undo and redo actions?": "No, there's no way to review or amend submissions post-hoc.",
+      "Are there consistent standards across the system?": "Yes, form field structure is consistent.",
+      "Is the design preventing problems before they occur?": "No, insufficient pre-validation.",
+      "Is recognition prioritized over recall?": "Yes, dropdowns help users select values.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks validation hints.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, form layout is clean.",
+      "Are error messages helpful and expressed in plain language?": "No, 'enter values' does not specify which are missing.",
+      "Is help and documentation easily accessible if needed?": "No, no tooltips or inline help."
+    },
+    "Recommendation": "Implement field-level validation with inline error prompts before submission to prevent invalid data entry."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Product creation requires manual slug entry rather than auto-generating from title input.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx:22",
+    "CodeSnippet": "slug: \"\",",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no hint that slug must be manually entered.",
+      "Is the language understandable and uses real-world conventions?": "Partially, 'slug' is unclear to some users.",
+      "Can users easily undo and redo actions?": "No, input must be redone manually.",
+      "Are there consistent standards across the system?": "Yes, consistent but not user-friendly.",
+      "Is the design preventing problems before they occur?": "No, it relies on user memory/recall.",
+      "Is recognition prioritized over recall?": "No, user has to remember formatting rules.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, novices may be confused.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, interface is clean.",
+      "Are error messages helpful and expressed in plain language?": "Partially, unclear field guidance.",
+      "Is help and documentation easily accessible if needed?": "No, no help provided for slug formatting."
+    },
+    "Recommendation": "Auto-generate slugs from title input and allow users to override if needed."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard shortcuts or admin dashboard bulk-edit features provided.",
+    "CodeReference": "app/(dashboard)/admin/products/page.tsx",
+    "CodeSnippet": "map((product) => ( ... ))",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, standard messages are displayed.",
+      "Is the language understandable and uses real-world conventions?": "Yes, understandable terms are used.",
+      "Can users easily undo and redo actions?": "No, changes require multiple steps to revert.",
+      "Are there consistent standards across the system?": "Yes, dashboard layout is consistent.",
+      "Is the design preventing problems before they occur?": "Partially, bulk operations would help avoid repetitive tasks.",
+      "Is recognition prioritized over recall?": "Yes, buttons and icons support task execution.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks power-user features.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually consistent dashboard.",
+      "Are error messages helpful and expressed in plain language?": "Yes, where present.",
+      "Is help and documentation easily accessible if needed?": "No, no guides or tooltips found."
+    },
+    "Recommendation": "Introduce keyboard shortcuts and bulk actions for efficiency, especially in admin panels."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The design is clean but certain pages, like checkout, appear dense with too many grouped inputs.",
+    "CodeReference": "app/checkout/page.tsx",
+    "CodeSnippet": "<div className=\"grid ...\"> ... </div>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, visual consistency is mostly maintained.",
+      "Is the language understandable and uses real-world conventions?": "Yes, field names are clear.",
+      "Can users easily undo and redo actions?": "No, no reset or undo option is present.",
+      "Are there consistent standards across the system?": "Yes, uniform Tailwind usage.",
+      "Is the design preventing problems before they occur?": "Partially, dense forms can lead to skipped inputs.",
+      "Is recognition prioritized over recall?": "Yes, labels and placeholders support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, basic users can operate forms effectively.",
+      "Is the design aesthetically pleasing and minimal?": "Partially, minimalism is undercut by dense input clusters.",
+      "Are error messages helpful and expressed in plain language?": "Partially, some are vague.",
+      "Is help and documentation easily accessible if needed?": "No, no form instructions or guidance provided."
+    },
+    "Recommendation": "Group form elements with spacing and progressive disclosure to reduce perceived complexity."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "Error handling shows generic toast messages but doesn't indicate which specific fields are invalid.",
+    "CodeReference": "app/(dashboard)/admin/products/new/page.tsx:53-57",
+    "CodeSnippet": "toast.error(\"Please enter values in input fields\");",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, doesn't indicate which fields are wrong.",
+      "Is the language understandable and uses real-world conventions?": "Partially, vague language like 'enter values' is used.",
+      "Can users easily undo and redo actions?": "No, incorrect entries must be manually corrected.",
+      "Are there consistent standards across the system?": "Yes, feedback uses toast messages consistently.",
+      "Is the design preventing problems before they occur?": "No, doesn't guide the user before errors occur.",
+      "Is recognition prioritized over recall?": "Yes, fields are labeled but lack inline validation.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, lacks guided recovery.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visual design is unaffected.",
+      "Are error messages helpful and expressed in plain language?": "No, messages are not field-specific.",
+      "Is help and documentation easily accessible if needed?": "No, help is not integrated with forms."
+    },
+    "Recommendation": "Display inline field-specific error messages instead of general toasts to aid recovery."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No contextual help, tooltips, or documentation links are available across the system.",
+    "CodeReference": "All front-end form files",
+    "CodeSnippet": "No <Tooltip> or <HelpText> components found",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, lacks instructional content.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terms are mostly clear.",
+      "Can users easily undo and redo actions?": "No, no user guidance on how to proceed or recover.",
+      "Are there consistent standards across the system?": "Yes, consistent but lacks help integration.",
+      "Is the design preventing problems before they occur?": "Partially, assumes user knowledge.",
+      "Is recognition prioritized over recall?": "No, no reminders or tips available.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, new users are unsupported.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, design is clean.",
+      "Are error messages helpful and expressed in plain language?": "Partially, but not educational.",
+      "Is help and documentation easily accessible if needed?": "No, completely missing in-app help."
+    },
+    "Recommendation": "Include tooltips, inline help text, and links to documentation for form fields and dashboard features."
+  }
+]

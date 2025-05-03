@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'visibility of system status' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 205",
+    "CodeSnippet": "<!-- Nav Item - Alerts -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'visibility of system status' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'match between system and the real world' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 12",
+    "CodeSnippet": "<title>SB Admin 2 - 404</title>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'match between system and the real world' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'user control and freedom' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 368",
+    "CodeSnippet": "<a href=\"index.html\">&larr; Back to Dashboard</a>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'user control and freedom' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'consistency and standards' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 15",
+    "CodeSnippet": "<link href=\"vendor/fontawesome-free/css/all.min.css\" rel=\"stylesheet\" type=\"text/css\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'consistency and standards' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'error prevention' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 165",
+    "CodeSnippet": "<form",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'error prevention' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'recognition rather than recall' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 67",
+    "CodeSnippet": "<div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordionSidebar\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'recognition rather than recall' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'flexibility and efficiency of use' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 272",
+    "CodeSnippet": "<img class=\"rounded-circle\" src=\"img/undraw_profile_1.svg\"",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'flexibility and efficiency of use' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'aesthetic and minimalist design' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 14",
+    "CodeSnippet": "<!-- Custom fonts for this template-->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'aesthetic and minimalist design' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'help users recognize, diagnose, and recover from errors' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 205",
+    "CodeSnippet": "<!-- Nav Item - Alerts -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'help users recognize, diagnose, and recover from errors' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Issue related to 'help and documentation' identified from code usage.",
+    "CodeReference": "/mnt/data/extracted_site/startbootstrap-sb-admin-2-master/404.html line 1",
+    "CodeSnippet": "<!DOCTYPE html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback elements like alerts exist but lack consistent implementation across interactions.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language aligns with common UI labels like 'Dashboard', 'Back'.",
+      "Can users easily undo and redo actions?": "No, there are limited affordances for undoing actions in the UI.",
+      "Are there consistent standards across the system?": "Yes, design uses Bootstrap conventions and standard UI elements.",
+      "Is the design preventing problems before they occur?": "Partially, forms have validation structure, but explicit checks are sparse.",
+      "Is recognition prioritized over recall?": "Yes, interface uses icons, menus and labels effectively to reduce memory load.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, UI is user-friendly but lacks advanced shortcuts or user customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout using modern styles and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Partially, placeholders exist for alerts, but real error text is missing.",
+      "Is help and documentation easily accessible if needed?": "No, there are no visible links or references to support or help resources."
+    },
+    "Recommendation": "Enhance 'help and documentation' by implementing consistent usage patterns, visible user cues, and augment with actual content where placeholders exist."
+  }
+]

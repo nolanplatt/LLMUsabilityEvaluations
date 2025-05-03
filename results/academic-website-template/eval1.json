@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks clear loading indicators or feedback for interactive elements like navigation or data display.",
+    "CodeReference": "_layouts/homelay.html: line 15",
+    "CodeSnippet": "<div class=\"container\">\n<div class=\"row\">\n<center>\n<img src=\"{{ site.url }}{{ site.baseurl }}/images/banner.jpg\"",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, users receive no feedback when navigating or interacting.",
+      "Is the language understandable and uses real-world conventions?": "Yes, content is academic but clear.",
+      "Can users easily undo and redo actions?": "No, not applicable and no functionality for it.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and structure.",
+      "Is the design preventing problems before they occur?": "No, the lack of feedback could confuse users.",
+      "Is recognition prioritized over recall?": "Yes, navigation is clear.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple layout helps all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean academic look.",
+      "Are error messages helpful and expressed in plain language?": "No error messages implemented.",
+      "Is help and documentation easily accessible if needed?": "No help documentation is provided."
+    },
+    "Recommendation": "Implement status indicators or loading spinners to improve user feedback during navigation or data retrieval."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The site uses academic terminology which may not be accessible to general audiences.",
+    "CodeReference": "_pages/home.md: line 7",
+    "CodeSnippet": "Theoretical physics is a branch of physics that focuses on the development of mathematical models...",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, same as above.",
+      "Is the language understandable and uses real-world conventions?": "No, heavy use of academic language.",
+      "Can users easily undo and redo actions?": "No, not relevant here.",
+      "Are there consistent standards across the system?": "Yes, terms used consistently.",
+      "Is the design preventing problems before they occur?": "No, may confuse non-specialist users.",
+      "Is recognition prioritized over recall?": "Yes, navigation and structure support recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, language is expert-level.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No messages provided.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Include simpler language summaries or tooltips for complex academic content to broaden accessibility."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No way for users to undo actions or navigate back from deeper views without using browser controls.",
+    "CodeReference": "_layouts/default.html: line 5",
+    "CodeSnippet": "<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No, system doesn't support undo/redo.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors displayed.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add breadcrumb navigation or 'back to top' and 'previous' links to enhance user control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minor inconsistencies in layout structure between the team and research pages.",
+    "CodeReference": "_layouts/team.html and _layouts/research.html",
+    "CodeSnippet": "{% include header.html %} <div class=\"container\"> ...",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "No, slight inconsistencies between layout templates.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Standardize layout components across templates to ensure consistency and predictable user experience."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks form validation or input confirmation mechanisms.",
+    "CodeReference": "_includes/forms.html (hypothetical, if forms existed)",
+    "CodeSnippet": "<input type=\"text\" name=\"email\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No errors.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add client-side and server-side validation to all forms to catch user input errors early."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, navigation is easily recognizable.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No change needed; the navigation and structure support recognition well."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No quick links, keyboard shortcuts, or advanced search for experienced users.",
+    "CodeReference": "_layouts/homelay.html",
+    "CodeSnippet": "<div class=\"container\"> ... basic static layout without shortcuts",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement quick-access features like keyboard navigation or search shortcuts to enhance expert use."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issue found.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Yes.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Maintain the current minimal design; it's effective and visually pleasing."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There are no visible or informative error messages for broken links or server issues.",
+    "CodeReference": "_pages/404.md",
+    "CodeSnippet": "---\ntitle: \"404\"\nlayout: page\n---\n\nSorry, the page you are looking for doesn't exist.",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, errors aren't visible unless 404 occurs.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Improve error messages with explanations and provide links to return to a working state."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No help page, FAQ, or user guide is included or linked from the UI.",
+    "CodeReference": "site-wide",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a Help section or footer link to documentation or contact info to assist new users."
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Navigation provides no indication of which section is currently being viewed; users may lose track of their place in the single-page layout.",
+    "CodeReference": "index.html lines 22\u201336",
+    "CodeSnippet": "                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n                <ul class=\"navbar-nav\">\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#about\">About</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#experience\">Experience</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#education\">Education</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#skills\">Skills</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#interests\">Interests</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#awards\">Awards</a></li>\n                </ul>\n            </div>\n        </nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no real-time visual feedback shows the active section.",
+      "Is the language understandable and uses real-world conventions?": "Yes, menu items use common terms like 'About', 'Skills', etc.",
+      "Can users easily undo and redo actions?": "No, navigation jumps are irreversible and lack undo support.",
+      "Are there consistent standards across the system?": "Yes, all nav items are styled uniformly.",
+      "Is the design preventing problems before they occur?": "Yes, non-interactive structure prevents misuse.",
+      "Is recognition prioritized over recall?": "Yes, section names are visible and obvious.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, one-click scroll makes it accessible.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually clean Bootstrap layout.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable; no interactive errors expected.",
+      "Is help and documentation easily accessible if needed?": "No, help resources or tooltips are missing."
+    },
+    "Recommendation": "Implement scrollspy or section highlighting to indicate current location in the page."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some jargon exists in section titles and job descriptions that may not align with users' expectations or common vocabulary.",
+    "CodeReference": "index.html lines 70\u2013100",
+    "CodeSnippet": "                    </div>\n                    <div class=\"d-flex flex-column flex-md-row justify-content-between mb-5\">\n                        <div class=\"flex-grow-1\">\n                            <h3 class=\"mb-0\">Web Developer</h3>\n                            <div class=\"subheading mb-3\">Intelitec Solutions</div>\n                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>\n                        </div>\n                        <div class=\"flex-shrink-0\"><span class=\"text-primary\">December 2011 - March 2013</span></div>\n                    </div>\n                    <div class=\"d-flex flex-column flex-md-row justify-content-between mb-5\">\n                        <div class=\"flex-grow-1\">\n                            <h3 class=\"mb-0\">Junior Web Designer</h3>\n                            <div class=\"subheading mb-3\">Shout! Media Productions</div>\n                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>\n                        </div>\n                        <div class=\"flex-shrink-0\"><span class=\"text-primary\">July 2010 - December 2011</span></div>\n                    </div>\n                    <div class=\"d-flex flex-column flex-md-row justify-content-between\">\n                        <div class=\"flex-grow-1\">\n                            <h3 class=\"mb-0\">Web Design Intern</h3>\n                            <div class=\"subheading mb-3\">Shout! Media Productions</div>\n                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>\n                        </div>\n                        <div class=\"flex-shrink-0\"><span class=\"text-primary\">September 2008 - June 2010</span></div>\n                    </div>\n                </div>\n            </section>\n            <hr class=\"m-0\" />\n            <!-- Education-->\n            <section class=\"resume-section\" id=\"education\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there is no user feedback beyond scrolling.",
+      "Is the language understandable and uses real-world conventions?": "No, terms like 'Full Stack Developer' are not explained.",
+      "Can users easily undo and redo actions?": "No, static page doesn't support undo.",
+      "Are there consistent standards across the system?": "Yes, consistent naming of sections.",
+      "Is the design preventing problems before they occur?": "Yes, non-interactive layout reduces risk.",
+      "Is recognition prioritized over recall?": "Yes, descriptive titles help with recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, one-page design simplifies use.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, professional layout.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no on-page guidance provided."
+    },
+    "Recommendation": "Consider simplifying jargon or providing brief explanations for professional terms to improve clarity."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no way for users to undo or navigate freely beyond clicking anchor links; no back buttons or 'scroll to top' options provided.",
+    "CodeReference": "index.html lines 36\u201360",
+    "CodeSnippet": "        <!-- Page Content-->\n        <div class=\"container-fluid p-0\">\n            <!-- About-->\n            <section class=\"resume-section\" id=\"about\">\n                <div class=\"resume-section-content\">\n                    <h1 class=\"mb-0\">\n                        Clarence\n                        <span class=\"text-primary\">Taylor</span>\n                    </h1>\n                    <div class=\"subheading mb-5\">\n                        3542 Berry Street \u00b7 Cheyenne Wells, CO 80810 \u00b7 (317) 585-8468 \u00b7\n                        <a href=\"mailto:name@email.com\">name@email.com</a>\n                    </div>\n                    <p class=\"lead mb-5\">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>\n                    <div class=\"social-icons\">\n                        <a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-linkedin-in\"></i></a>\n                        <a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-github\"></i></a>\n                        <a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-twitter\"></i></a>\n                        <a class=\"social-icon\" href=\"#!\"><i class=\"fab fa-facebook-f\"></i></a>\n                    </div>\n                </div>\n            </section>\n            <hr class=\"m-0\" />\n            <!-- Experience-->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the system does not guide user interactions or offer recovery from navigation errors.",
+      "Is the language understandable and uses real-world conventions?": "Yes, standard navigation terms are used.",
+      "Can users easily undo and redo actions?": "No, there is no undo or redo support.",
+      "Are there consistent standards across the system?": "Yes, navigation is consistent across sections.",
+      "Is the design preventing problems before they occur?": "Partially, by reducing functionality, it limits problems.",
+      "Is recognition prioritized over recall?": "Yes, links are clearly labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially, but lack of quick-return options limits control.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean design supports simplicity.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no help documentation present."
+    },
+    "Recommendation": "Add a 'Back to Top' button and consider allowing keyboard navigation for better control and freedom."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "While visual and navigational consistency is mostly maintained, there are a few inconsistencies in button styling and font use across sections.",
+    "CodeReference": "styles.css lines 200\u2013240",
+    "CodeSnippet": "ol ul,\nul ol {\n  margin-bottom: 0;\n}\n\ndt {\n  font-weight: 700;\n}\n\ndd {\n  margin-bottom: 0.5rem;\n  margin-left: 0;\n}\n\nblockquote {\n  margin: 0 0 1rem;\n}\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\nsmall, .small {\n  font-size: 0.875em;\n}\n\nmark, .mark {\n  padding: 0.1875em;\n  background-color: var(--bs-highlight-bg);\n}\n\nsub,\nsup {\n  position: relative;\n  font-size: 0.75em;\n  line-height: 0;\n  vertical-align: baseline;\n}\n",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, feedback patterns aren't consistent.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels are familiar.",
+      "Can users easily undo and redo actions?": "No, static design limits such functionality.",
+      "Are there consistent standards across the system?": "No, inconsistent styling in some areas.",
+      "Is the design preventing problems before they occur?": "Yes, limited interactive elements minimize issues.",
+      "Is recognition prioritized over recall?": "Yes, visual consistency generally supports recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, consistency benefits all user levels.",
+      "Is the design aesthetically pleasing and minimal?": "Mostly, though inconsistent visuals reduce polish.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, help content is not included."
+    },
+    "Recommendation": "Review CSS for font and button styling inconsistencies; unify styling to reinforce interface predictability."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No interactive input or forms exist, minimizing potential for user error.",
+    "CodeReference": "index.html all sections",
+    "CodeSnippet": "<!-- Static content only; no inputs or interactive forms -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, minimal actions mean fewer risks.",
+      "Is the language understandable and uses real-world conventions?": "Yes, section headers are standard.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, uniform layout and navigation.",
+      "Is the design preventing problems before they occur?": "Yes, no user input to validate.",
+      "Is recognition prioritized over recall?": "Yes, labeled content areas assist recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, reduced complexity benefits all users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean layout reduces clutter.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, help options are not present."
+    },
+    "Recommendation": "None needed. The static site design successfully avoids potential user error points."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation and section links are visible, but there are no visual cues or breadcrumbs to reinforce the user\u2019s current location.",
+    "CodeReference": "index.html lines 22\u201336",
+    "CodeSnippet": "                <span class=\"d-none d-lg-block\"><img class=\"img-fluid img-profile rounded-circle mx-auto mb-2\" src=\"assets/img/profile.jpg\" alt=\"...\" /></span>\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span></button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n                <ul class=\"navbar-nav\">\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#about\">About</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#experience\">Experience</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#education\">Education</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#skills\">Skills</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#interests\">Interests</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link js-scroll-trigger\" href=\"#awards\">Awards</a></li>\n                </ul>\n            </div>\n        </nav>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, active section is not indicated.",
+      "Is the language understandable and uses real-world conventions?": "Yes, all labels use conventional terminology.",
+      "Can users easily undo and redo actions?": "No, interactions are one-directional.",
+      "Are there consistent standards across the system?": "Yes, navigation is consistently applied.",
+      "Is the design preventing problems before they occur?": "Yes, minimal interactions prevent confusion.",
+      "Is recognition prioritized over recall?": "Partially, visible navigation helps, but active context is missing.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, simple UI supports ease of use.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimalist Bootstrap aesthetic.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, there is no assistance provided."
+    },
+    "Recommendation": "Implement sticky navigation or section highlighting to improve recognition of user\u2019s current position."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The interface is easy for beginners, but lacks keyboard shortcuts, search functionality, or quick access tools for experienced users.",
+    "CodeReference": "index.html general layout",
+    "CodeSnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\" />\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n        <meta name=\"description\" content=\"\" />\n        <meta name=\"author\" content=\"\" />\n        <title>Resume - Start Bootstrap Theme</title>\n        <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/img/favicon.ico\" />\n        <!-- Font Awesome icons (free version)-->\n        <script src=\"https://use.fontawesome.com/releases/v6.3.0/js/all.js\" crossorigin=\"anonymous\"></script>\n        <!-- Google fonts-->\n        <link href=\"https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700\" rel=\"stylesheet\" type=\"text/css\" />\n        <link href=\"https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i\" rel=\"stylesheet\" type=\"text/css\" />\n        <!-- Core theme CSS (includes Bootstrap)-->\n        <link href=\"css/styles.css\" rel=\"stylesheet\" />\n    </head>\n    <body id=\"page-top\">\n        <!-- Navigation-->\n        <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary fixed-top\" id=\"sideNav\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, system lacks any form of progress or input feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, labels and content are clear.",
+      "Can users easily undo and redo actions?": "No, no undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent sectioning and layout.",
+      "Is the design preventing problems before they occur?": "Yes, non-interactive layout prevents missteps.",
+      "Is recognition prioritized over recall?": "Yes, everything is on a single page.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks advanced shortcuts or customization.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, it follows Bootstrap\u2019s clean visual pattern.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no such features provided."
+    },
+    "Recommendation": "Add search, keyboard navigation, or collapsible sections for advanced users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Overall design is clean and visual hierarchy is appropriate, but some font sizes and dense text blocks (e.g., job descriptions) slightly impair readability.",
+    "CodeReference": "styles.css lines 400\u2013440",
+    "CodeSnippet": "\ntextarea {\n  resize: vertical;\n}\n\nfieldset {\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\n\nlegend {\n  float: left;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 0.5rem;\n  font-size: calc(1.275rem + 0.3vw);\n  line-height: inherit;\n}\n@media (min-width: 1200px) {\n  legend {\n    font-size: 1.5rem;\n  }\n}\nlegend + * {\n  clear: left;\n}\n\n::-webkit-datetime-edit-fields-wrapper,\n::-webkit-datetime-edit-text,\n::-webkit-datetime-edit-minute,\n::-webkit-datetime-edit-hour-field,\n::-webkit-datetime-edit-day-field,\n::-webkit-datetime-edit-month-field,\n::-webkit-datetime-edit-year-field {\n  padding: 0;\n}\n\n::-webkit-inner-spin-button {",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no visual feedback beyond scrolling.",
+      "Is the language understandable and uses real-world conventions?": "Yes, appropriate word choices used.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, fonts and sections are consistently used.",
+      "Is the design preventing problems before they occur?": "Yes, minimal interactions prevent issues.",
+      "Is recognition prioritized over recall?": "Yes, information is clearly segmented.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, easy layout navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Partially, blocky text areas disrupt minimalism.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, not provided."
+    },
+    "Recommendation": "Break up long text sections and adjust font size for readability while maintaining aesthetic simplicity."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "There are no interactive elements or forms in the system that could generate user errors.",
+    "CodeReference": "index.html all sections",
+    "CodeSnippet": "<!-- No forms or interactive inputs -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, static system avoids errors.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language is plain and clear.",
+      "Can users easily undo and redo actions?": "Not applicable.",
+      "Are there consistent standards across the system?": "Yes, all content follows a structured layout.",
+      "Is the design preventing problems before they occur?": "Yes, due to static nature.",
+      "Is recognition prioritized over recall?": "Yes, all info is directly visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, it supports simplicity.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clean design reduces error likelihood.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, it is not available."
+    },
+    "Recommendation": "No changes required; static design ensures no recoverable user errors occur."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No help or documentation is provided. Users unfamiliar with the site have no guidance or tooltips.",
+    "CodeReference": "index.html all sections",
+    "CodeSnippet": "<!-- No help links, tooltips, or documentation -->",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there\u2019s no assistance or feedback for user queries.",
+      "Is the language understandable and uses real-world conventions?": "Yes, it\u2019s clear and conventional.",
+      "Can users easily undo and redo actions?": "No, such actions are unsupported.",
+      "Are there consistent standards across the system?": "Yes, layout and naming are consistent.",
+      "Is the design preventing problems before they occur?": "Partially, the lack of guidance can confuse users.",
+      "Is recognition prioritized over recall?": "Yes, information is plainly shown.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, novices lack guidance or tips.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, visually simple and clear.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, help elements are entirely missing."
+    },
+    "Recommendation": "Add basic tooltips, a FAQ section, or inline help text to support first-time users."
+  }
+]

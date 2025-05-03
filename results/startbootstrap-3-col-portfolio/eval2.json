@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no visual feedback provided to the user after clicking on the navigation links. The links do not show any change indicating that they were clicked or if loading is occurring.",
+    "CodeReference": "index.html:12-29",
+    "CodeSnippet": "    <!-- Bootstrap core CSS -->\n    <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/3-col-portfolio.css\" rel=\"stylesheet\">\n\n  </head>\n\n  <body>\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, the system does not indicate when an action is in progress or completed (e.g., no loading state or active indication for navigation).",
+      "Is the language understandable and uses real-world conventions?": "Yes, the labels like 'Home', 'About', 'Contact' are clear and conventional.",
+      "Can users easily undo and redo actions?": "No, there is no mechanism for undoing or redoing actions related to navigation.",
+      "Are there consistent standards across the system?": "Yes, Bootstrap ensures consistent visual standards.",
+      "Is the design preventing problems before they occur?": "No, users are not informed if clicking a link does nothing (e.g., placeholder links).",
+      "Is recognition prioritized over recall?": "Yes, the navigation links are clearly visible and labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, it lacks feedback or keyboard navigation cues for more experienced users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the design is visually clean and minimal.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable\u2014no errors/messages are shown.",
+      "Is help and documentation easily accessible if needed?": "No, there is no documentation or help link available."
+    },
+    "Recommendation": "Add active and hover states to navigation links. Provide visual feedback like highlighting the current section or loading spinners where appropriate to enhance system status visibility."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The labels and structure follow standard conventions but some dummy placeholders (e.g., '#' in hrefs) break real-world expectations.",
+    "CodeReference": "index.html:6-30",
+    "CodeSnippet": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>3 Col Portfolio - Start Bootstrap Template</title>\n\n    <!-- Bootstrap core CSS -->\n    <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/3-col-portfolio.css\" rel=\"stylesheet\">\n\n  </head>\n\n  <body>\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, navigation links do not lead to actual content which breaks user expectations.",
+      "Is the language understandable and uses real-world conventions?": "Yes, terms like 'About', 'Contact' are standard.",
+      "Can users easily undo and redo actions?": "No, there is no undo functionality for misclicks or interactions.",
+      "Are there consistent standards across the system?": "Yes, Bootstrap provides consistency.",
+      "Is the design preventing problems before they occur?": "No, it allows navigation links that lead nowhere.",
+      "Is recognition prioritized over recall?": "Yes, users can see all options at a glance.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, it's simple and familiar.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, minimal and clean structure.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No, no documentation or help provided."
+    },
+    "Recommendation": "Ensure that navigation links lead to meaningful destinations or display a 'coming soon' message. Replace '#' with valid or informative URLs to match real-world expectations."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "Users cannot undo or go back from navigation clicks since all links lead nowhere and there is no breadcrumb or contextual cues.",
+    "CodeReference": "index.html:25-30",
+    "CodeSnippet": "        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no feedback or confirmation is given after clicks.",
+      "Is the language understandable and uses real-world conventions?": "Yes, language is clear.",
+      "Can users easily undo and redo actions?": "No, no undo or contextual return capability.",
+      "Are there consistent standards across the system?": "Yes, visual standards are upheld.",
+      "Is the design preventing problems before they occur?": "No, allows dead-end navigation.",
+      "Is recognition prioritized over recall?": "Yes, visible structure.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks advanced user shortcuts or recovery options.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Implement breadcrumbs or visual cues that allow users to backtrack. Provide undo functionality or confirm navigations that lead away from the current state."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "The use of Bootstrap ensures visual consistency, but a few inconsistencies like mixed placeholder links and empty content sections are present.",
+    "CodeReference": "index.html:31-60",
+    "CodeSnippet": "            <li class=\"nav-item active\">\n              <a class=\"nav-link\" href=\"#\">Home\n                <span class=\"sr-only\">(current)</span>\n              </a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">About</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Services</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Contact</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n\n    <!-- Page Content -->\n    <div class=\"container\">\n\n      <!-- Page Heading -->\n      <h1 class=\"my-4\">Page Heading\n        <small>Secondary Text</small>\n      </h1>\n\n      <div class=\"row\">\n        <div class=\"col-lg-4 col-sm-6 portfolio-item\">\n          <div class=\"card h-100\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No consistent feedback system.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Mostly yes, with minor inconsistencies.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Somewhat.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Ensure all parts of the page use working, consistent components. Avoid placeholders and complete all sections with meaningful content or informative placeholders."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "There are no preventative features to avoid navigation to dead links or empty sections, and no user confirmation for important actions.",
+    "CodeReference": "index.html:6-30",
+    "CodeSnippet": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>3 Col Portfolio - Start Bootstrap Template</title>\n\n    <!-- Bootstrap core CSS -->\n    <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/3-col-portfolio.css\" rel=\"stylesheet\">\n\n  </head>\n\n  <body>\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, dead links are not flagged or guided.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No, users can click misleading or broken links.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Somewhat.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Validate link destinations or display tooltips or notifications when content is unavailable. Disable dead links or use modal alerts to guide the user."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "All content and navigational options are visible without requiring memory from the user.",
+    "CodeReference": "index.html:25-60",
+    "CodeSnippet": "        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item active\">\n              <a class=\"nav-link\" href=\"#\">Home\n                <span class=\"sr-only\">(current)</span>\n              </a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">About</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Services</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Contact</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n\n    <!-- Page Content -->\n    <div class=\"container\">\n\n      <!-- Page Heading -->\n      <h1 class=\"my-4\">Page Heading\n        <small>Secondary Text</small>\n      </h1>\n\n      <div class=\"row\">\n        <div class=\"col-lg-4 col-sm-6 portfolio-item\">\n          <div class=\"card h-100\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, though not related to recognition.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes, navigation and labels are always visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No changes needed. The site successfully prioritizes recognition over recall."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The interface lacks shortcuts, accessibility options, or efficient navigation tools for advanced users.",
+    "CodeReference": "index.html:12-30",
+    "CodeSnippet": "    <!-- Bootstrap core CSS -->\n    <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/3-col-portfolio.css\" rel=\"stylesheet\">\n\n  </head>\n\n  <body>\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No, lacks advanced tools or keyboard accessibility.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add keyboard navigation, ARIA labels, and optional shortcuts to improve efficiency for experienced users."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "The design uses Bootstrap and custom styles effectively for a clean, minimal layout with appropriate whitespace and alignment.",
+    "CodeReference": "main CSS",
+    "CodeSnippet": "/*!",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "Partially.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, clear layout and spacing.",
+      "Are error messages helpful and expressed in plain language?": "Not applicable.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "No changes required. Maintain the clean and focused design."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No visible error messages or user feedback is present, even when interacting with empty links or invalid actions.",
+    "CodeReference": "index.html:25-45",
+    "CodeSnippet": "        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item active\">\n              <a class=\"nav-link\" href=\"#\">Home\n                <span class=\"sr-only\">(current)</span>\n              </a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">About</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Services</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Contact</a>\n            </li>\n          </ul>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, no user feedback or error messages are shown.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No, they are missing.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add user-friendly error handling and feedback messages. Use modals or alert boxes to guide users when errors occur (e.g., broken links)."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "There is no help, support, or guidance documentation embedded or linked anywhere on the site.",
+    "CodeReference": "index.html:0-60",
+    "CodeSnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>3 Col Portfolio - Start Bootstrap Template</title>\n\n    <!-- Bootstrap core CSS -->\n    <link href=\"vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom styles for this template -->\n    <link href=\"css/3-col-portfolio.css\" rel=\"stylesheet\">\n\n  </head>\n\n  <body>\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item active\">\n              <a class=\"nav-link\" href=\"#\">Home\n                <span class=\"sr-only\">(current)</span>\n              </a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">About</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Services</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" href=\"#\">Contact</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n\n    <!-- Page Content -->\n    <div class=\"container\">\n\n      <!-- Page Heading -->\n      <h1 class=\"my-4\">Page Heading\n        <small>Secondary Text</small>\n      </h1>\n\n      <div class=\"row\">\n        <div class=\"col-lg-4 col-sm-6 portfolio-item\">\n          <div class=\"card h-100\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No.",
+      "Is the language understandable and uses real-world conventions?": "Yes.",
+      "Can users easily undo and redo actions?": "No.",
+      "Are there consistent standards across the system?": "Yes.",
+      "Is the design preventing problems before they occur?": "No.",
+      "Is recognition prioritized over recall?": "Yes.",
+      "Is the interface flexible and efficient for both novices and experts?": "No.",
+      "Is the design aesthetically pleasing and minimal?": "Yes.",
+      "Are error messages helpful and expressed in plain language?": "No.",
+      "Is help and documentation easily accessible if needed?": "No."
+    },
+    "Recommendation": "Add a help link or tooltip system with explanations for page sections, actions, and troubleshooting information."
+  }
+]

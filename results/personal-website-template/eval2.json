@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks real-time user feedback mechanisms like loading states or form submission success indicators.",
+    "CodeReference": "index.html: form section, contact_me.js (not referenced inline)",
+    "CodeSnippet": "<form name=\"sentMessage\" id=\"contactForm\" novalidate>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 form submissions don't give visual confirmation or feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 labels like 'Name', 'Email', and 'Message' are intuitive.",
+      "Can users easily undo and redo actions?": "No \u2013 there is no mechanism for undoing or redoing form inputs.",
+      "Are there consistent standards across the system?": "Yes \u2013 layout and UI styles are consistent.",
+      "Is the design preventing problems before they occur?": "No \u2013 absence of status feedback could lead to double submissions.",
+      "Is recognition prioritized over recall?": "Yes \u2013 clearly labeled fields and sections.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 very basic and straightforward design.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 clean, responsive, and not cluttered.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 feedback on failure or success is not implemented.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 no documentation or inline help available."
+    },
+    "Recommendation": "Add real-time user feedback for actions such as form submission using modal, alert, or toast messages."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Language and visuals are somewhat abstract; the theme is 'Freelancer' but does not match all user expectations for personal portfolios.",
+    "CodeReference": "index.html: head and header sections",
+    "CodeSnippet": "<title>Freelancer - Yourname Theme</title>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 not related to real-world metaphors or professional titles.",
+      "Is the language understandable and uses real-world conventions?": "Partially \u2013 generic terms like 'Freelancer' are used instead of descriptive roles.",
+      "Can users easily undo and redo actions?": "No \u2013 functionality not applicable in this context.",
+      "Are there consistent standards across the system?": "Yes \u2013 it follows web conventions.",
+      "Is the design preventing problems before they occur?": "N/A \u2013 no dynamic behavior tied to real-world workflows.",
+      "Is recognition prioritized over recall?": "Yes \u2013 UI elements reflect real-world use patterns.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 simplicity supports this.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 aligns with web standards.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 not applicable.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 not provided."
+    },
+    "Recommendation": "Use clearer personal branding and avoid boilerplate terms like 'Freelancer'. Customize content to match the real-world role and context of the user."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The user cannot undo or cancel actions such as form input or navigation easily.",
+    "CodeReference": "index.html: contact form section",
+    "CodeSnippet": "<form name=\"sentMessage\" id=\"contactForm\" novalidate>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 cancel/reset button not present in form.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 form elements are clear.",
+      "Can users easily undo and redo actions?": "No \u2013 no undo, redo or cancel options exist.",
+      "Are there consistent standards across the system?": "Yes \u2013 standard HTML practices are used.",
+      "Is the design preventing problems before they occur?": "No \u2013 no guidance or fail-safes.",
+      "Is recognition prioritized over recall?": "Yes \u2013 input fields are visible and labeled.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 simple interface is user-friendly.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 clean UI.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 missing or minimal.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 not found on page."
+    },
+    "Recommendation": "Add a 'Reset' button to forms or confirm/cancel dialog modals for major actions to improve control and error recovery."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Some icon classes and color choices may conflict with expected Bootstrap conventions or accessibility standards.",
+    "CodeReference": "index.html: social media icons section",
+    "CodeSnippet": "<i class=\"fa fa-twitter\"></i>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A \u2013 no dynamic interaction here.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 icon usage follows common patterns.",
+      "Can users easily undo and redo actions?": "No \u2013 not applicable to static content.",
+      "Are there consistent standards across the system?": "Partially \u2013 some inconsistencies in icon styling.",
+      "Is the design preventing problems before they occur?": "Partially \u2013 but accessibility may suffer from icon-only links.",
+      "Is recognition prioritized over recall?": "Yes \u2013 icons are recognizable.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 clean navigation.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 visually cohesive.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 no errors present.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 not present."
+    },
+    "Recommendation": "Ensure all icons have `aria-labels` or text equivalents for accessibility and clarity. Align with expected framework usage."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "The form lacks client-side validation indicators and doesn't appear to prevent submission on invalid input.",
+    "CodeReference": "index.html: contact form",
+    "CodeSnippet": "<input type=\"email\" class=\"form-control\" placeholder=\"Email Address\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 no visual cues for invalid form entries.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 input placeholders are clear.",
+      "Can users easily undo and redo actions?": "No \u2013 no form reset or undo.",
+      "Are there consistent standards across the system?": "Yes \u2013 input patterns are typical.",
+      "Is the design preventing problems before they occur?": "No \u2013 lack of constraints or client-side alerts.",
+      "Is recognition prioritized over recall?": "Yes \u2013 inputs are explicit.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 beginner-friendly UI.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 clean form layout.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 none shown on error.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 none provided."
+    },
+    "Recommendation": "Add client-side input validation with real-time indicators and constraints (e.g., required fields, valid email formats)."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes \u2013 all UI elements are visible and clearly labeled.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 easy to follow.",
+      "Can users easily undo and redo actions?": "No \u2013 still no support for this.",
+      "Are there consistent standards across the system?": "Yes \u2013 follows visual hierarchy.",
+      "Is the design preventing problems before they occur?": "Yes \u2013 minimalism helps.",
+      "Is recognition prioritized over recall?": "Yes \u2013 UI minimizes memory burden.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 straightforward layout.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 visually pleasing.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 error handling absent.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 no assistance found."
+    },
+    "Recommendation": "Maintain visibility and clarity of labels and navigation to support recognition-based interaction."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No keyboard shortcuts, search features, or advanced interaction options exist for experienced users.",
+    "CodeReference": "index.html: navigation and body",
+    "CodeSnippet": "<nav class=\"navbar navbar-default navbar-fixed-top\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "N/A \u2013 mostly static content.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 clearly written.",
+      "Can users easily undo and redo actions?": "No \u2013 not available.",
+      "Are there consistent standards across the system?": "Yes \u2013 bootstrap navigation patterns.",
+      "Is the design preventing problems before they occur?": "Yes \u2013 simplicity helps.",
+      "Is recognition prioritized over recall?": "Yes \u2013 navigation links are visible.",
+      "Is the interface flexible and efficient for both novices and experts?": "Partially \u2013 lacks power-user features.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 clean Bootstrap theme.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 not applicable.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 none provided."
+    },
+    "Recommendation": "Introduce optional shortcut keys or tab navigation and ARIA roles for enhanced accessibility and efficiency."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No issues identified.",
+    "CodeReference": "freelancer.css",
+    "CodeSnippet": "body {\n  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes \u2013 minimalist aesthetic improves clarity.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 content and sections are clear.",
+      "Can users easily undo and redo actions?": "No \u2013 still not supported.",
+      "Are there consistent standards across the system?": "Yes \u2013 follows CSS framework.",
+      "Is the design preventing problems before they occur?": "Yes \u2013 visual simplicity reduces confusion.",
+      "Is recognition prioritized over recall?": "Yes \u2013 visual hierarchy is used.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 basic but effective.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 no unnecessary content.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 errors not shown.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 none found."
+    },
+    "Recommendation": "Continue maintaining clean visuals. Consider adding subtle affordances or interactivity without cluttering the interface."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No clear error feedback is provided on form validation failures or incomplete inputs.",
+    "CodeReference": "index.html: contact form",
+    "CodeSnippet": "<input type=\"text\" class=\"form-control\" placeholder=\"Name\">",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 no alerts or instructions for fixing input errors.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 form fields are labeled well.",
+      "Can users easily undo and redo actions?": "No \u2013 form remains static after failure.",
+      "Are there consistent standards across the system?": "Yes \u2013 input layout follows norms.",
+      "Is the design preventing problems before they occur?": "No \u2013 invalid entries are not blocked or explained.",
+      "Is recognition prioritized over recall?": "Yes \u2013 fields and placeholders guide users.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 simple and direct.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 consistent visuals.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 not implemented.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 absent."
+    },
+    "Recommendation": "Implement real-time error validation and post-submit messages with actionable instructions for correcting input."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "The site lacks any documentation, tooltips, onboarding, or accessibility guidance for its use or customization.",
+    "CodeReference": "README.md (minimal content)",
+    "CodeSnippet": "# personal-website-template-master",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No \u2013 no guides or instructions.",
+      "Is the language understandable and uses real-world conventions?": "Yes \u2013 simple UI language.",
+      "Can users easily undo and redo actions?": "No \u2013 not available.",
+      "Are there consistent standards across the system?": "Yes \u2013 simple HTML structure.",
+      "Is the design preventing problems before they occur?": "No \u2013 no support information provided.",
+      "Is recognition prioritized over recall?": "Yes \u2013 layout guides interaction.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes \u2013 simple setup.",
+      "Is the design aesthetically pleasing and minimal?": "Yes \u2013 clear visual design.",
+      "Are error messages helpful and expressed in plain language?": "No \u2013 error handling absent.",
+      "Is help and documentation easily accessible if needed?": "No \u2013 README is insufficient."
+    },
+    "Recommendation": "Add a proper README with setup, customization guidance, and optional inline tips or tooltips to support new users."
+  }
+]

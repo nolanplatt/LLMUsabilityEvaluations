@@ -1,0 +1,212 @@
+[
+  {
+    "Heuristic": "Visibility of system status",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No feedback mechanism (e.g., loading indicators or current page highlights) visible in navigation.",
+    "CodeReference": "_includes/header.html: entire file",
+    "CodeSnippet": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->\n\n<nav class=\"navbar sticky-top navbar-e",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "No, there are no indicators showing current page status or system feedback.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Add active state indicators for current navigation items and include loading spinners for actions if needed."
+  },
+  {
+    "Heuristic": "Match between system and the real world",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Menu labels are minimal and might not align with real-world terminology for non-technical users.",
+    "CodeReference": "_includes/header.html: lines 10\u201350",
+    "CodeSnippet": "e Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></i",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "No, some labels like 'CV' may not be universally clear.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Use more intuitive, user-centered language for navigation and section headers (e.g., 'Resume' instead of 'CV')."
+  },
+  {
+    "Heuristic": "User control and freedom",
+    "SeverityRating": 3,
+    "IssueFound": true,
+    "IssueDescription": "No way to undo actions or navigate back easily is provided in the static design.",
+    "CodeReference": "Project-wide: all static HTML",
+    "CodeSnippet": "<html>...</html>",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, the static site offers no undo or back control elements.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Include navigation aids like 'Back' buttons or breadcrumb trails to enhance user control."
+  },
+  {
+    "Heuristic": "Consistency and standards",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Inconsistent use of HTML class names and incomplete accessibility tags.",
+    "CodeReference": "_includes/head.html: lines 1\u201350",
+    "CodeSnippet": "<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n  <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>\n  <m",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "No, class naming and alt attributes lack consistency.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Standardize class naming conventions and ensure all images have descriptive alt text."
+  },
+  {
+    "Heuristic": "Error prevention",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No interactive inputs present; low risk of user error.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, design avoids risky elements.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "No change needed since no interactive elements exist."
+  },
+  {
+    "Heuristic": "Recognition rather than recall",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Navigation lacks visual cues to aid recognition (no hover or active states).",
+    "CodeReference": "_includes/header.html",
+    "CodeSnippet": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->\n\n<nav class=\"navbar sticky-top navbar-e",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "No, missing visual reinforcement for navigation context.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Implement hover/active states and use icons or breadcrumbs to support recognition."
+  },
+  {
+    "Heuristic": "Flexibility and efficiency of use",
+    "SeverityRating": 0,
+    "IssueFound": false,
+    "IssueDescription": "No major inefficiencies; simple layout supports varied use.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal structure is efficient for general browsing.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "No specific action required unless new interaction features are added."
+  },
+  {
+    "Heuristic": "Aesthetic and minimalist design",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "Minimal design is present but lacks color contrast and visual hierarchy.",
+    "CodeReference": "_includes/footer.html",
+    "CodeSnippet": "<br/>\n<section id=\"footer\">\n<div class=\"container-footer\">\n  <div class=\"panel-footer\">\n\t  <div class=\"row\">\n\t\t<div class=\"col-sm-4\">\n\t\t    <h5>About</h5>\t\n            <p>{{ site.affiliation }}</p>\n\t\t</div>\n\n\t\t<div class=\"col-sm-4\">\n\t\t    <h5>Contact</h5>\t\n            <p>{{ site.contact }}</p>\n\t\t</d",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "No, layout lacks strong contrast and emphasis on content hierarchy.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Increase contrast and font weight for headings; introduce spacing between sections."
+  },
+  {
+    "Heuristic": "Help users recognize, diagnose, and recover from errors",
+    "SeverityRating": 2,
+    "IssueFound": true,
+    "IssueDescription": "No error messaging or indicators are defined in this static setup.",
+    "CodeReference": "N/A",
+    "CodeSnippet": "N/A",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No, site lacks feedback for failed states or missing pages.",
+      "Is help and documentation easily accessible if needed?": "No, help/documentation links not explicitly provided."
+    },
+    "Recommendation": "Add a 404.html error page and friendly error messages for broken links or missing content."
+  },
+  {
+    "Heuristic": "Help and documentation",
+    "SeverityRating": 1,
+    "IssueFound": true,
+    "IssueDescription": "No visible help or user guidance links are present.",
+    "CodeReference": "README.md",
+    "CodeSnippet": "<!-- <HEADER> // IGNORE IT -->\n<p align=\"center\">\n  <img src=\"https://rawcdn.githack.com/popperjs/popper-core/8805a5d7599e14619c9e7ac19a3713285d8e5d7f/docs/src/images/popper-logo-outlined.svg\" alt=\"Popper\" height=\"300px\"/>\n</p>\n\n<div align=\"center\">\n  <h1>Tooltip & Popover Positioning Engine</h1>\n</",
+    "EvaluationAnswers": {
+      "Is the system providing appropriate feedback?": "Yes, no missing feedback patterns found.",
+      "Is the language understandable and uses real-world conventions?": "Yes, the language used aligns with real-world conventions.",
+      "Can users easily undo and redo actions?": "No, this is a static site without undo functionality.",
+      "Are there consistent standards across the system?": "Yes, consistent layout and element use is present.",
+      "Is the design preventing problems before they occur?": "Yes, there are minimal entry points to errors.",
+      "Is recognition prioritized over recall?": "Yes, visible navigation aids recognition.",
+      "Is the interface flexible and efficient for both novices and experts?": "Yes, minimal design supports various users.",
+      "Is the design aesthetically pleasing and minimal?": "Yes, the HTML structure is lean and clear.",
+      "Are error messages helpful and expressed in plain language?": "No explicit error messages found due to static design.",
+      "Is help and documentation easily accessible if needed?": "No, there are no links to documentation for end users."
+    },
+    "Recommendation": "Add a 'Help' or 'About' section with clear contact or FAQ resources."
+  }
+]
