@@ -26,8 +26,8 @@ If you would like to use our statistical analysis methods for your own usability
 3. [Dr. Sehrish Basir Nizamani](https://website.cs.vt.edu/people/faculty/sehrish-basir.html) | Assistant Professor, Virginia Tech Department of Computer Science
 
 
-<center>
+<p align="center">
 <img src="static/vtcs.png" alt="Virginia Tech CS Logo" style="width:450px;height:82px;"> <br> <br>
 <img src="static/chci.png" alt="CHCI Logo">
 
-</center>
+</p>
