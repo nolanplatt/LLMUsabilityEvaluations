@@ -27,7 +27,7 @@ If you would like to use our statistical analysis methods for your own usability
 
 
 <center>
-<img src="static/vtcs.png" alt="Virginia Tech CS Logo" style="width:508px;height:92px;"> <br> <br>
-<img src="static/chcilogo.png" alt="CHCI Logo" style="width:338px;height:61px;">
+<img src="static/vtcs.png" alt="Virginia Tech CS Logo" style="width:450px;height:82px;"> <br> <br>
+<img src="static/chci.png" alt="CHCI Logo">
 
 </center>
