@@ -1,6 +1,6 @@
 # LLMUsabilityEvaluations 
 
-Data and code for our full-paper **Catching UX Flaws in Code: Leveraging LLMs to Identify Usability Flaws at the Development Stage**, as submitted to [VLHCC 2025](https://conf.researchr.org/home/vlhcc-2025).
+Data and code for our paper **Catching UX Flaws in Code: Leveraging LLMs to Identify Usability Flaws at the Development Stage**, as accepted to [VLHCC 2025](https://conf.researchr.org/home/vlhcc-2025).
 
 ## Methodology
 The essence of this repository is to analyze usability evaluations conducted by Large Language Models (LLMs). 
@@ -24,6 +24,9 @@ If you would like to use our statistical analysis methods for your own usability
 1. [Nolan Platt](https://nolanplatt.com) | Virginia Tech Department of Computer Science
 2. [Ethan Luchs](https://www.linkedin.com/in/ethanluchs) | Virginia Tech Department of Computer Science
 3. [Dr. Sehrish Basir Nizamani](https://website.cs.vt.edu/people/faculty/sehrish-basir.html) | Assistant Professor, Virginia Tech Department of Computer Science
+
+## Citation
+Once officially published, the citation will be posted here. The paper will be available in the _Proceedings of the 2025 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2025_
 
 
 <p align="center">
